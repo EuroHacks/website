@@ -8,6 +8,7 @@ export default {
 				'light-blue': '#9AC3FF',
 				'dark-gray': '#2f2f2f',
 				'grayish-blue': '#a6b3c9',
+				'background': '#263954;',
 			  },
 			  spacing: {
 				'85vw': '85vw',
