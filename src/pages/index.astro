@@ -1,5 +1,6 @@
 ---
 import Navbar from "../components/Navbar.astro"
+import FAQ from "../components/FAQElement.astro"
 ---
 
 <html lang="en">
@@ -12,25 +13,23 @@ import Navbar from "../components/Navbar.astro"
 	</head>
 
 	<Navbar>
-		
+
 	</Navbar>
-	<body>
 
-		<div class="faq">
-            <div class="question"> Question 1 </div>
-            <div class="answer">
-                <p> See now I use it :) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
+	<body class="font-">
 
-            <div class="question"> Question 2 </div>
-            <div class="answer">
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
+		<div class="pt-6 flex flex-col items-center">
 
-            <div class="question"> Question 3 </div>
-            <div class="answer">
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
+			<FAQ 
+				question = " What is a hackathon? "
+				answer = " Hackathon is when many people interested in coding/robotics and generally computer science for 1 or more days in order to create amazing project but more importantly meet new people and learn new things. All of these combined with amazing venues, food, drinks and good attitude make up a wonderful experience and an unforgetable coding event."> 
+			</FAQ>
+
+			<FAQ 
+				question = " Is there any age limit? "
+				answer = " Τhis is an event for teenagers. Technically the ages accepted are 0-18 but preferably this is an event for people from 13 to 18 years old."> 
+			</FAQ>
+
         </div>
 
         <script>
@@ -49,47 +48,6 @@ import Navbar from "../components/Navbar.astro"
               });
             }
         </script>
-		<style>
-			.faq {
-				padding-top: 25px;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
-			.question {
-				background-color: #D3E4FF;
-				color: #2f2f2f;
 
-				font-size: 32px;
-				border-radius: 10px;
-
-				padding: 10px 20px;
-				margin: 10px;
-
-				width: 85vw;
-
-				text-align: center;
-
-				cursor: default;
-				border: none;
-
-				transition: 0.6s;
-			}
-			
-			.active, .question:hover {
-				background-color: #a6b3c9; 
-				width: 85vw;
-			}
-			
-			.answer {
-				font-size: 22px;
-				padding: 10px 20px;
-				width: 85vw;
-				display: none;
-				background-color: #9AC3FF;
-				overflow: hidden;
-				border-radius: 10px;
-			}
-		</style>
 	</body>
 </html>
