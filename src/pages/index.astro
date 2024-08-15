@@ -1,5 +1,5 @@
 ---
-
+import Navbar from "../components/Navbar.astro"
 ---
 
 <html lang="en">
@@ -8,9 +8,88 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title> Eurohacks </title>
 	</head>
+
+	<Navbar>
+		
+	</Navbar>
 	<body>
-		<h1>Astro</h1>
+
+		<div class="faq">
+            <div class="question"> Question 1 </div>
+            <div class="answer">
+                <p> See now I use it :) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="question"> Question 2 </div>
+            <div class="answer">
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="question"> Question 3 </div>
+            <div class="answer">
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("question");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+        </script>
+		<style>
+			.faq {
+				padding-top: 25px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.question {
+				background-color: #D3E4FF;
+				color: #2f2f2f;
+
+				font-size: 32px;
+				border-radius: 10px;
+
+				padding: 10px 20px;
+				margin: 10px;
+
+				width: 85vw;
+
+				text-align: center;
+
+				cursor: default;
+				border: none;
+
+				transition: 0.6s;
+			}
+			
+			.active, .question:hover {
+				background-color: #a6b3c9; 
+				width: 85vw;
+			}
+			
+			.answer {
+				font-size: 22px;
+				padding: 10px 20px;
+				width: 85vw;
+				display: none;
+				background-color: #9AC3FF;
+				overflow: hidden;
+				border-radius: 10px;
+			}
+		</style>
 	</body>
 </html>
