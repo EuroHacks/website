@@ -2,120 +2,45 @@
 let { city, discordlink, telephone, country, countrytitle, image } = Astro.props
 ---
 
-<div class="hackathon-card">
-    <div class="same-line-hackathons-cards"> 
-        <div class="left-half-hackathons-cards">
-            <div class="flag-country">
+<script src="https://kit.fontawesome.com/53a136327d.js" crossorigin="anonymous"></script>
+
+<div class="hackathon-card font-bold bg-marine-sapphire w-90vw my-4vw mx-5vw rounded-2xl justify-center">
+    <div class="flex flex-row justify-between">
+
+        <div class="flex flex-col">
+            <div class="flex flex-row m-3 text-soft-peach">
                 <img src={image} width="90px" height="64px">
-                <div class="country"> {countrytitle} </div>
+                <div class="text-5xl my-5 ml-4"> {countrytitle} </div>
             </div>
-            <div class="contact-info">
-                <br> <i class="fa-solid fa-envelope"></i> Mail: {country}@eurohakcs.org
-                <br> <i class="fa-solid fa-phone"></i> Telephone: {telephone}
-                <br> <i class="fa-brands fa-discord"></i> Discord/Slack: {discordlink}
+            <div class="text-3xl my-3 ml-4 text-soft-peach">
+                <br> <i class="fa-solid fa-envelope mr-2 my-3"></i> Mail: {country}@eurohakcs.org
+                <br> <i class="fa-solid fa-phone mr-2 my-3"></i> Telephone: {telephone}
+                <br> <i class="fa-brands fa-discord mr-1 my-3"></i> Discord/Slack: {discordlink}
             </div>
         </div>
 
-        <div class="right-half-hackathons-cards">
-            <h1 class="city"> <i class="fa-solid fa-location-dot"> </i> {city} </h1>
-            <div class="buttons">
-                <a> <button> <i class="fa-solid fa-circle-info" id="button-icons"> </i> More information </button> </a>
-                <a> <button> <i class="fa-solid fa-user" id="button-icons"> </i> Participate </button> </a>
+        <div class="flex flex-col justify-center items-center">
+            <h1 class="text-soft-peach flex text-4xl justify-end mr-10%"> <i class="fa-solid fa-location-dot mr-3"> </i> {city} </h1>
+            <div class="flex justify-end items-end text-5xl mx-2 -mb-4">
+
+                <a> 
+                    <button class="h-160px w-360px text-4.5xl mx-3 mt-60px -mb-20px bg-frosted-blue rounded-xl hover:bg-frosted-sky"> 
+                        <div class="button-icons flex flex-col items-start ml-1 -mb-4"> <i class="fa-solid fa-circle-info" id="button-icons"> </i> </div> More information 
+                    </button> 
+                </a>
+                <a> 
+                    <button class="h-160px w-360px text-4.5xl mx-3 mt-60px -mb-20px bg-frosted-blue rounded-xl hover:bg-icy-mist"> 
+                        <div class="button-icons flex flex-col items-start ml-1 -mb-4"> <i class="fa-solid fa-user"> </i> </div> Participate 
+                    </button> 
+                </a>
+
             </div>
         </div>
     </div>
 </div>
 
 <style>
-    * {
-        font-weight: 700;
-    }
-    .hackathon-card{
-        background-color: #2E548E;
-        width: 90vw;
-        margin: 5vw 4vw;
-        border-radius: 15px;
-        justify-content: center;
-    }
-
-    .same-line-hackathons-cards{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .left-half-hackathons-cards {
-        display: flex;
-        flex-direction: column;
-    }
-    .right-half-hackathons-cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .flag-country {
-        display: flex;
-        flex-direction: row;
-        margin: 10px 10px;
-        color: #FFF2DE;
-    }
-
-    .buttons {
-        display: flex;
-        justify-content: end;
-        align-items: end;
-        margin: 30px 10px 10px 10px;
-        font-size: 42px;
-    }
-    button {
-        height: 160px;
-        width: 360px;
-        font-size: 42px;
-        margin: 0px 10px;
-        margin-top: 60px;
-        margin-bottom: -20px;
-        background-color: #76ADFF;
-        border-radius: 10px;
-    }
-    button:hover {
-        height: 160px;
-        width: 360px;
-        font-size: 42px;
-        background-color: #99C2FF;
-        border-radius: 10px;
-    }
-    button:active {
-        height: 160px;
-        width: 360px;
-        font-size: 42px;
-        background-color: #D3E4FF;
-        border-radius: 10px;
-    }
-    .city {
-        color: #FFF2DE;
-        display: flex;
-        font-size: 42px;
-        justify-content: end;
-        margin-right: 10%;
-    }
-    .country {
-        font-size: 60px;
-        margin: 0px 20px;
-    }
-    .contact-info {
-        color: #FFF2DE;
-        font-size: 38px;
-        margin: 10px 20px;
-    }
-
-    i {
-        margin-right: 6px;
-    }
-
-    #button-icons {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        transform: translateY(-60%);
+    .button-icons {
+        transform: translateY(-80%);
     }
 </style>
