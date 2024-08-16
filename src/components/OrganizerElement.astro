@@ -1,0 +1,69 @@
+---
+let { name, paragraph,counrty_image, image  } = Astro.props
+---
+
+<div class="head-orga">
+    <div class="ho-image-country">
+        <img src={image} class="image-ho">
+        <img src={counrty_image} class="home-country">
+     </div>
+    <div class="info-about-ho">
+        <h1 class="name-of-ho"> {name} </h1>
+        <div class="text-about-ho"> 
+            <p class="text"> {paragraph} </p>
+        </div>
+    </div>
+</div>
+
+<style>
+            .head-orga {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0px 16px;
+            }
+
+            .info-about-ho {
+                width: 24vw;
+                margin-top: 10px;
+            }
+            .name-of-ho {
+                width: 24vw;
+                color: #FFF2DE;
+                background-color: #99C2FF;   
+                text-align: center;
+                padding: 0.4vw;
+                border-radius: 10px 10px 0px 0px;
+                font-size: 32px;
+            }
+
+            .text-about-ho {
+                margin-top: 0px;
+                background-color: #2E548E;
+                border-radius: 0px 0px 10px 10px;
+                font-size: 24px;
+            }
+            .text {
+                margin: 0px 20px;
+                color: #FFF2DE;
+            }
+
+
+            .ho-image-country { 
+                position: relative; 
+            }
+            .image-ho { 
+                display: block;
+                width: 24vw;
+                height: 18vw;
+                border-radius: 10px;
+            }
+            .home-country { 
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                top: 5px; 
+                left: 5px; 
+            }
+</style>

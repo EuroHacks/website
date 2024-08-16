@@ -1,0 +1,241 @@
+---
+import Navbar from "../../components/Navbar.astro"
+import OrganizerCard from "../../components/OrganizerElement.astro"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title> Eurohacks - About Us </title>
+	</head>
+
+	<Navbar>
+
+	</Navbar>
+
+	<body class="bg-background">
+        <div class="our-goal-card"> 
+            <div class="our-goal">
+                <h1 class="title-our-goal"> <i class="fa-solid fa-bullseye"></i> Our goal </h1>
+                <p class="text-our-goal"> After some years in the Hack Club community and after we participated in many smaller and bigger events we found out that there is an issue...there are no enough Hack Club hackathons in Europe. So we decided to take care of the issue by organizing Eurohacks. We hope that this event will be the first event of a series of events in Europe organized by Hack Club. (I will write some more things tmr) 
+                    <br> <br> For more information about Hack Club, visit this page: <a href="../hackclub/" style="text-decoration: none; color: rgb(0, 128, 255);"> Hack Club</a>. </p>
+            </div>
+        </div>
+
+        <div class="ho-card">
+            <div class="head-orga-card">
+
+                <div class="upper-part-head-orga-card">
+                    <img src="../../../public/head_organizing_team.png" width="80px" style="margin-right: 25px;">
+                    <h1 class="title-head-orga"> Head Organizers </h1>
+                </div>
+
+                <div class="head-orgas mt-3">
+
+                    <OrganizerCard
+                    name = "Odysseus Kirikopoulos"
+                    paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+                    counrty_image = "../../../public/greece.png"
+                    image = "../../../public/test-photo.png"
+                    >
+                    </OrganizerCard>
+
+                    <OrganizerCard
+                    name = "Tsilas Nikos"
+                    paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+                    counrty_image = "../../../public/greece.png"
+                    image = "../../../public/test-photo.png"
+                    >
+                    </OrganizerCard>    
+
+                    <OrganizerCard
+                    name = "Marios Mitsios"
+                    paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+                    counrty_image = "../../../public/greece.png"
+                    image = "../../../public/test-photo.png"
+                    >
+                    </OrganizerCard>
+
+                    
+                </div>
+
+                <br>
+            </div>
+        </div>
+
+        <br> <!-- 1st line of Organizers -->
+
+        <div class="ho-card">
+            <div class="head-orga-card">
+
+                <div class="upper-part-head-orga-card">
+                    <img src="../../../public/organizing_team.png" width="80px" style="margin-right: 25px;"> <!-- Title -->
+                    <h1 class="title-head-orga"> Organizers </h1>
+                </div>
+
+                <div class="head-orgas mt-3">
+                    
+                    <OrganizerCard
+                    name = "Bartosz Budnik"
+                    paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+                    counrty_image = "../../../public/poland.png"
+                    image = "../../../public/test-photo.png"
+                    >
+                    </OrganizerCard>
+
+                    <OrganizerCard
+                    name = "Victorio"
+                    paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+                    counrty_image = "../../../public/spain.png"
+                    image = "../../../public/test-photo.png"
+                    >
+                    </OrganizerCard>
+
+                    <OrganizerCard
+                    name = "Leo Wilkin"
+                    paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+                    counrty_image = "../../../public/united-kingdom.png"
+                    image = "../../../public/test-photo.png"
+                    >
+                    </OrganizerCard>
+                
+                </div>
+
+                <br> <!-- 2nd line of Organizers -->
+
+                <div class="head-orgas">
+
+                    <OrganizerCard
+                    name = "Leonard Stegle"
+                    paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+                    counrty_image = "../../../public/germany.png"
+                    image = "../../../public/test-photo.png"
+                    >
+                    </OrganizerCard>
+
+                    <OrganizerCard
+                    name = "Samuel Leber"
+                    paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+                    counrty_image = "../../../public/germany.png"
+                    image = "../../../public/test-photo.png"
+                    >
+                    </OrganizerCard>
+
+                    <OrganizerCard
+                    name = "Arthur Hardy"
+                    paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+                    counrty_image = "../../../public/united-kingdom.png"
+                    image = "../../../public/test-photo.png"
+                    >
+                    </OrganizerCard>
+
+                </div>
+
+                <br> <!-- 3rd line of Organizers -->
+
+                <div class="head-orgas">
+                    
+                    <OrganizerCard
+                    name = "Giacomo Radaelli"
+                    paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+                    counrty_image = "../../../public/italy.png"
+                    image = "../../../public/test-photo.png"
+                    >
+                    </OrganizerCard>
+
+                    <OrganizerCard
+                    name = "Doruk Sarp Aydın"
+                    paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+                    counrty_image = "../../../public/turkey.png"
+                    image = "../../../public/test-photo.png"
+                    >
+                    </OrganizerCard>
+
+                    <OrganizerCard
+                    name = "Marios Mitsios"
+                    paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+                    counrty_image = "../../../public/greece.png"
+                    image = "../../../public/test-photo.png"
+                    >
+                    </OrganizerCard>
+                    
+                </div>
+
+                <br>
+            </div>
+        </div>
+        <br>
+    </body>
+</html>
+        <style>
+            * {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .our-goal-card {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            .our-goal { 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #76ADFF;
+                border-radius: 15px;
+                height: fit-content;
+                width: 80vw;
+            }
+            .title-our-goal {
+                font-size: 50px;
+            }
+            .text-our-goal {
+                text-align: justify;
+                font-size: 36px;
+                margin: 10px 40px;
+            }
+            .ho-card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .head-orga-card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+                background-color: #76ADFF;
+                width: 80vw;
+                border-radius: 15px;
+            }
+            .upper-part-head-orga-card{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-radius: 15px;
+                height: fit-content;
+                width: 80vw;
+            }
+            .title-head-orga {
+                font-size: 50px;
+            }
+            .head-orga {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0px 16px;
+            }
+            .head-orgas {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        </style>
+    </body>
+</html>
