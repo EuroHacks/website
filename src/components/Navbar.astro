@@ -1,61 +1,29 @@
 
-<nav>
-    <ul class="navbar">
-        <li class="navbar-item">
+<nav class="font-sams">
+    <ul class= "flex sticky items-center justify-between px-5 list-none bg-midnight-slate">
+        <li>
             <a href="/home-page-light.html" aria-label="Eurohacks"><img src="/media/Banner.png" alt="Logo" width="100px"/></a>
         </li>
-        <li class="nav-link">
+        <li class="nav-link font-bold opacity-75 relative text-5xl no-underline text-frosted-blue flex">
             <i class= "fa-solid fa-house"></i>
-            <a href= "/pages"> <slot class="navbar-item"> Home Page </slot> </a>
+            <a href= "/pages" class="no-underline"> <slot class="navbar-item"> Home Page </slot> </a>
         </li>
-        <li class="nav-link">
+        <li class="nav-link font-bold opacity-75 relative text-5xl no-underline text-frosted-blue flex">
             <i class="fa-solid fa-laptop-code" ></i>
-            <a href= "/hackathons"> <slot class="navbar-item"> Hackathons </slot> </a>
+            <a href= "/hackathons" class="no-underline"> <slot class="navbar-item"> Hackathons </slot> </a>
         </li>
-        <li class="nav-link">
+        <li class="nav-link font-bold opacity-75 relative text-5xl no-underline text-frosted-blue flex">
             <i class="fa-solid fa-people-group" ></i>
-            <a href= "/about"> <slot class="navbar-item"> About us </slot> </a>
+            <a href= "/about" class="no-underline"> <slot class="navbar-item"> About us </slot> </a>
         </li>
-        <li class="nav-link">
+        <li class="nav-link font-bold opacity-75 relative text-5xl no-underline text-frosted-blue flex hover:opacity-100 hover:text-frosted-blue">
             <img src="https://assets.hackclub.com/icon-rounded.svg" width="45px">
-            <a href= "/hackclub"> <slot class="navbar-item"> Hack Club </slot> </a>
+            <a href= "/hackclub" class="no-underline"> <slot class="navbar-item"> Hack Club </slot> </a>
         </li>
     </ul>
 </nav>
-
+<div class="flex sticky items-center justify-between px-5 list-none bg-midnight-slate"></div>
 <style>
-    * {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    a {
-        text-decoration: none;
-    }
-    .navbar {
-        display: flex;
-        position: sticky;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0px 20px;
-        list-style: none;
-        background-color: #39537A;
-    }
-    .nav-link{
-        font-weight: 700;
-        opacity: .75;
-        position: relative;
-        font-size: 50px;
-        text-decoration: none;
-        color: #76ADFF;
-        display: flex;
-    }
-    .navbar-item{
-        color: #76ADFF;
-    }
-    .nav-link:hover {
-        opacity: 1;
-        color: #76ADFF;
-    }
-
     .nav-link::before {
     transition: 1000ms;
     height: 6px;
@@ -63,11 +31,10 @@
     position: absolute;
     background-color: rgb(163, 227, 255);
     width: 0%;
-    bottom: 10px;
+    bottom: -7px;
     }
 
     .nav-link:hover::before {
         width: 100%;
     }
-
 </style>
