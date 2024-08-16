@@ -24,6 +24,7 @@ export default {
 			  width: {
 				'360px': '360px',
 				'24vw': '24vw',
+				'80vw': '80vw',
 				'90vw': '90vw',
 			  },
 			  height: {

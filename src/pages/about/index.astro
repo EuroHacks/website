@@ -1,6 +1,7 @@
 ---
 import Navbar from "../../components/Navbar.astro"
 import OrganizerCard from "../../components/OrganizerElement.astro"
+import Footer from "../../components/Footer.astro"
 ---
 
 <html lang="en">
@@ -15,25 +16,32 @@ import OrganizerCard from "../../components/OrganizerElement.astro"
 	<Navbar>
 
 	</Navbar>
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
 
-	<body class="bg-background">
-        <div class="our-goal-card"> 
-            <div class="our-goal">
-                <h1 class="title-our-goal"> <i class="fa-solid fa-bullseye"></i> Our goal </h1>
-                <p class="text-our-goal"> After some years in the Hack Club community and after we participated in many smaller and bigger events we found out that there is an issue...there are no enough Hack Club hackathons in Europe. So we decided to take care of the issue by organizing Eurohacks. We hope that this event will be the first event of a series of events in Europe organized by Hack Club. (I will write some more things tmr) 
+	<body class="bg-background font-sans">
+        <div class="flex flex-row justify-center mt-12"> 
+
+            <div class="flex flex-col items-center bg-frosted-blue rounded-2xl h-fit w-80vw">
+                <h1 class="text-5xl"> <i class="fa-solid fa-bullseye"></i> Our goal </h1>
+                <p class="text-4xl my-3 mx-10 text-justify"> After some years in the Hack Club community and after we participated in many smaller and bigger events we found out that there is an issue...there are no enough Hack Club hackathons in Europe. So we decided to take care of the issue by organizing Eurohacks. We hope that this event will be the first event of a series of events in Europe organized by Hack Club. (I will write some more things tmr) 
                     <br> <br> For more information about Hack Club, visit this page: <a href="../hackclub/" style="text-decoration: none; color: rgb(0, 128, 255);"> Hack Club</a>. </p>
             </div>
+
         </div>
 
-        <div class="ho-card">
-            <div class="head-orga-card">
+        <div class="flex justify-center">
+            <div class="flex flex-col justify-center items-center mt-12 bg-frosted-blue w-80vw rounded-2xl">
 
-                <div class="upper-part-head-orga-card">
+                <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
                     <img src="../../../public/head_organizing_team.png" width="80px" style="margin-right: 25px;">
-                    <h1 class="title-head-orga"> Head Organizers </h1>
+                    <h1 class="text-5xl"> Head Organizers </h1>
                 </div>
 
-                <div class="head-orgas mt-3">
+                <div class="flex flex-row justify-evenly mt-3">
 
                     <OrganizerCard
                     name = "Odysseus Kirikopoulos"
@@ -68,15 +76,15 @@ import OrganizerCard from "../../components/OrganizerElement.astro"
 
         <br> <!-- 1st line of Organizers -->
 
-        <div class="ho-card">
-            <div class="head-orga-card">
+        <div class="flex justify-center">
+            <div class="flex flex-col justify-center items-center mt-12 bg-frosted-blue w-80vw rounded-2xl">
 
-                <div class="upper-part-head-orga-card">
+                <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
                     <img src="../../../public/organizing_team.png" width="80px" style="margin-right: 25px;"> <!-- Title -->
-                    <h1 class="title-head-orga"> Organizers </h1>
+                    <h1 class="text-5xl"> Organizers </h1>
                 </div>
 
-                <div class="head-orgas mt-3">
+                <div class="flex flex-row justify-evenly mt-3">
                     
                     <OrganizerCard
                     name = "Bartosz Budnik"
@@ -106,7 +114,7 @@ import OrganizerCard from "../../components/OrganizerElement.astro"
 
                 <br> <!-- 2nd line of Organizers -->
 
-                <div class="head-orgas">
+                <div class="flex flex-row justify-evenly">
 
                     <OrganizerCard
                     name = "Leonard Stegle"
@@ -136,7 +144,7 @@ import OrganizerCard from "../../components/OrganizerElement.astro"
 
                 <br> <!-- 3rd line of Organizers -->
 
-                <div class="head-orgas">
+                <div class="flex flex-row justify-evenly">
                     
                     <OrganizerCard
                     name = "Giacomo Radaelli"
@@ -169,73 +177,8 @@ import OrganizerCard from "../../components/OrganizerElement.astro"
         </div>
         <br>
     </body>
-</html>
-        <style>
-            * {
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            }
-            .our-goal-card {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                margin-top: 50px;
-            }
-            .our-goal { 
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-color: #76ADFF;
-                border-radius: 15px;
-                height: fit-content;
-                width: 80vw;
-            }
-            .title-our-goal {
-                font-size: 50px;
-            }
-            .text-our-goal {
-                text-align: justify;
-                font-size: 36px;
-                margin: 10px 40px;
-            }
-            .ho-card {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .head-orga-card {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin-top: 50px;
-                background-color: #76ADFF;
-                width: 80vw;
-                border-radius: 15px;
-            }
-            .upper-part-head-orga-card{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                border-radius: 15px;
-                height: fit-content;
-                width: 80vw;
-            }
-            .title-head-orga {
-                font-size: 50px;
-            }
-            .head-orga {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin: 0px 16px;
-            }
-            .head-orgas {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-            }
-        </style>
-    </body>
+    
+    <Footer>
+
+    </Footer>
 </html>
