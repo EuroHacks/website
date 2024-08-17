@@ -1,0 +1,14 @@
+{
+    "thumb": "/test_photo.png",
+    "country": "/greece.png",
+    "lang": {
+        "origin": {
+            "fullname": "Πειραματάνθρωπος",
+            "description": "Γραφω γραφω"
+        },
+        "en": {
+            "fullname": "Test Person",
+            "description": "Blah blah"
+        }
+    }
+}

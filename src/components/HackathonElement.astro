@@ -1,8 +1,6 @@
 ---
-let { city, discordlink, telephone, country, countrytitle, image } = Astro.props
+let { city, discordlink, telephone, country, countrytitle, image, rsvp_page, info_page} = Astro.props
 ---
-
-<script src="https://kit.fontawesome.com/53a136327d.js" crossorigin="anonymous"></script>
 
 <div class="hackathon-card font-bold bg-marine-sapphire w-90vw my-4vw mx-5vw rounded-2xl justify-center">
     <div class="flex flex-row justify-between">
@@ -23,12 +21,13 @@ let { city, discordlink, telephone, country, countrytitle, image } = Astro.props
             <h1 class="text-soft-peach flex text-4xl justify-end mr-10%"> <i class="fa-solid fa-location-dot mr-3"> </i> {city} </h1>
             <div class="flex justify-end items-end text-5xl mx-2 -mb-4">
 
-                <a> 
+                <a href={info_page}> 
                     <button class="h-160px w-360px text-4.5xl mx-3 mt-60px -mb-20px bg-frosted-blue rounded-xl hover:bg-frosted-sky"> 
                         <div class="button-icons flex flex-col items-start ml-1 -mb-4"> <i class="fa-solid fa-circle-info" id="button-icons"> </i> </div> More information 
                     </button> 
                 </a>
-                <a> 
+                
+                <a href={rsvp_page}> 
                     <button class="h-160px w-360px text-4.5xl mx-3 mt-60px -mb-20px bg-frosted-blue rounded-xl hover:bg-icy-mist"> 
                         <div class="button-icons flex flex-col items-start ml-1 -mb-4"> <i class="fa-solid fa-user"> </i> </div> Participate 
                     </button> 

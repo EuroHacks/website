@@ -1,0 +1,81 @@
+{
+    "logo": "",
+    "organizers": ["test_person"],
+    "info": {
+        "location": "Οδός xx, Περαία/Επανομή, Ν. Θεσσαλονίκης, Ελλάδα",
+        "dates": "20/08/2025 - 23/08/2025",
+        "participants": 50,
+        "zoom": "later/soon.not_now-coming_soon@just_wait",
+        "contact": {
+            "email": "greece@eurohacks.org", 
+            "phone": "+30 6987391425"
+        }
+    },
+    "lang": {
+        "origin": {
+            "welcome": "Καλώς ήρθατε στην σελίδα του Ελληνικού Hackathon. Εδώ μπορείτε να βρείτε παραπάνω πληροφορίες για την διεξαγωγή του Ελληνικού Hackathon. ",
+            "organizers": "Οργανωτική επιτροπή διοργάνωσης",
+            "translation": "To change the language from Greek to English press this button:",
+            "info": {
+                "header": "Πληροφορίες διοργάνωσης: ",
+                "dates": "Ημερομηνίες διεξαγωγής: ",
+                "participants": "Αριθμός Συμμετεχόντων: ",
+                "zoom": "Σύνδεσμος zoom: ",
+                "contact": {
+                    "email": "E-mail επικοινωνίας: ", 
+                    "phone": "Τηλέφωνο επικοινωνίας: "
+                }
+            },
+            "announcements": {
+                "header": "Ανακοινώσεις",
+                "data": ""
+            },
+            "food": {
+                "header": "Διατροφή συμμετεχόντων",
+                "data": ""
+            },
+            "stay": {
+                "header": "Διαμονή συμμετεχόντων",
+                "data": ""
+            },
+            "transit": {
+                "header": "Μεταφορά συμμετεχόντων",
+                "data": ""
+            }
+        },
+
+
+            
+        "en": {
+            "welcome": "Welcome to the Greek Hackathon page. Here you can find more information about the Greek Hackathon. ",
+            "organizers": "Organizing committee",
+            "translation": "To change the language from Greek to English press this button:",
+            "info": {
+                "header": "Event Information: ",
+                "dates": "Event Dates: ",
+                "participants": "Participants: ",
+                "zoom": "Zoom link: ",
+                "contact": {
+                    "email": "E-mail contact: ", 
+                    "phone": "Phone contact: "
+                }
+            },
+            "announcements": {
+                "header": "Announcements",
+                "data": ""
+            },
+            "food": {
+                "header": "Participant Nutrition",
+                "data": ""
+            },
+            "stay": {
+                "header": "Participant Stay",
+                "data": ""
+            },
+            "transit": {
+                "header": "Participant Transit",
+                "data": ""
+            }
+        }
+    }
+}

@@ -1,18 +1,18 @@
 <nav class="font-sams">
     <ul class= "flex sticky items-center justify-between px-5 list-none bg-midnight-slate">
         <li>
-            <a href="/home-page-light.html" aria-label="Eurohacks"><img src="/media/Banner.png" alt="Logo" width="100px"/></a>
+            <a href="/" aria-label="Eurohacks"><img src="/media/Banner.png" alt="Logo" width="100px"/></a>
         </li>
         <li class="nav-link font-bold opacity-75 relative text-5xl no-underline text-frosted-blue flex">
             <i class= "fa-solid fa-house"></i>
-            <a href= "/pages" class="no-underline"> <slot class="navbar-item"> Home Page </slot> </a>
+            <a href= "/" class="no-underline"> <slot class="navbar-item"> Home Page </slot> </a>
         </li>
         <li class="nav-link font-bold opacity-75 relative text-5xl no-underline text-frosted-blue flex">
             <i class="fa-solid fa-laptop-code" ></i>
             <a href= "/hackathons" class="no-underline"> <slot class="navbar-item"> Hackathons </slot> </a>
         </li>
         <li class="nav-link font-bold opacity-75 relative text-5xl no-underline text-frosted-blue flex">
-            <i class="fa-solid fa-people-group" ></i>
+            <div class="mr-2"> <i class="fa-solid fa-people-group"></i>  </div>
             <a href= "/about" class="no-underline"> <slot class="navbar-item"> About us </slot> </a>
         </li>
         <li class="nav-link font-bold opacity-75 relative text-5xl no-underline text-frosted-blue flex hover:opacity-100 hover:text-frosted-blue">

@@ -1,0 +1,80 @@
+---
+import Layout from "../../../layout/default.astro"
+import OrganizerCard from "../../../components/OrganizerElement.astro";
+import { getEntry } from "astro:content";
+
+export function getStaticPaths() {
+  return [
+    {params: {country: 'greece'}},
+    {params: {country: 'uk'}}
+  ];
+}
+
+const { country } = Astro.params;
+const event = (await getEntry('events', country)).data
+// const eventOrganizers = event.organizers.map(async (organizer: string) => (await getEntry('organizers', organizer)).data)
+const t = event.organizers.map(async (person) => {
+  const data = await getEntry('organizers', person)
+  return data.data
+})
+
+console.log(t)
+---
+
+<Layout title="Greek Event">
+
+
+    <div class="flex justify-center my-3">
+      <div class="flex flex-col justify-center items-center mt-12 bg-frosted-blue w-80vw rounded-2xl">
+
+          <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
+              <img src="../../../public/head_organizing_team.png" width="80px" class="mr-6 mt-2">
+              <h1 class="text-5xl font-bold"> Οργανωτική επιτροπή διοργάνωσης  </h1>
+          </div>
+
+          <div class="flex flex-row justify-evenly mt-3">
+
+              <OrganizerCard
+              name = "Odysseus Kirikopoulos"
+              paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+              country_image = "../../../public/greece.png"
+              image = "../../../public/test-photo.png"
+              >
+              </OrganizerCard>
+
+              <OrganizerCard
+              name = "Tsilas Nikos"
+              paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+              country_image = "../../../public/greece.png"
+              image = "../../../public/test-photo.png"
+              >
+              </OrganizerCard>    
+
+              <OrganizerCard
+              name = "Marios Mitsios"
+              paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
+              country_image = "../../../public/greece.png"
+              image = "../../../public/test-photo.png"
+              >
+              </OrganizerCard>
+
+              
+          </div>
+
+          <br>
+      </div>
+  </div>
+
+  <div class="flex justify-center my-3">
+    <div class="flex flex-col justify-center items-center mt-12 bg-frosted-blue w-80vw rounded-2xl">
+
+      <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
+        <img src="/info.png" width="80px" class= "mr-6 mt-2">
+        <h1 class="text-5xl font-bold"> Πληροφορίες διοργάνωσης </h1>
+      </div>
+      
+      <br>
+      <h1>  </h1>
+    </div>
+  </div>
+</Layout>

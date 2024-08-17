@@ -1,53 +1,37 @@
 ---
-import Navbar from "../components/Navbar.astro"
 import FAQ from "../components/FAQElement.astro"
+import Layout from "../layout/default.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title> Eurohacks </title>
-	</head>
+<Layout title="Home">
+	<div class="pt-6 flex flex-col items-center">
 
-	<Navbar>
+		<FAQ 
+			question = " What is a hackathon? "
+			answer = " Hackathon is when many people interested in coding/robotics and generally computer science for 1 or more days in order to create amazing project but more importantly meet new people and learn new things. All of these combined with amazing venues, food, drinks and good attitude make up a wonderful experience and an unforgetable coding event."> 
+		</FAQ>
 
-	</Navbar>
+		<FAQ 
+			question = " Is there any age limit? "
+			answer = " Τhis is an event for teenagers. Technically the ages accepted are 0-18 but preferably this is an event for people from 13 to 18 years old."> 
+		</FAQ>
 
-	<body class="">
+	</div>
 
-		<div class="pt-6 flex flex-col items-center">
-
-			<FAQ 
-				question = " What is a hackathon? "
-				answer = " Hackathon is when many people interested in coding/robotics and generally computer science for 1 or more days in order to create amazing project but more importantly meet new people and learn new things. All of these combined with amazing venues, food, drinks and good attitude make up a wonderful experience and an unforgetable coding event."> 
-			</FAQ>
-
-			<FAQ 
-				question = " Is there any age limit? "
-				answer = " Τhis is an event for teenagers. Technically the ages accepted are 0-18 but preferably this is an event for people from 13 to 18 years old."> 
-			</FAQ>
-
-        </div>
-
-        <script>
-            var acc = document.getElementsByClassName("question");
-            var i;
-            
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                  panel.style.display = "none";
-                } else {
-                  panel.style.display = "block";
-                }
-              });
-            }
-        </script>
-
-	</body>
-</html>
+	<script>
+		var acc = document.getElementsByClassName("question");
+		var i;
+		
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.display === "block") {
+				panel.style.display = "none";
+			} else {
+				panel.style.display = "block";
+			}
+			});
+		}
+	</script>
+</Layout>

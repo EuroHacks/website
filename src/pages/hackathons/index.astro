@@ -1,95 +1,82 @@
 ---
-import Navbar from "../../components/Navbar.astro"
 import HackathonCard from "../../components/HackathonElement.astro"
+import Layout from "../../layout/default.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title> Eurohacks - Hackathons</title>
-	</head>
+<Layout title="Hackathons">
+    <h2 class="hackathons_title font-bold text-6xl mt-6 -mb-5 text-soft-peach"> Europe-Hacks: Hackathons in every corner of Europe </h2>
 
-	<Navbar>
+    <HackathonCard
+    countrytitle =  "France"
+    country =       " france"
+    city =          " Peraia, Thessaloniki "
+    discordlink =   " <placeholder> "
+    telephone =     " +30 69******** "
+    image =         " ../../../public/france.png "
+    info_page =     "../hackathons/greece"
+    rsvp_page =     "#"
+    >
+    </HackathonCard>
+    <HackathonCard
+    countrytitle = "Germany"
+    country = " germany"
+    city = " Peraia, Thessaloniki "
+    discordlink = " <placeholder> "
+    telephone = " +30 69******** "
+    image = " ../../../public/germany.png "
+    >
+    </HackathonCard>
 
-	</Navbar>
+    <HackathonCard
+    countrytitle = "Greece"
+    country = " greece"
+    city = " Peraia, Thessaloniki "
+    discordlink = " <placeholder> "
+    telephone = " +30 69******** "
+    image = " ../../../public/greece.png "
+    >
+    </HackathonCard>
 
-	<body class="bg-background">
-        <h2 class="hackathons_title font-bold text-6xl mt-6 -mb-5"> Europe-Hacks: Hackathons in every corner of Europe </h2>
+    <HackathonCard
+    countrytitle = "Italy"
+    country = "italy"
+    city = " Peraia, Thessaloniki "
+    discordlink = " <placeholder> "
+    telephone = " +30 69******** "
+    image = " ../../../public/italy.png "
+    >
+    </HackathonCard>
 
-        <HackathonCard
-        countrytitle = "France"
-        country = " france"
-        city = " Peraia, Thessaloniki "
-        discordlink = " <placeholder> "
-        telephone = " +30 69******** "
-        image = " ../../../public/france.png "
-        >
-        </HackathonCard>
+    <HackathonCard
+    countrytitle = "Poland"
+    country = "poland"
+    city = " Peraia, Thessaloniki "
+    discordlink = " <placeholder> "
+    telephone = " +30 69******** "
+    image = " ../../../public/poland.png "
+    >
+    </HackathonCard>
 
-        <HackathonCard
-        countrytitle = "Germany"
-        country = " germany"
-        city = " Peraia, Thessaloniki "
-        discordlink = " <placeholder> "
-        telephone = " +30 69******** "
-        image = " ../../../public/germany.png "
-        >
-        </HackathonCard>
+    <HackathonCard
+    countrytitle = "Spain"
+    country = "spain"
+    city = " Peraia, Thessaloniki "
+    discordlink = " <placeholder> "
+    telephone = " +30 69******** "
+    image = " ../../../public/spain.png "
+    >
+    </HackathonCard>
 
-        <HackathonCard
-        countrytitle = "Greece"
-        country = " greece"
-        city = " Peraia, Thessaloniki "
-        discordlink = " <placeholder> "
-        telephone = " +30 69******** "
-        image = " ../../../public/greece.png "
-        >
-        </HackathonCard>
+    <HackathonCard
+    countrytitle = "UK"
+    country = "uk"
+    city = " Peraia, Thessaloniki "
+    discordlink = " <placeholder> "
+    telephone = " +30 69******** "
+    image = " ../../../public/united-kingdom.png "
+    >
+    </HackathonCard>
 
-        <HackathonCard
-        countrytitle = "Italy"
-        country = "italy"
-        city = " Peraia, Thessaloniki "
-        discordlink = " <placeholder> "
-        telephone = " +30 69******** "
-        image = " ../../../public/italy.png "
-        >
-        </HackathonCard>
-
-        <HackathonCard
-        countrytitle = "Poland"
-        country = "poland"
-        city = " Peraia, Thessaloniki "
-        discordlink = " <placeholder> "
-        telephone = " +30 69******** "
-        image = " ../../../public/poland.png "
-        >
-        </HackathonCard>
-
-        <HackathonCard
-        countrytitle = "Spain"
-        country = "spain"
-        city = " Peraia, Thessaloniki "
-        discordlink = " <placeholder> "
-        telephone = " +30 69******** "
-        image = " ../../../public/spain.png "
-        >
-        </HackathonCard>
-
-        <HackathonCard
-        countrytitle = "UK"
-        country = "uk"
-        city = " Peraia, Thessaloniki "
-        discordlink = " <placeholder> "
-        telephone = " +30 69******** "
-        image = " ../../../public/united-kingdom.png "
-        >
-        </HackathonCard>
-
-	</body>
     <style>
         .hackathons_title {
             display: flex;
@@ -98,4 +85,4 @@ import HackathonCard from "../../components/HackathonElement.astro"
             font-size: 48px;
         }
     </style>
-</html>
+</Layout>
