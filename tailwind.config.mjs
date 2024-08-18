@@ -17,6 +17,7 @@ export default {
 				'marine-sapphire': 	'#2E548E',
 				'frosted-sky': 		'#99C2FF',
 				'icy-mist': 		'#D3E4FF',
+				'golden-sand': 		'#FFE193',
 			  },
 			  fontSize: {
 				'4.5xl': '42px',
@@ -24,6 +25,7 @@ export default {
 			  width: {
 				'360px': '360px',
 				'24vw': '24vw',
+				'30vw': '30vw',
 				'80vw': '80vw',
 				'90vw': '90vw',
 			  },
@@ -35,8 +37,10 @@ export default {
 				'-20px': '-20px',
 				'60px': '60px',
 				'0.4vw': '0.4vw',
+				'1vw': '1vw',
 				'4vw': '4vw',
 				'5vw': '5vw',
+				'35vw': '35vw',
 				'85vw': '85vw',
 				'80%': '80%',
 				'10%': '10%',
