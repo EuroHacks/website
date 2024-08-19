@@ -34,10 +34,12 @@ export default {
 				'38vw': '38vw',
 				'80vw': '80vw',
 				'90vw': '90vw',
+				'100vw': '100vw',
 			  },
 			  height: {
 				'160px': '160px',
 				'18vw': '18vw',
+				'80vh': '80vh',
 			  },
 			  spacing: {
 				'-20px': '-20px',
