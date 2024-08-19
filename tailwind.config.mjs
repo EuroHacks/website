@@ -39,7 +39,7 @@ export default {
 			  height: {
 				'160px': '160px',
 				'18vw': '18vw',
-				'80vh': '80vh',
+				'88vh': '88vh',
 			  },
 			  spacing: {
 				'-20px': '-20px',
