@@ -3,9 +3,69 @@ import FAQ from "../components/FAQElement.astro"
 import Layout from "../layout/default.astro"
 ---
 
-<Layout title="Home">
-	<div class="pt-6 flex flex-col items-center">
+<Layout title="Home Page">
+	<div class="flex justify-center">
+		<div class="flex items-center justify-between w-85vw">
+			<div class="flex flex-col justify-center mt-10 bg-frosted-blue w-38vw rounded-2xl">
+			
+			<div class="flex flex-row items-center justify-center">
+				<img src="../../../../public/staying.png" class="w-5vw mt-4 ml-4">
+				<h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> Διαμονή συμμετεχόντων </h2>
+			</div>
+		
+			<p class="text-justify text-3xl my-4 mx-8"> Η διαμονή των συμμετεχόντων εντός των 50χλμ θα γίνεται στα σπίτια του 
+				και η μεταφορά τους από τον χώρο του hackathon θα γίνεται στις 20:00 με 21:00. Συμμετέχοντες  από άλλες πόλεις 
+				θα φιλοξενούνται σε κοντική εγκατάσταση με έξοδα της διοργάνωσης και η μεταφορά τους θα γίνεται με λεωφορείο της 
+				διοργάνωσης. </p>
+			</div>
+		
+			
+			<div class="flex flex-col justify-center mt-12 bg-frosted-blue w-38vw rounded-2xl">
+		
+			<div class="flex flex-row items-center justify-center">
+				<img src="../../../../public/transportation.png" class="w-5vw mt-4 ml-4">
+				<h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> Μεταφορά συμμετεχόντων </h2>
+			</div>
+		
+			<p class="text-justify text-3xl my-4 mx-8"> <br> Η μεταφορά των συμμετεχόντων θα γίνει με έξοδα των ιδίων. Η μεταφορά 
+				θα καλυπτεται στην περίπτωση όπου η μεταφορά είναι μεγαλύτερη από 50χλμ. Το μέγιστο καλυπτόμενο ποσό ορίζεται 
+				στα 20€ και η μεταφορά μπορεί να γίνει με λεωφορείο ή τρένο. <br><br> </p>
+			</div>
+		</div>
+	</div>
 
+	<div class="flex justify-center">
+		<div class="flex items-center justify-between w-85vw">
+			<div class="flex flex-col justify-center mt-10 bg-frosted-blue w-38vw rounded-2xl">
+			
+			<div class="flex flex-row items-center justify-center">
+				<img src="../../../../public/staying.png" class="w-5vw mt-4 ml-4">
+				<h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> Διαμονή συμμετεχόντων </h2>
+			</div>
+		
+			<p class="text-justify text-3xl my-4 mx-8"> Η διαμονή των συμμετεχόντων εντός των 50χλμ θα γίνεται στα σπίτια του 
+				και η μεταφορά τους από τον χώρο του hackathon θα γίνεται στις 20:00 με 21:00. Συμμετέχοντες  από άλλες πόλεις 
+				θα φιλοξενούνται σε κοντική εγκατάσταση με έξοδα της διοργάνωσης και η μεταφορά τους θα γίνεται με λεωφορείο της 
+				διοργάνωσης. </p>
+			</div>
+		
+			
+			<div class="flex flex-col justify-center mt-12 bg-frosted-blue w-38vw rounded-2xl">
+		
+				<div class="flex flex-row items-center justify-center">
+					<img src="../../../../public/transportation.png" class="w-5vw mt-4 ml-4">
+					<h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> Μεταφορά συμμετεχόντων </h2>
+				</div>
+		
+				<p class="text-justify text-3xl my-4 mx-8"> <br> Η μεταφορά των συμμετεχόντων θα γίνει με έξοδα των ιδίων. Η μεταφορά 
+					θα καλυπτεται στην περίπτωση όπου η μεταφορά είναι μεγαλύτερη από 50χλμ. Το μέγιστο καλυπτόμενο ποσό ορίζεται 
+					στα 20€ και η μεταφορά μπορεί να γίνει με λεωφορείο ή τρένο. <br><br> </p>
+			</div>
+		</div>
+	</div>
+
+	<div class="pt-6 flex flex-col items-center">
+		<h1 class="text-left w-85vw text-blanched-almond text-5xl mb-4"> FAQ (Frequently Asked Questions) </h1>
 		<FAQ 
 			question = " What is a hackathon? "
 			answer = " Hackathon is when many people interested in coding/robotics and generally computer science for 1 or more days in order to create amazing project but more importantly meet new people and learn new things. All of these combined with amazing venues, food, drinks and good attitude make up a wonderful experience and an unforgetable coding event."> 
@@ -16,22 +76,30 @@ import Layout from "../layout/default.astro"
 			answer = " Τhis is an event for teenagers. Technically the ages accepted are 0-18 but preferably this is an event for people from 13 to 18 years old."> 
 		</FAQ>
 
-	</div>
+		<FAQ 
+			question = " Do I have to speak English? "
+			answer = " No, you don’t have to speak English or any other languages except your native one but it would be really helpful for navigating yourself in the website and also communicate with other people from all over Europe during the hackathon. (It is an optional activity but deferentially a wonderful experience). "> 
+		</FAQ>
 
-	<script>
-		var acc = document.getElementsByClassName("question");
-		var i;
-		
-		for (i = 0; i < acc.length; i++) {
-			acc[i].addEventListener("click", function() {
-			this.classList.toggle("active");
-			var panel = this.nextElementSibling;
-			if (panel.style.display === "block") {
-				panel.style.display = "none";
-			} else {
-				panel.style.display = "block";
-			}
-			});
-		}
-	</script>
+		<FAQ 
+			question = " How can I contact you if I have any question for the events? "
+			answer = " Don’t hesitate to send us an email with all your question. We will answer them as soon as possible (probably under 24h). You can either send an email in questions@eurohacks.org or in yours country email which is <country>@eurohacks.org. If we don’t answer after 3 days you can contact hackathon’s phone number (but please don’t use it for no important reason). "> 
+		</FAQ>
+
+		<FAQ 
+			question = " Do I have to pay in order to participate in the hackathon? "
+			answer = " Technically yes but probably no. It depends on where you live. If you live less than 50km from the venue you will have to come in the venue each day with your ouw expenses. If you live away from the venue and you came with a bus from an other city, your expenses for coming in the host city will be partially covered so you may have to pay some amount of money for your tickets. "> 
+		</FAQ>
+
+		<FAQ 
+			question = " Can I participate in the event if I am not near the venue (or not even the host city)?"
+			answer = " Whatever you want if it is about computer science. It could be something with Arduino, raspberry pi, or (something that you don’t have to get your own hardware) coding. This could be website developing, app developing, code an Arduino or making code which do something cool and something that YOU are proud of."> 
+		</FAQ>
+
+		<FAQ 
+			question = " Do I have to get a laptop with me? "
+			answer = " Yes. It is a coding event, you have to get your devices (it could be a tablet or a laptop) so you can make your projects. We may be able to offer some laptop in 1 or 2 people but you have to get your own devices in the hackathon.  "> 
+		</FAQ>
+		<br>
+	</div>
 </Layout>

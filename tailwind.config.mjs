@@ -31,6 +31,7 @@ export default {
 				'20.8vw': '20.8vw',
 				'24vw': '24vw',
 				'30vw': '30vw',
+				'38vw': '38vw',
 				'80vw': '80vw',
 				'90vw': '90vw',
 			  },
