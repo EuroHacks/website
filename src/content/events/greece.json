@@ -2,7 +2,7 @@
     "logo": "",
     "organizers": ["test_person", "test_person", "test_person"],
     "info": {
-        "location": "Δεν έχει ακόμα οριστεί, Ν. Θεσσαλονίκης, Ελλάδα",
+        "location": "Δεν έχει ακόμα οριστεί, Ν. Θεσσαλονίκης",
         "dates": "20/08/2025 - 23/08/2025",
         "participants": 0,
         "zoom": "Δεν έχει ακόμα οριστεί",
@@ -15,10 +15,11 @@
         "origin": {
             "welcome": "Καλώς ήρθατε στην σελίδα του Ελληνικού Hackathon. Εδώ μπορείτε να βρείτε παραπάνω πληροφορίες για την διεξαγωγή του Ελληνικού Hackathon. ",
             "organizers": "Οργανωτική επιτροπή διοργάνωσης",
-            "translation": "To change the language from Greek to English press this button:",
+            "translation": "To change the language from to English press this button: ",
             "info": {
                 "header": "Πληροφορίες διοργάνωσης: ",
                 "dates": "Ημερομηνίες διεξαγωγής: ",
+                "location": "Τοποθεσία διεξαγωγής: ",
                 "participants": "Αριθμός Συμμετεχόντων: ",
                 "zoom": "Σύνδεσμος zoom: ",
                 "contact": {
@@ -49,10 +50,11 @@
         "en": {
             "welcome": "Welcome to the Greek Hackathon page. Here you can find more information about the Greek Hackathon. ",
             "organizers": "Organizing committee",
-            "translation": "To change the language from Greek to English press this button:",
+            "translation": "Για να αλλάξετε την γλώσσα σε Ελληνικά, πατήστε το κουμπί: ",
             "info": {
                 "header": "Event Information: ",
                 "dates": "Event Dates: ",
+                "location": "Event Venue: ",
                 "participants": "Participants: ",
                 "zoom": "Zoom link: ",
                 "contact": {

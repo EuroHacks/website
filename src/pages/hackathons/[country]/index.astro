@@ -3,6 +3,8 @@ import Layout from "../../../layout/default.astro";
 import OrganizerCard from "../../../components/OrganizerElement.astro";
 import { getEntry } from "astro:content";
 
+export const prerender = true;
+
 export function getStaticPaths() {
   return [
     {params: {country: 'france'}},
@@ -26,9 +28,9 @@ let translation = Astro.url.searchParams.get("lang");
 if (translation != "en") translation = "origin";
 ---
 
-<Layout title= Event>
-
+<Layout title={`Hackathon # ${country}`}>
     <br>
+
     <div class="flex justify-center text-golden-sand">
       <div class="flex flex-row w-90vw">
         <div class="text-6xl mr-3"> <i class="fa-solid fa-language"></i> </div>
@@ -74,7 +76,7 @@ if (translation != "en") translation = "origin";
       
       <br>
       <div class="flex flex-row items-center justify-start ml-4vw"> 
-        <div class="mr-1vw"> <i class="fa-solid fa-location-dot fa-2xl"></i> </div> <h2 class="text-4xl"> {event.lang[translation].info.place} {event.info.location} </h2> 
+        <div class="mr-1vw"> <i class="fa-solid fa-location-dot fa-2xl"></i> </div> <h2 class="text-4xl"> {event.lang[translation].info.location} {event.info.location} </h2> 
       </div>
       <br>
 

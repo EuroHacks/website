@@ -12,6 +12,7 @@ const langEventTranslation = z.object({
     info: z.object({
         header: z.string(),
         dates: z.string(),
+        location: z.string(),
         participants: z.string(),
         zoom: z.string(),
         contact: z.object({
