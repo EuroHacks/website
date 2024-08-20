@@ -1,0 +1,81 @@
+{
+    "logo": "",
+    "organizers": ["test_person", "test_person", "test_person"],
+    "info": {
+        "location": "Not yet decided",
+        "dates": "20/08/2025 - 23/08/2025 (I just put a date)",
+        "participants": 0,
+        "zoom": "Not yet decided",
+        "contact": {
+            "email": "poland@eurohacks.org", 
+            "phone": "+00 00000000000 Fill this"
+        }
+    },
+    "lang": {
+        "origin": {
+            "welcome": " Fill this ",
+            "organizers": " Fill this ",
+            "translation": "For changin the language from French to English press this button:",
+            "info": {
+                "header": " Fill this ",
+                "dates": " Fill this ",
+                "participants": " Fill this ",
+                "zoom": " Fill this ",
+                "contact": {
+                    "email": " Fill this ", 
+                    "phone": " Fill this "
+                }
+            },
+            "announcements": {
+                "header": "Fill this",
+                "data": " Fill this "
+            },
+            "food": {
+                "header": " Fill this ",
+                "data": " Fill this "
+            },
+            "stay": {
+                "header": " Fill this ",
+                "data": " Fill this "
+            },
+            "transit": {
+                "header": " Fill this ",
+                "data": " Fill this "
+            }
+        },
+
+
+            
+        "en": {
+            "welcome": " Welcome to the French Hackathon page. Here you can find more information about the French Hackathon. ",
+            "organizers": "Organizing committee",
+            "translation": " Fill this ",
+            "info": {
+                "header": "Event Information: ",
+                "dates": "Event Dates: ",
+                "participants": "Participants: ",
+                "zoom": "Zoom link: ",
+                "contact": {
+                    "email": "E-mail contact: ", 
+                    "phone": "Phone contact: "
+                }
+            },
+            "announcements": {
+                "header": "Announcements",
+                "data": " Fill this "
+            },
+            "food": {
+                "header": "Participant Nutrition",
+                "data": " Fill this "
+            },
+            "stay": {
+                "header": "Participant Stay",
+                "data": " Fill this "
+            },
+            "transit": {
+                "header": "Participant Transit",
+                "data": " Fill this "
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 ---
-import Layout from "../../../layout/default.astro"
+import Layout from "../../../layout/default.astro"; 
 import OrganizerCard from "../../../components/OrganizerElement.astro";
 import { getEntry } from "astro:content";
 
@@ -11,17 +11,18 @@ export function getStaticPaths() {
 }
 
 const { country } = Astro.params;
-const event = (await getEntry('events', country)).data
-// const eventOrganizers = event.organizers.map(async (organizer: string) => (await getEntry('organizers', organizer)).data)
-const t = event.organizers.map(async (person) => {
-  const data = await getEntry('organizers', person)
-  return data.data
-})
 
-console.log(t)
+const event = (await getEntry('events', country)).data
+const eventOrganizers = await Promise.all(event.organizers.map(
+  async (organizer: string) => (await getEntry('organizers', organizer)).data)
+)
+
+let translation = Astro.url.searchParams.get("lang"); //add this for English: ?lang=en
+if (translation != "en") translation = "origin";
 ---
 
 <Layout title="Greek Event">
+
 
 
     <div class="flex justify-center my-3">
@@ -29,36 +30,17 @@ console.log(t)
 
           <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
               <img src="../../../public/head_organizing_team.png" width="80px" class="mr-6 mt-2">
-              <h1 class="text-5xl font-bold"> Οργανωτική επιτροπή διοργάνωσης  </h1>
+              <h1 class="text-5xl font-bold"> {event.lang[translation].organizers}  </h1>
           </div>
 
           <div class="flex flex-row justify-evenly mt-3">
-
-              <OrganizerCard
-              name = "Odysseus Kirikopoulos"
-              paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-              country_image = "../../../public/greece.png"
-              image = "../../../public/test-photo.png"
-              >
-              </OrganizerCard>
-
-              <OrganizerCard
-              name = "Tsilas Nikos"
-              paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-              country_image = "../../../public/greece.png"
-              image = "../../../public/test-photo.png"
-              >
-              </OrganizerCard>    
-
-              <OrganizerCard
-              name = "Marios Mitsios"
-              paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-              country_image = "../../../public/greece.png"
-              image = "../../../public/test-photo.png"
-              >
-              </OrganizerCard>
-
-              
+            {eventOrganizers.map(
+              organizer => <OrganizerCard
+              name={organizer.lang[translation].fullname}
+              paragraph={organizer.lang[translation].description}
+              country_image={organizer.country}
+              image={organizer.thumb}
+            />)}
           </div>
 
           <br>
@@ -70,42 +52,42 @@ console.log(t)
 
       <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
         <img src="/info.png" width="80px" class= "mr-6 mt-2">
-        <h1 class="text-5xl font-bold"> Πληροφορίες διοργάνωσης </h1>
+        <h1 class="text-5xl font-bold">{event.lang[translation].info.header}</h1>
       </div>
       
       <br>
       <div class="flex flex-row items-center justify-start ml-4vw"> 
-        <div class="mr-1vw"> <i class="fa-solid fa-location-dot fa-2xl"></i> </div> <h2 class="text-4xl"> Location </h2> 
+        <div class="mr-1vw"> <i class="fa-solid fa-location-dot fa-2xl"></i> </div> <h2 class="text-4xl"> {event.lang[translation].info.place} {event.info.location} </h2> 
       </div>
       <br>
 
       <br>
       <div class="flex flex-row items-center justify-start ml-4vw"> 
-        <div class="mr-1vw"> <i class="fa-solid fa-clock fa-2xl"></i> </div> <h2 class="text-4xl"> Dates / Time </h2> 
+        <div class="mr-1vw"> <i class="fa-solid fa-clock fa-2xl"></i> </div> <h2 class="text-4xl"> {event.lang[translation].info.dates} {event.info.dates} </h2> 
       </div>
       <br>
 
       <br>
       <div class="flex flex-row items-center justify-start ml-4vw"> 
-        <div class="mr-1vw"> <img src="../../../../public/participants.png" class="w-9"> </div> <h2 class="text-4xl"> Participants </h2> 
+        <div class="mr-1vw"> <img src="../../../../public/participants.png" class="w-9"> </div> <h2 class="text-4xl"> {event.lang[translation].info.participants} {event.info.participants} </h2> 
       </div>
       <br>
 
       <br>
       <div class="flex flex-row items-center justify-start ml-4vw"> 
-        <div class="mr-1vw"> <img src="../../../../public/zoom.png" class="w-9"> </div> <h2 class="text-4xl"> Zoom call </h2> 
+        <div class="mr-1vw"> <img src="../../../../public/zoom.png" class="w-9"> </div> <h2 class="text-4xl"> {event.lang[translation].info.zoom} {event.info.zoom}</h2> 
       </div>
       <br>
 
       <br>
       <div class="flex flex-row items-center justify-start ml-4vw"> 
-        <div class="mr-1vw"> <i class="fa-solid fa-envelope fa-2x"></i> </div> <h2 class="text-4xl"> E-mail </h2> 
+        <div class="mr-1vw"> <i class="fa-solid fa-envelope fa-2x"></i> </div> <h2 class="text-4xl"> {event.lang[translation].info.contact.email}  {event.info.contact.email}</h2> 
       </div>
       <br>
 
       <br>
       <div class="flex flex-row items-center justify-start ml-4vw"> 
-        <div class="mr-1vw"> <i class="fa-solid fa-phone fa-2x"></i> </div> <h2 class="text-4xl"> Telephone </h2> 
+        <div class="mr-1vw"> <i class="fa-solid fa-phone fa-2x"></i> </div> <h2 class="text-4xl"> {event.lang[translation].info.contact.phone}  {event.info.contact.phone}</h2> 
       </div>
       <br>
     </div>
@@ -118,21 +100,13 @@ console.log(t)
       
       <div class="flex flex-row items-center justify-center">
         <img src="../../../../public/announcments.png" class="w-5vw mt-4 ml-4">
-        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> Ανακοινώσεις </h2>
+        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> {event.lang[translation].announcements.header} </h2>
       </div>
 
       <p class="text-justify text-3xl my-4 mx-8"> 
-        Lorem ipsum dolor sit amet, consectetur
-        <br><br>
-        dolo  re magna aliqua. Ut enim ad minim
-        <br><br>
-        ea commodo consequat. Duis aute irure
-        <br><br>
-        fugiat nulla pariatur. Excepteur sint 
-        <br><br>
-        deserunt mollit anim id
-        <br><br>
-        fugiat nulla pariatur. Excepteur sint 
+        
+        {event.lang[translation].announcements.data}
+
       </p>
     </div>
 
@@ -141,41 +115,45 @@ console.log(t)
 
       <div class="flex flex-row items-center justify-center">
         <img src="../../../../public/food.png" class="w-5vw mt-4 ml-4">
-        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> Διατροφή συμμετεχόντων </h2>
+        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> {event.lang[translation].food.header} </h2>
       </div>
 
-      <p class="text-justify text-3xl my-4 mx-8"> <br> Η διατροφή των συμμετεχόντων θα καλύπτεται πλήρως από την διοργάνωση 
-        με 3 γεύματα (πρωινό, μεσημεριανό & βραδινό) για συμμετέχοντες των οποίων η μεταφορά μερικώς καλύπτεται και 2 
-        γεύματα (πρωινό & μεσημεριανό) για τους συμμετέχοντες από κοντινές περιοχές. Ακόμα, κατά την διάρκεια όλου του 
-        3ημέρου θα ειναι διαθέσιμα snacks. </p>
+      <p class="text-justify text-3xl my-4 mx-8"> 
+        
+        {event.lang[translation].food.data}
+      
+      </p>
     </div>
   </div>
 
-  <div class="flex items-center justify-evenly my-3">
+  <div class="flex justify-evenly items-start my-3">
     <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw rounded-2xl">
       
       <div class="flex flex-row items-center justify-center">
         <img src="../../../../public/staying.png" class="w-5vw mt-4 ml-4">
-        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> Διαμονή συμμετεχόντων </h2>
+        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> {event.lang[translation].stay.header} </h2>
       </div>
 
-      <p class="text-justify text-3xl my-4 mx-8"> Η διαμονή των συμμετεχόντων εντός των 50χλμ θα γίνεται στα σπίτια του 
-        και η μεταφορά τους από τον χώρο του hackathon θα γίνεται στις 20:00 με 21:00. Συμμετέχοντες  από άλλες πόλεις 
-        θα φιλοξενούνται σε κοντική εγκατάσταση με έξοδα της διοργάνωσης και η μεταφορά τους θα γίνεται με λεωφορείο της 
-        διοργάνωσης. </p>
+      <p class="text-justify text-3xl my-4 mx-8"> 
+        
+        {event.lang[translation].stay.data}
+      
+      </p>
     </div>
 
     
-    <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw rounded-2xl">
+    <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw h-fit rounded-2xl">
 
       <div class="flex flex-row items-center justify-center">
         <img src="../../../../public/transportation.png" class="w-5vw mt-4 ml-4">
-        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> Μεταφορά συμμετεχόντων </h2>
+        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> {event.lang[translation].transit.header} </h2>
       </div>
 
-      <p class="text-justify text-3xl my-4 mx-8"> <br> Η μεταφορά των συμμετεχόντων θα γίνει με έξοδα των ιδίων. Η μεταφορά 
-        θα καλυπτεται στην περίπτωση όπου η μεταφορά είναι μεγαλύτερη από 50χλμ. Το μέγιστο καλυπτόμενο ποσό ορίζεται 
-        στα 20€ και η μεταφορά μπορεί να γίνει με λεωφορείο ή τρένο. <br><br> </p>
+      <p class="text-justify text-3xl my-4 mx-8"> 
+          
+        {event.lang[translation].transit.data}
+
+      </p>
     </div>
   </div>
   <br>
