@@ -8,7 +8,7 @@
         "zoom": "Not yet decided",
         "contact": {
             "email": "germany@eurohacks.org", 
-            "phone": "+49 15679411392"
+            "phone": "+49 15679411392 (not final)"
         }
     },
     "lang": {
@@ -31,7 +31,7 @@
                 "data": " Fill this "
             },
             "food": {
-                "header": "Essen",
+                "header": "Verpflegung",
                 "data": " Fill this "
             },
             "stay": {
