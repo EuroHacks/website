@@ -1,6 +1,6 @@
 {
     "logo": "",
-    "organizers": ["test_person", "test_person", "test_person"],
+    "organizers": ["Bartosz Budnik"],
     "info": {
         "location": "Not yet decided",
         "dates": "20/08/2025 - 23/08/2025 (I just put a date)",
@@ -8,38 +8,38 @@
         "zoom": "Not yet decided",
         "contact": {
             "email": "poland@eurohacks.org", 
-            "phone": "+00 00000000000 Fill this"
+            "phone": "+64 609 481 080"
         }
     },
     "lang": {
         "origin": {
-            "welcome": " Fill this ",
-            "organizers": " Fill this ",
-            "translation": "For changin the language from French to English press this button:",
+            "welcome": " Witamy na stronie Polskiego Hackathonu. Tutaj możesz znaleźć więcej informacji na temat Polskiego Hackathonu. ",
+            "organizers": "Komitet organizacyjny",
+            "translation": "For changin the language from Polish to English press this button:",
             "info": {
-                "header": " Fill this ",
-                "dates": " Fill this ",
-                "participants": " Fill this ",
-                "zoom": " Fill this ",
+                "header": "Informacje o wydarzeniu: ",
+                "dates": "Daty wydarzenia: ",
+                "participants": "Uczestnicy: ",
+                "zoom": "Link do Zoom: ",
                 "contact": {
-                    "email": " Fill this ", 
-                    "phone": " Fill this "
+                    "email": "Kontakt e-mail: ", 
+                    "phone": "Kontakt telefoniczny: "
                 }
             },
             "announcements": {
-                "header": "Fill this",
+                "header": "Ogłoszenia",
                 "data": " Fill this "
             },
             "food": {
-                "header": " Fill this ",
+                "header": "Żywienie uczestników",
                 "data": " Fill this "
             },
             "stay": {
-                "header": " Fill this ",
+                "header": "Pobyt uczestników",
                 "data": " Fill this "
             },
             "transit": {
-                "header": " Fill this ",
+                "header": "Transport uczestników",
                 "data": " Fill this "
             }
         },
@@ -47,9 +47,9 @@
 
             
         "en": {
-            "welcome": " Welcome to the French Hackathon page. Here you can find more information about the French Hackathon. ",
+            "welcome": " Welcome to the Poland Hackathon page. Here you can find more information about the French Hackathon. ",
             "organizers": "Organizing committee",
-            "translation": " Fill this ",
+            "translation": "For changin the language from English to Polish press this button:",
             "info": {
                 "header": "Event Information: ",
                 "dates": "Event Dates: ",
