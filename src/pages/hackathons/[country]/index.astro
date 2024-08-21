@@ -16,7 +16,7 @@ export function getStaticPaths() {
     {params: {country: 'uk'}}
   ];
 }
-
+ 
 const { country } = Astro.params;
 
 const event = (await getEntry('events', country)).data
