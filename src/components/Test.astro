@@ -1,0 +1,47 @@
+---
+import Event from "../components/Event.astro"
+---
+
+<div class="overflow-hidden relative border-2 border-solid border-[#ddd]">
+    <div class="carousel flex flex-row w-max">
+        <Event/>
+        <Event/>
+        <Event/>
+        <Event/>
+        <Event/>
+        <!-- Duplicate the images for infinite scrolling -->
+        <Event/>
+        <Event/>
+        <Event/>
+        <Event/>
+        <Event/>
+    </div>
+</div>
+
+<style>
+
+.carousel {
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+</style>
+
+
+<script>
+const carousel = document.querySelector('.carousel');
+
+// Duplicate the content of the carousel
+const carouselImages = [...carousel.children];
+carouselImages.forEach((img) => {
+    const clone = img.cloneNode(true);
+    carousel.appendChild(clone);
+});
+</script>
