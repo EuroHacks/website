@@ -4,24 +4,26 @@ import Event from "../components/Event.astro"
 
 <div class="overflow-hidden relative border-2 border-solid border-[#ddd]">
     <div class="carousel flex flex-row w-max">
-        <Event/>
-        <Event/>
-        <Event/>
-        <Event/>
-        <Event/>
+        <Event city="Berlin"        country="Germany"   image="../../public/Berlin_1.jpg"/>
+        <Event city=" - "           country="Poland"    image="../../public/test-photo.jpg"/>
+        <Event city="Madrid"        country="Spain"     image="../../public/Madrid_1.jpg"/>
+        <Event city="Lodnon"        country="UK"        image="../../public/London_1.jpg"/>
+        <Event city="Thessaloniki"  country="Greece"    image="../../public/Thessaloniki_1.jpg"/>
+        <Event city="Milan"         country="Italy"     image="../../public/Milan_1.jpg"/>
         <!-- Duplicate the images for infinite scrolling -->
-        <Event/>
-        <Event/>
-        <Event/>
-        <Event/>
-        <Event/>
+        <Event city="London"        country="UK"        image="../../public/London_2.jpg"/>
+        <Event city="Madrid"        country="Spain"     image="../../public/Madrid_2.jpg"/>
+        <Event city="Thessaloniki"  country="Greece"    image="../../public/Thessaloniki_2.jpg"/>
+        <Event city="Berlin"        country="Germany"   image="../../public/Berlin_2.jpg"/>
+        <Event city="Milan"         country="Italy"     image="../../public/Milan_2.jpg"/>
+        <Event city=" - "  country="Poland"             image="../../public/test-photo.jpg"/>
     </div>
 </div>
 
 <style>
 
 .carousel {
-    animation: scroll 40s linear infinite;
+    animation: scroll 60s linear infinite;
 }
 
 @keyframes scroll {

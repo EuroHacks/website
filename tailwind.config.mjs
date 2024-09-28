@@ -35,11 +35,13 @@ export default {
 				'80vw': '80vw',
 				'90vw': '90vw',
 				'100vw': '100vw',
+				'event_cards': '22vw',
 			  },
 			  height: {
 				'160px': '160px',
 				'18vw': '18vw',
 				'88vh': '88vh',
+				'event_cards': '22vw',
 			  },
 			  spacing: {
 				'-20px': '-20px',
