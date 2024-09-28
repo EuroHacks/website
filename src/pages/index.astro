@@ -1,97 +1,99 @@
 ---
-import FAQ from "../components/FAQElement.astro"
-import Layout from "../layout/default.astro"
-import Carousel from "../components/Carousel.astro"
-import Navbar from "../components/Navbar.astro"
+import FAQ from "../components/FAQElement.astro";
+import Layout from "../layout/default.astro";
+import Carousel from "../components/Carousel.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout title="Home Page">
-	<Navbar/>
-	
+	<Navbar />
+
 	<Carousel
-	image_1 = "../../public/thessaloniki.jpg"
-	city_1 = "Thessaloniki, Greece"
-
-	image_2 = "../../public/madrid.jpg"
-	city_2 = "Madrid, Spain"
-
-	image_3 = "../../public/london.jpg"
-	city_3 = "Lodon, UK"
-	></Carousel>
-
+		items={[
+			["../../public/thessaloniki.jpg", "Thessaloniki, Greece"],
+			["../../public/madrid.jpg", "Madrid, Spain"],
+			["../../public/london.jpg", "London, UK"],
+		]}
+	/>
 
 	<div class="flex justify-center">
 		<div class="flex items-center justify-between w-85vw">
-			<div class="flex flex-col justify-center mt-10 bg-frosted-blue w-38vw rounded-2xl">
-			
-		
-			<p class="text-justify text-3xl my-4 mx-8 text-blanched-almond"> Eurohacks is a hackathon with multiple events all over Europe. 
-				Every event will happen the same days. Everyone will be able to make their own project(s), meet other 
-				people from all over Europe, learn things about programming, robotics, etc, have fun and of course win 
-				prizes. Find the Hackathon next to you and more information about each one hackathon here.</p>
+			<div
+				class="flex flex-col justify-center mt-10 bg-frosted-blue w-38vw rounded-2xl"
+			>
+				<p class="text-justify text-3xl my-4 mx-8 text-blanched-almond">
+					Eurohacks is a hackathon with multiple events all over
+					Europe. Every event will happen the same days. Everyone will
+					be able to make their own project(s), meet other people from
+					all over Europe, learn things about programming, robotics,
+					etc, have fun and of course win prizes. Find the Hackathon
+					next to you and more information about each one hackathon
+					here.
+				</p>
 			</div>
-		
-			
-			<div class="flex flex-col justify-center mt-12 bg-frosted-blue w-38vw rounded-2xl">
-		
-				<img src="../../public/test-photo.png" class="w-38vw h-96">
 
+			<div
+				class="flex flex-col justify-center mt-12 bg-frosted-blue w-38vw rounded-2xl"
+			>
+				<img src="../../public/test-photo.png" class="w-38vw h-96" />
 			</div>
 		</div>
 	</div>
 
 	<div class="flex justify-center">
 		<div class="flex items-center justify-between w-85vw">
-			<div class="flex flex-col justify-center mt-10 bg-frosted-blue w-38vw rounded-2xl">
-			
-
-
+			<div
+				class="flex flex-col justify-center mt-10 bg-frosted-blue w-38vw rounded-2xl"
+			>
 			</div>
-		
-			
-			<div class="flex flex-col justify-center mt-12 bg-frosted-blue w-38vw rounded-2xl">
-		
-				<p class="text-justify text-3xl my-4 mx-8 text-blanched-almond">  </p>
+
+			<div
+				class="flex flex-col justify-center mt-12 bg-frosted-blue w-38vw rounded-2xl"
+			>
+				<p class="text-justify text-3xl my-4 mx-8 text-blanched-almond">
+				</p>
 			</div>
 		</div>
 	</div>
 
 	<div class="pt-6 flex flex-col items-center">
-		<h1 class="text-left w-85vw text-blanched-almond text-5xl mb-4"> FAQ (Frequently Asked Questions) </h1>
-		<FAQ 
-			question = " What is a hackathon? "
-			answer = " Hackathon is when many people interested in coding/robotics and generally computer science for 1 or more days in order to create amazing project but more importantly meet new people and learn new things. All of these combined with amazing venues, food, drinks and good attitude make up a wonderful experience and an unforgetable coding event."> 
-		</FAQ>
+		<h1 class="text-left w-85vw text-blanched-almond text-5xl mb-4">
+			FAQ (Frequently Asked Questions)
+		</h1>
+		<FAQ
+			question=" What is a hackathon? "
+			answer=" Hackathon is when many people interested in coding/robotics and generally computer science for 1 or more days in order to create amazing project but more importantly meet new people and learn new things. All of these combined with amazing venues, food, drinks and good attitude make up a wonderful experience and an unforgetable coding event."
+		/>
 
-		<FAQ 
-			question = " Is there any age limit? "
-			answer = " Τhis is an event for teenagers. Technically the ages accepted are 0-18 but preferably this is an event for people from 13 to 18 years old."> 
-		</FAQ>
+		<FAQ
+			question=" Is there any age limit? "
+			answer=" Τhis is an event for teenagers. Technically the ages accepted are 0-18 but preferably this is an event for people from 13 to 18 years old."
+		/>
 
-		<FAQ 
-			question = " Do I have to speak English? "
-			answer = " No, you don’t have to speak English or any other languages except your native one but it would be really helpful for navigating yourself in the website and also communicate with other people from all over Europe during the hackathon. (It is an optional activity but deferentially a wonderful experience). "> 
-		</FAQ>
+		<FAQ
+			question=" Do I have to speak English? "
+			answer=" No, you don’t have to speak English or any other languages except your native one but it would be really helpful for navigating yourself in the website and also communicate with other people from all over Europe during the hackathon. (It is an optional activity but deferentially a wonderful experience). "
+		/>
 
-		<FAQ 
-			question = " How can I contact you if I have any question for the events? "
-			answer = " Don’t hesitate to send us an email with all your question. We will answer them as soon as possible (probably under 24h). You can either send an email in questions@eurohacks.org or in yours country email which is <country>@eurohacks.org. If we don’t answer after 3 days you can contact hackathon’s phone number (but please don’t use it for no important reason). "> 
-		</FAQ>
+		<FAQ
+			question=" How can I contact you if I have any question for the events? "
+			answer=" Don’t hesitate to send us an email with all your question. We will answer them as soon as possible (probably under 24h). You can either send an email in questions@eurohacks.org or in yours country email which is <country>@eurohacks.org. If we don’t answer after 3 days you can contact hackathon’s phone number (but please don’t use it for no important reason). "
+		/>
 
-		<FAQ 
-			question = " Do I have to pay in order to participate in the hackathon? "
-			answer = " Technically yes but probably no. It depends on where you live. If you live less than 50km from the venue you will have to come in the venue each day with your ouw expenses. If you live away from the venue and you came with a bus from an other city, your expenses for coming in the host city will be partially covered so you may have to pay some amount of money for your tickets. "> 
-		</FAQ>
+		<FAQ
+			question=" Do I have to pay in order to participate in the hackathon? "
+			answer=" Technically yes but probably no. It depends on where you live. If you live less than 50km from the venue you will have to come in the venue each day with your ouw expenses. If you live away from the venue and you came with a bus from an other city, your expenses for coming in the host city will be partially covered so you may have to pay some amount of money for your tickets. "
+		/>
 
-		<FAQ 
-			question = " Can I participate in the event if I am not near the venue (or not even the host city)?"
-			answer = " Whatever you want if it is about computer science. It could be something with Arduino, raspberry pi, or (something that you don’t have to get your own hardware) coding. This could be website developing, app developing, code an Arduino or making code which do something cool and something that YOU are proud of."> 
-		</FAQ>
+		<FAQ
+			question=" Can I participate in the event if I am not near the venue (or not even the host city)?"
+			answer=" Whatever you want if it is about computer science. It could be something with Arduino, raspberry pi, or (something that you don’t have to get your own hardware) coding. This could be website developing, app developing, code an Arduino or making code which do something cool and something that YOU are proud of."
+		/>
 
-		<FAQ 
-			question = " Do I have to get a laptop with me? "
-			answer = " Yes. It is a coding event, you have to get your devices (it could be a tablet or a laptop) so you can make your projects. We may be able to offer some laptop in 1 or 2 people but you have to get your own devices in the hackathon.  "> 
-		</FAQ>
-		<br>
+		<FAQ
+			question=" Do I have to get a laptop with me? "
+			answer=" Yes. It is a coding event, you have to get your devices (it could be a tablet or a laptop) so you can make your projects. We may be able to offer some laptop in 1 or 2 people but you have to get your own devices in the hackathon.  "
+		/>
+		<br />
 	</div>
 </Layout>
