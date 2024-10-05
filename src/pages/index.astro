@@ -6,52 +6,57 @@ import Navbar from "../components/Navbar.astro"
 ---
 
 <Layout title="Home Page">
-	<Navbar/>
+	<nav class="font-sams h-[100vh]">
+			<ul class= "w-[30vw] flex float-end justify-between px-5 list-none py-3 z-10 sticky top-0">
+				
+				<li class="nav-link font-bold opacity-75 relative text-2xl no-underline flex float-end">
+					<a href= "/" class="no-underline"> <slot class="navbar-item"> Eurohacks </slot> </a>
+				</li>
+		
+				<li class="nav-link font-bold opacity-75 relative text-2xl no-underline flex float-end">
+					<a href= "/hackathons" class="no-underline"> <slot class="navbar-item"> Map </slot> </a>
+				</li>
+		
+				<li class="nav-link font-bold opacity-75 relative text-2xl no-underline flex float-end">
+					<a href= "/hackclub" class="no-underline"> <slot class="navbar-item"> Hackathons </slot> </a>
+				</li>
+			</ul>
+
+		<img src="../../public/hackathon_banner.jpg" class="absolute"> 
+	</nav>
+
+	<style>
+		.nav-link::before {
+		transition: 1000ms;
+		height: 4px;
+		content: "";
+		position: absolute;
+		background-color: rgb(79, 80, 97);
+		width: 0%;
+		bottom: -1px;
+		}
 	
-	<Carousel
-	image_1 = "../../public/thessaloniki.jpg"
-	city_1 = "Thessaloniki, Greece"
-
-	image_2 = "../../public/madrid.jpg"
-	city_2 = "Madrid, Spain"
-
-	image_3 = "../../public/london.jpg"
-	city_3 = "Lodon, UK"
-	></Carousel>
-
+		.nav-link:hover::before {
+			width: 100%;
+		}
+	</style>
 
 	<div class="flex justify-center">
 		<div class="flex items-center justify-between w-85vw">
-			<div class="flex flex-col justify-center mt-10 bg-frosted-blue w-38vw rounded-2xl">
+			<div class="flex flex-col justify-center items-center mt-10 bg-frosted-blue w-38vw rounded-2xl">
 			
 		
-			<p class="text-justify text-3xl my-4 mx-8 text-blanched-almond"> Eurohacks is a hackathon with multiple events all over Europe. 
-				Every event will happen the same days. Everyone will be able to make their own project(s), meet other 
-				people from all over Europe, learn things about programming, robotics, etc, have fun and of course win 
-				prizes. Find the Hackathon next to you and more information about each one hackathon here.</p>
+			<p class="text-justify text-3xl my-4 mx-8 text-blanched-almond"> Eurohacks is a hackathon with multiple events all 
+				over Europe. Every event will happen during the same time. Everyone will be able to make their own project(s), meet 
+				other people from all over Europe, learn things about programming, robotics, etc, by attending workshops that we 
+				are gonna host, win prizes and of course have a good time. </p>
 			</div>
 		
 			
 			<div class="flex flex-col justify-center mt-12 bg-frosted-blue w-38vw rounded-2xl">
 		
-				<img src="../../public/test-photo.png" class="w-38vw h-96">
+				<img src="../../public/hackathon.png" class="w-38vw h-96 rounded-xl">
 
-			</div>
-		</div>
-	</div>
-
-	<div class="flex justify-center">
-		<div class="flex items-center justify-between w-85vw">
-			<div class="flex flex-col justify-center mt-10 bg-frosted-blue w-38vw rounded-2xl">
-			
-
-
-			</div>
-		
-			
-			<div class="flex flex-col justify-center mt-12 bg-frosted-blue w-38vw rounded-2xl">
-		
-				<p class="text-justify text-3xl my-4 mx-8 text-blanched-almond">  </p>
 			</div>
 		</div>
 	</div>
