@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout title="Home Page">
+
 	<Navbar />
 
 	<Carousel
@@ -15,6 +16,41 @@ import Navbar from "../components/Navbar.astro";
 			["../../public/london.jpg", "London, UK"],
 		]}
 	/>
+
+	<nav class="font-sams h-[100vh]">
+			<ul class= "w-[30vw] flex float-end justify-between px-5 list-none py-3 z-10 sticky top-0">
+				
+				<li class="nav-link font-bold opacity-75 relative text-2xl no-underline flex float-end">
+					<a href= "/" class="no-underline"> <slot class="navbar-item"> Eurohacks </slot> </a>
+				</li>
+		
+				<li class="nav-link font-bold opacity-75 relative text-2xl no-underline flex float-end">
+					<a href= "/hackathons" class="no-underline"> <slot class="navbar-item"> Map </slot> </a>
+				</li>
+		
+				<li class="nav-link font-bold opacity-75 relative text-2xl no-underline flex float-end">
+					<a href= "/hackclub" class="no-underline"> <slot class="navbar-item"> Hackathons </slot> </a>
+				</li>
+			</ul>
+
+		<img src="../../public/hackathon_banner.jpg" class="absolute"> 
+	</nav>
+
+	<style>
+		.nav-link::before {
+		transition: 1000ms;
+		height: 4px;
+		content: "";
+		position: absolute;
+		background-color: rgb(79, 80, 97);
+		width: 0%;
+		bottom: -1px;
+		}
+	
+		.nav-link:hover::before {
+			width: 100%;
+		}
+	</style>
 
 	<div class="flex justify-center">
 		<div class="flex items-center justify-between w-85vw">
@@ -31,27 +67,11 @@ import Navbar from "../components/Navbar.astro";
 					here.
 				</p>
 			</div>
-
-			<div
-				class="flex flex-col justify-center mt-12 bg-frosted-blue w-38vw rounded-2xl"
-			>
-				<img src="../../public/test-photo.png" class="w-38vw h-96" />
-			</div>
-		</div>
-	</div>
-
-	<div class="flex justify-center">
-		<div class="flex items-center justify-between w-85vw">
-			<div
-				class="flex flex-col justify-center mt-10 bg-frosted-blue w-38vw rounded-2xl"
-			>
-			</div>
-
-			<div
-				class="flex flex-col justify-center mt-12 bg-frosted-blue w-38vw rounded-2xl"
-			>
-				<p class="text-justify text-3xl my-4 mx-8 text-blanched-almond">
-				</p>
+		
+			
+			<div class="flex flex-col justify-center mt-12 bg-frosted-blue w-38vw rounded-2xl">
+		
+				<img src="../../public/hackathon.png" class="w-38vw h-96 rounded-xl">
 			</div>
 		</div>
 	</div>
