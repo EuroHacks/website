@@ -1,51 +1,39 @@
 ---
 import FAQ from "../components/FAQElement.astro";
 import Layout from "../layout/default.astro";
-import Carousel from "../components/Carousel.astro";
 import Navbar from "../components/Navbar.astro";
+import Event from "../components/Event.astro"
 ---
 
 <Layout title="Home Page">
 
-	<nav class="font-sams h-[100vh]">
-			<ul class= "w-[30vw] flex float-end justify-between px-5 list-none py-3 z-10 sticky top-0">
-				
-				<li class="nav-link font-bold opacity-75 relative text-2xl no-underline flex float-end">
-					<a href= "/" class="no-underline"> <slot class="navbar-item"> Eurohacks </slot> </a>
-				</li>
-		
-				<li class="nav-link font-bold opacity-75 relative text-2xl no-underline flex float-end">
-					<a href= "/hackathons" class="no-underline"> <slot class="navbar-item"> Map </slot> </a>
-				</li>
-		
-				<li class="nav-link font-bold opacity-75 relative text-2xl no-underline flex float-end">
-					<a href= "/hackclub" class="no-underline"> <slot class="navbar-item"> Hackathons </slot> </a>
-				</li>
-			</ul>
+	<div class="absolute w-[100vw] pt-[87.7vh]">
+		<h1 class="colors text-[200px] font-bold text-light-apricot z-10 relative flex justify-center"> EuroHacks</h1>
+	</div>
 
-		<img src="../../public/hackathon_banner.jpg" class="absolute"> 
-	</nav>
-
+<!-- 
 	<style>
-		.nav-link::before {
-		transition: 1000ms;
-		height: 4px;
-		content: "";
-		position: absolute;
-		background-color: rgb(79, 80, 97);
-		width: 0%;
-		bottom: -1px;
+		.colors {
+			animation-name: color;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
 		}
-	
-		.nav-link:hover::before {
-			width: 100%;
+		@keyframes color {
+			0%   {color: #fcd89b;}
+			50%  {color: #fec580;}
+			100% {color: #fcd89b;}
 		}
 	</style>
+-->
+
+	<Navbar></Navbar>
+
+	<br><br><br><br><br><br>
 
 	<div class="flex justify-center">
 		<div class="flex items-center justify-between w-85vw">
 			<div
-				class="flex flex-col justify-center mt-10 bg-frosted-blue w-38vw rounded-2xl"
+				class="flex flex-col justify-center items-center mt-10 bg-frosted-blue w-38vw rounded-2xl"
 			>
 				<p class="text-justify text-3xl my-4 mx-8 text-blanched-almond">
 					Eurohacks is a hackathon with multiple events all over
@@ -56,6 +44,12 @@ import Navbar from "../components/Navbar.astro";
 					next to you and more information about each one hackathon
 					here.
 				</p>
+				<a href="https://docs.google.com/document/d/1UYgjeY0_YN5d8G_4LN1zcPzTSMoom5nO7tXxiW-kUOM/edit?tab=t.0#heading=h.itv0xa234b8vs" target="_blank">
+					<div class="question flex flex-row justify-center bg-really-light-blue text-dark-gray font-semibold text-3xl rounded-xl py-3 px-5 m-2 w-fit duration-700 border-none cursor-default text-center my-4 hover:bg-grayish-blue"> 
+						<div> Learn more: Read our vision </div>
+					</div>
+				</a>
+
 			</div>
 		
 			
@@ -66,8 +60,19 @@ import Navbar from "../components/Navbar.astro";
 		</div>
 	</div>
 
+		<div class="overflow-hidden relative my-[10vh]">
+			<div class="carousel flex flex-row w-max">
+				<Event city="Berlin"        country="Germany"   image="../../public/Berlin_1.jpg"/>
+				<Event city=" - "           country="Poland"    image="../../public/test-photo.jpg"/>
+				<Event city="Madrid"        country="Spain"     image="../../public/Madrid_1.jpg"/>
+				<Event city="Lodnon"        country="UK"        image="../../public/London_1.jpg"/>
+				<Event city="Thessaloniki"  country="Greece"    image="../../public/Thessaloniki_1.jpg"/>
+				<Event city="Milan"         country="Italy"     image="../../public/Milan_1.jpg"/>
+			</div>
+		</div>
+
 	<div class="pt-6 flex flex-col items-center">
-		<h1 class="text-left w-85vw text-blanched-almond text-5xl mb-4">
+		<h1 class="text-left w-85vw text-light-apricot text-5xl mb-4">
 			FAQ (Frequently Asked Questions)
 		</h1>
 		<FAQ
@@ -106,4 +111,32 @@ import Navbar from "../components/Navbar.astro";
 		/>
 		<br />
 	</div>
+
+	<style>
+
+		.carousel {
+			animation: scroll 60s linear infinite;
+		}
+		
+		@keyframes scroll {
+			from {
+				transform: translateX(0);
+			}
+			to {
+				transform: translateX(-50%);
+			}
+		}
+		</style>
+		
+		
+		<script>
+		const carousel = document.querySelector('.carousel');
+		
+		// Duplicate the content of the carousel
+		const carouselImages = [...carousel.children];
+		carouselImages.forEach((img) => {
+			const clone = img.cloneNode(true);
+			carousel.appendChild(clone);
+		});
+		</script>
 </Layout>

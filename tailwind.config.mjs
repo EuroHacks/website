@@ -4,6 +4,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				'light-apricot': 	"#fec580",
 				'really-light-blue':'#D3E4FF',
 				'light-blue': 		'#9AC3FF',
 				'pale-sky-blue': 	'#99C2FF',
