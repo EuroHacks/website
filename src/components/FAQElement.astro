@@ -2,36 +2,56 @@
 let { question, answer } = Astro.props
 ---
 
-<div class= "question flex flex-row justify-between bg-really-light-blue text-dark-gray font-semibold text-3xl rounded-xl py-3 px-5 m-2 w-85vw duration-700 border-none cursor-default text-center hover:bg-grayish-blue hover:w-85vw"> 
-    {question} <div> <i class="fa-solid fa-caret-down fa-2xl"></i> </div>
+<div class="question flex flex-row justify-between bg-really-light-blue text-dark-gray font-semibold text-3xl rounded-xl py-3 px-5 m-2 w-85vw duration-700 border-none cursor-pointer text-center hover:bg-grayish-blue hover:w-85vw"> 
+    {question} 
+    <div class="arrow-icon">
+        <i class="fa-solid fa-caret-down fa-2xl"></i>
+    </div>
 </div>
 
-<div class="text-xl px-5 py-3 w-85vw hidden bg-light-blue overflow-hidden rounded-xl font-semibold text-center mb-4">
-
-    <p> {answer} </p>
-
+<div class="answer text-xl w-85vw max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out bg-light-blue rounded-xl mb-4">
+    <p class="px-5 py-3 font-semibold text-center">
+        {answer}
+    </p>
 </div>
 
 <style>
-	.active {
-		background-color: #a6b3c9; 
-		width: 85vw;
-	}
+    .active {
+        background-color: #a6b3c9; 
+        width: 85vw;
+    }
+    .transition-max-height {
+        transition: max-height 0.5s ease-in-out;
+    }
+    .answer p {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .answer.show p {
+        opacity: 1;
+    }
 </style>
 
-	<script>
-		var acc = document.getElementsByClassName("question");
-		var i;
-		
-		for (i = 0; i < acc.length; i++) {
-			acc[i].addEventListener("click", function() {
-			this.classList.toggle("active");
-			var panel = this.nextElementSibling;
-			if (panel.style.display === "block") {
-				panel.style.display = "none";
-			} else {
-				panel.style.display = "block";
-			}
-			});
-		}
-	</script>
+<script>
+    var acc = document.getElementsByClassName("question");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+
+            var icon = this.querySelector(".arrow-icon i");
+            icon.classList.toggle("fa-caret-down");
+            icon.classList.toggle("fa-caret-up");
+
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                panel.classList.remove('show');
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                panel.classList.add('show');
+            }
+        });
+    }
+</script>

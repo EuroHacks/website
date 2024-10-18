@@ -4,5 +4,36 @@ import Test  from "../../components/Test.astro"
 ---
 
 <Layout title="Hack CLub">
+    <!DOCTYPE html>
 
+    <div id="fadeDiv" class="hidden">Hello, I faded in!</div>
+
+    <style>
+        #fadeDiv {
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+            background-color: #4caf50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 24px;
+        }
+
+        #fadeDiv.visible {
+            opacity: 1;
+        }
+
+        .hidden {
+            display: block;
+        }
+    </style>
+
+    <script>
+        window.addEventListener("load", function() {
+        const fadeDiv = document.getElementById("fadeDiv");
+        setTimeout(() => {
+            fadeDiv.classList.add("visible");
+        }, 100);
+    });
+    </script>
 </Layout>
