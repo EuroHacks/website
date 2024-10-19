@@ -1,39 +1,27 @@
-<nav class="font-sams h-[100vh] text-zinc-50">
-    <ul class= "w-[30vw] flex float-end justify-between px-5 list-none py-3 z-10 sticky top-0">
-            
-        <li class="nav-link font-bold opacity-75 relative text-2xl no-underline flex float-end">
-                <a href= "/eurohacks" class="no-underline"> <slot class="navbar-item"> Eurohacks </slot> </a>
-        </li>
-    
-        <li class="nav-link font-bold opacity-75 relative text-2xl no-underline flex float-end">
-                <a href= "/map" class="no-underline"> <slot class="navbar-item"> Map </slot> </a>
-        </li>
-    
-        <li class="nav-link font-bold opacity-75 relative text-2xl no-underline flex float-end">
-                <a href= "/hackathons" class="no-underline"> <slot class="navbar-item"> Hackathons </slot> </a>
-        </li>
-    </ul>
+---
+import NavbarElement from "../components/NavbarElement.astro";
+---
 
-    <img src="../../public/hackathon_banner.jpg" class="absolute h-fit w-max">
-</nav>
+<div class="absolute w-[100vw] pt-[87.7vh]">
+    <p class="colors text-[200px] font-bold text-light-apricot z-10 relative flex justify-center my-0 py-0"> EuroHacks </p>
+    <p class="colors text-[70px] font-bold  text-light-apricot z-10 relative flex justify-center my-0 py-0 -mt-20"> Hackathons in every corner of Europe </p>
+</div>
 
+<!-- 
 <style>
-    @media screen and (max-width: 1100px) {
-        body {
-            background-color: lightgreen;
-        }
+    .colors {
+        animation-name: color;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
     }
-    .nav-link::before {
-    transition: 1000ms;
-    height: 4px;
-    content: "";
-    position: absolute;
-    background-color: rgb(170, 170, 176);
-    width: 0%;
-    bottom: -1px;
-    }
-
-    .nav-link:hover::before {
-        width: 100%;
+    @keyframes color {
+        0%   {color: #fcd89b;}
+        50%  {color: #fec580;}
+        100% {color: #fcd89b;}
     }
 </style>
+-->
+
+<NavbarElement></NavbarElement>
+
+<br><br><br><br><br><br><br><br><br>
