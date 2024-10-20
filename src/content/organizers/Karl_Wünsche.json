@@ -1,0 +1,14 @@
+{
+    "thumb": "/test-photo.png",
+    "country": "/[country].png",
+    "lang": {
+        "origin": {
+            "fullname": "Karl Wunsche",
+            "description": ""
+        },
+        "en": {
+            "fullname": "Test Person",
+            "description": "Blah blah"
+        }
+    }
+}

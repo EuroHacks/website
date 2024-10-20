@@ -1,0 +1,83 @@
+{
+    "logo": "",
+    "organizers": ["Karl Wünsche", "Samuel Leber", "Max Schneider", "Leonard Stegle"],
+    "info": {
+        "location": "Munich (not final)",
+        "dates": "20/08/2025 - 23/08/2025 (I just put a date)",
+        "participants": 0,
+        "zoom": "Not yet decided",
+        "contact": {
+            "email": "germany@eurohacks.org", 
+            "phone": "+49 15679411392 (not final)"
+        }
+    },
+    "lang": {
+        "origin": {
+            "welcome": "Wilkommen",
+            "organizers": "Organisatoren",
+            "translation": "For changin the language from German to English press this button:",
+            "info": {
+                "header": "Informationen",
+                "dates": "Daten",
+                "location": "",
+                "participants": "Teilnehmer",
+                "zoom": "Zoom",
+                "contact": {
+                    "email": "Email", 
+                    "phone": "Telefon"
+                }
+            },
+            "announcements": {
+                "header": "Ankündigungen",
+                "data": " Fill this "
+            },
+            "food": {
+                "header": "Verpflegung",
+                "data": " Fill this "
+            },
+            "stay": {
+                "header": "Unterkunft",
+                "data": " Fill this "
+            },
+            "transit": {
+                "header": "Anreise",
+                "data": " Fill this "
+            }
+        },
+
+
+            
+        "en": {
+            "welcome": " Welcome to the German Hackathon page. Here you can find more information about the German Hackathon. ",
+            "organizers": "Organizing committee",
+            "translation": "German",
+            "info": {
+                "header": "Event Information: ",
+                "dates": "Event Dates: ",
+                "location": "",
+                "participants": "Participants: ",
+                "zoom": "Zoom link: ",
+                "contact": {
+                    "email": "E-mail contact: ", 
+                    "phone": "Phone contact: "
+                }
+            },
+            "announcements": {
+                "header": "Announcements",
+                "data": " Fill this "
+            },
+            "food": {
+                "header": "Participant Nutrition",
+                "data": " Fill this "
+            },
+            "stay": {
+                "header": "Participant Stay",
+                "data": " Fill this "
+            },
+            "transit": {
+                "header": "Participant Transit",
+                "data": " Fill this "
+            }
+        }
+    }
+}

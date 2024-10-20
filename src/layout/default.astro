@@ -1,0 +1,36 @@
+---
+import Navbar from "../components/Navbar.astro"
+import Footer from "../components/Footer.astro"
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title> Eurohacks - {title} </title>
+        <script src="https://kit.fontawesome.com/53a136327d.js" crossorigin="anonymous"></script>
+	</head>
+
+	<Navbar></Navbar>
+
+	<body>
+        <slot />
+	</body>
+
+    <Footer></Footer>
+    
+    <style>
+        body {
+            background-color: #FFF0DE;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			scroll-behavior: unset;
+        }
+		body::-webkit-scrollbar {
+			display: none;
+		}
+    </style>
+</html>

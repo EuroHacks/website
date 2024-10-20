@@ -1,0 +1,117 @@
+---
+import FAQ from "../components/FAQElement.astro";
+import Layout from "../layout/default.astro";
+import Navbar from "../components/Navbar.astro";
+import Event from "../components/Event.astro"
+---
+
+<Layout title="Home Page">
+
+	<div class="flex justify-center">
+		<div class="flex items-center justify-between w-85vw">
+			<div
+				class="flex flex-col justify-center items-center mt-10 bg-light-apricot w-38vw rounded-2xl"
+			>
+				<p class="text-justify text-3xl my-4 mx-8 text-blanched-almond">
+					EuroHacks is a Europe-wide hackathon, with multiple events all 
+					happening at the same time. Everyone will have the opportunity 
+					to create their own projects, meet other people from all over 
+					Europe, have fun, and, of course, to win prizes! Find the 
+					hackathon nearest to you and get more information them here.
+				</p>
+				<a href="https://docs.google.com/document/d/1UYgjeY0_YN5d8G_4LN1zcPzTSMoom5nO7tXxiW-kUOM/edit?tab=t.0#heading=h.itv0xa234b8vs" target="_blank">
+					<div class="question flex flex-row justify-center bg-[#FFE6A7] text-dark-gray font-semibold text-3xl rounded-xl py-3 px-5 m-2 w-fit duration-700 border-none cursor-default text-center my-4 hover:bg-golden-sand"> 
+						<div> Learn more: Read our vision </div>
+					</div>
+				</a>
+
+			</div>
+		
+			
+			<div class="flex flex-col justify-center mt-12 w-38vw rounded-2xl">
+		
+				<img src="../../public/hackathon.png" class="w-38vw h-96 rounded-xl">
+			</div>
+		</div>
+	</div>
+
+		<div class="overflow-hidden relative my-[10vh]">
+			<div class="carousel flex flex-row w-max">
+				<Event city="Munich"        country="Germany"   image="../../public/Munich.jpg"/>
+				<Event city="Bydgoszcz"    	country="Poland"    image="../../public/Bydgoszcz.jpg"/>
+				<Event city="Madrid"        country="Spain"     image="../../public/Madrid.jpg"/>
+				<Event city="London"        country="UK"        image="../../public/London.jpg"/>
+				<Event city="Thessaloniki"  country="Greece"    image="../../public/Thessaloniki.jpg"/>
+				<Event city="Milan"         country="Italy"     image="../../public/Milan.jpg"/>
+			</div>
+		</div>
+
+	<div class="pt-6 flex flex-col items-center">
+		<h1 class="text-left w-85vw text-light-apricot text-5xl mb-4">
+			FAQ (Frequently Asked Questions)
+		</h1>
+		<FAQ
+			question=" What is a hackathon? "
+			answer=" Hackathon is when many people interested in coding/robotics and generally computer science for 1 or more days in order to create amazing project but more importantly meet new people and learn new things. All of these combined with amazing venues, food, drinks and good attitude make up a wonderful experience and an unforgetable coding event."
+		/>
+
+		<FAQ
+			question=" Is there any age limit? "
+			answer=" Τhis is an event for teenagers. Technically the ages accepted are 0-18 but preferably this is an event for people from 13 to 18 years old."
+		/>
+
+		<FAQ
+			question=" Do I have to speak English? "
+			answer=" No, you don’t have to speak English or any other languages except your native one but it would be really helpful for navigating yourself in the website and also communicate with other people from all over Europe during the hackathon. (It is an optional activity but deferentially a wonderful experience). "
+		/>
+
+		<FAQ
+			question=" How can I contact you if I have any question for the events? "
+			answer=" Don’t hesitate to send us an email with all your question. We will answer them as soon as possible (probably under 24h). You can either send an email in questions@eurohacks.org or in yours country email which is <country>@eurohacks.org. If we don’t answer after 3 days you can contact hackathon’s phone number (but please don’t use it for no important reason). "
+		/>
+
+		<FAQ
+			question=" Do I have to pay in order to participate in the hackathon? "
+			answer=" Technically yes but probably no. It depends on where you live. If you live less than 50km from the venue you will have to come in the venue each day with your ouw expenses. If you live away from the venue and you came with a bus from an other city, your expenses for coming in the host city will be partially covered so you may have to pay some amount of money for your tickets. "
+		/>
+
+		<FAQ
+			question=" Can I participate in the event if I am not near the venue (or not even the host city)?"
+			answer=" Whatever you want if it is about computer science. It could be something with Arduino, raspberry pi, or (something that you don’t have to get your own hardware) coding. This could be website developing, app developing, code an Arduino or making code which do something cool and something that YOU are proud of."
+		/>
+
+		<FAQ
+			question=" Do I have to get a laptop with me? "
+			answer=" Yes. It is a coding event, you have to get your devices (it could be a tablet or a laptop) so you can make your projects. We may be able to offer some laptop in 1 or 2 people but you have to get your own devices in the hackathon.  "
+		/>
+		<br />
+	</div>
+
+	<style>
+
+		.carousel {
+			animation: scroll 60s linear infinite;
+		}
+		
+		@keyframes scroll {
+			from {
+				transform: translateX(0);
+			}
+			to {
+				transform: translateX(-50%);
+			}
+		}
+		</style>
+		
+		
+		<script>
+		const carousel = document.querySelector('.carousel');
+		
+		// Duplicate the content of the carousel
+		const carouselImages = [...carousel.children];
+		carouselImages.forEach((img) => {
+			const clone = img.cloneNode(true);
+			carousel.appendChild(clone);
+		});
+		</script>
+</Layout>

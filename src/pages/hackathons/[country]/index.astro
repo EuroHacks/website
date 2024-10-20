@@ -1,0 +1,211 @@
+---
+import Layout from "../../../layout/default.astro"; 
+import OrganizerCard from "../../../components/OrganizerElement.astro";
+import { getEntry } from "astro:content";
+
+export const prerender = true;
+
+export function getStaticPaths() {
+  return [
+    {params: {country: 'france'}},
+    {params: {country: 'germany'}},
+    {params: {country: 'greece'}},
+    {params: {country: 'italy'}},
+    {params: {country: 'poland'}},
+    {params: {country: 'spain'}},
+    {params: {country: 'uk'}}
+  ];
+}
+ 
+const { country } = Astro.params;
+
+const event = (await getEntry('events', country)).data
+const eventOrganizers = await Promise.all(event.organizers.map(
+  async (organizer: string) => (await getEntry('organizers', organizer)).data)
+)
+
+let translation = Astro.url.searchParams.get("lang");
+if (translation != "en") translation = "origin";
+---
+
+<Layout title={`Hackathon # ${country}`}>
+    <br>
+
+    <div class="flex justify-center text-golden-sand">
+      <div class="flex flex-row w-80vw">
+        <div class="text-6xl mr-3"> <i class="fa-solid fa-language"></i> </div>
+        <h2 class="font-bold text-4.5xl"> {event.lang[translation].translation} </h2>
+        <div class="mt-3.5 ml-3">
+          <label class="relative inline-block w-16 h-9">
+            <input type="checkbox" class="opacity-0 w-0 h-0 checked:bg-frosted-blue">
+            <span class="slider round absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-slate-500 @apply transition-[0.4s]; -webkit-transition: 0.4s;"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center my-3">
+      <div class="flex flex-col justify-center items-center mt-12 bg-frosted-blue w-80vw rounded-2xl">
+
+          <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
+              <img src="../../../public/head_organizing_team.png" width="80px" class="mr-6 mt-2">
+              <h1 class="text-4.5xl font-bold"> {event.lang[translation].organizers}  </h1>
+          </div>
+
+          <div class="flex flex-row justify-evenly mt-3">
+            {eventOrganizers.map(
+              organizer => <OrganizerCard
+              name={organizer.lang[translation].fullname}
+              paragraph={organizer.lang[translation].description}
+              country_image={organizer.country}
+              image={organizer.thumb}
+            />)}
+          </div>
+
+          <br>
+      </div>
+  </div>
+
+  <div class="flex justify-center my-3">
+    <div class="flex flex-col justify-start mt-12 bg-frosted-blue w-80vw rounded-2xl">
+
+      <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
+        <img src="/info.png" width="80px" class= "mr-6 mt-2">
+        <h1 class="text-5xl font-bold">{event.lang[translation].info.header}</h1>
+      </div>
+      
+      <br>
+      <div class="flex flex-row items-center justify-start ml-4vw"> 
+        <div class="mr-1vw"> <i class="fa-solid fa-location-dot fa-2xl"></i> </div> <h2 class="text-4xl"> {event.lang[translation].info.location} {event.info.location} </h2> 
+      </div>
+      <br>
+
+      <br>
+      <div class="flex flex-row items-center justify-start ml-4vw"> 
+        <div class="mr-1vw"> <i class="fa-solid fa-clock fa-2xl"></i> </div> <h2 class="text-4xl"> {event.lang[translation].info.dates} {event.info.dates} </h2> 
+      </div>
+      <br>
+
+      <br>
+      <div class="flex flex-row items-center justify-start ml-4vw"> 
+        <div class="mr-1vw"> <img src="../../../../public/participants.png" class="w-9"> </div> <h2 class="text-4xl"> {event.lang[translation].info.participants} {event.info.participants} </h2> 
+      </div>
+      <br>
+
+      <br>
+      <div class="flex flex-row items-center justify-start ml-4vw"> 
+        <div class="mr-1vw"> <img src="../../../../public/zoom.png" class="w-9"> </div> <h2 class="text-4xl"> {event.lang[translation].info.zoom} {event.info.zoom}</h2> 
+      </div>
+      <br>
+
+      <br>
+      <div class="flex flex-row items-center justify-start ml-4vw"> 
+        <div class="mr-1vw"> <i class="fa-solid fa-envelope fa-2x"></i> </div> <h2 class="text-4xl"> {event.lang[translation].info.contact.email}  {event.info.contact.email}</h2> 
+      </div>
+      <br>
+
+      <br>
+      <div class="flex flex-row items-center justify-start ml-4vw"> 
+        <div class="mr-1vw"> <i class="fa-solid fa-phone fa-2x"></i> </div> <h2 class="text-4xl"> {event.lang[translation].info.contact.phone}  {event.info.contact.phone}</h2> 
+      </div>
+      <br>
+    </div>
+  </div>
+  
+  <br>
+
+  <div class="flex items-center justify-evenly my-3">
+    <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw rounded-2xl">
+      
+      <div class="flex flex-row items-center justify-center">
+        <img src="../../../../public/announcments.png" class="w-5vw mt-4 ml-4">
+        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> {event.lang[translation].announcements.header} </h2>
+      </div>
+
+      <p class="text-justify text-3xl my-4 mx-8"> 
+        
+        {event.lang[translation].announcements.data}
+
+      </p>
+    </div>
+
+
+    <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw rounded-2xl">
+
+      <div class="flex flex-row items-center justify-center">
+        <img src="../../../../public/food.png" class="w-5vw mt-4 ml-4">
+        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> {event.lang[translation].food.header} </h2>
+      </div>
+
+      <p class="text-justify text-3xl my-4 mx-8"> 
+        
+        {event.lang[translation].food.data}
+      
+      </p>
+    </div>
+  </div>
+
+  <div class="flex justify-evenly items-start my-3">
+    <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw rounded-2xl">
+      
+      <div class="flex flex-row items-center justify-center">
+        <img src="../../../../public/staying.png" class="w-5vw mt-4 ml-4">
+        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> {event.lang[translation].stay.header} </h2>
+      </div>
+
+      <p class="text-justify text-3xl my-4 mx-8"> 
+        
+        {event.lang[translation].stay.data}
+      
+      </p>
+    </div>
+
+    
+    <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw h-fit rounded-2xl">
+
+      <div class="flex flex-row items-center justify-center">
+        <img src="../../../../public/transportation.png" class="w-5vw mt-4 ml-4">
+        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> {event.lang[translation].transit.header} </h2>
+      </div>
+
+      <p class="text-justify text-3xl my-4 mx-8"> 
+          
+        {event.lang[translation].transit.data}
+
+      </p>
+    </div>
+  </div>
+  <br>
+
+  <style>
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 5px;
+      bottom: 5px;
+      background-color: bisque;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+  </style>
+   
+</Layout>

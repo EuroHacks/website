@@ -1,0 +1,14 @@
+{
+    "thumb": "/test-photo.png",
+    "country": "/germany.png",
+    "lang": {
+        "origin": {
+            "fullname": "Leonard Stegle",
+            "description": "Hallo, ich bin Leonard, ein 16 Jahre alter Programmierer aus Süddeutschland."
+        },
+        "en": {
+            "fullname": "Test Person",
+            "description": "Hi, I'm Leonard, a 16 years old hacker from southern Germany."
+        }
+    }
+}
