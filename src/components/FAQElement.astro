@@ -1,0 +1,64 @@
+---
+let { question, answer } = Astro.props
+---
+
+<div class="question flex flex-row justify-between text-dark-gray font-semibold text-3xl rounded-xl py-3 px-5 m-2 w-85vw duration-700 border-none cursor-pointer text-center hover:bg-grayish-blue hover:w-85vw"> 
+    {question} 
+    <div class="arrow-icon">
+        <i class="fa-solid fa-caret-down fa-2xl"></i>
+    </div>
+</div>
+
+<div class="answer text-xl w-85vw max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out rounded-xl mb-4">
+    <p class="px-5 py-3 font-semibold text-center">
+        {answer}
+    </p>
+</div>
+
+<style>
+    .question {
+        background-color: rgb(240, 185, 100);
+    }
+    .question:hover {
+        background-color: rgb(255, 210, 125);
+    }
+    .active {
+        background-color: rgb(255, 200, 115);
+        width: 85vw;
+    }
+    .transition-max-height {
+        transition: max-height 0.5s ease-in-out;
+    }
+    .answer p {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        background-color: rgb(255, 191, 63);
+    }
+    .answer.show p {
+        opacity: 1;
+    }
+</style>
+
+<script>
+    var acc = document.getElementsByClassName("question");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+
+            var icon = this.querySelector(".arrow-icon i");
+            icon.classList.toggle("fa-caret-down");
+            icon.classList.toggle("fa-caret-up");
+
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                panel.classList.remove('show');
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                panel.classList.add('show');
+            }
+        });
+    }
+</script>
