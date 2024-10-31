@@ -1,8 +1,8 @@
 ---
 import FAQ from "../components/FAQElement.astro";
 import Layout from "../layout/default.astro";
-import Navbar from "../components/Navbar.astro";
-import Event from "../components/Event.astro"
+import Event from "../components/Event.astro";
+import Sponsors from "../components/Sponsor.astro";
 ---
 
 <Layout title="Home Page">
@@ -85,6 +85,17 @@ import Event from "../components/Event.astro"
 			answer=" Yes. It is a coding event, you have to get your devices (it could be a tablet or a laptop) so you can make your projects. We may be able to offer some laptop in 1 or 2 people but you have to get your own devices in the hackathon.  "
 		/>
 		<br />
+	</div>
+
+	<div class="overflow-hidden relative my-[10vh]">
+		<div class="carousel flex flex-row w-max">
+			<Sponsors 	image="../../public/test-photo.png"/>
+			<Sponsors	image="../../public/test-photo.png"/>
+			<Sponsors	image="../../public/test-photo.png"/>
+			<Sponsors	image="../../public/test-photo.png"/>
+			<Sponsors	image="../../public/test-photo.png"/>
+			<Sponsors	image="../../public/test-photo.png"/>
+		</div>
 	</div>
 
 	<style>
