@@ -1,58 +1,60 @@
 {
     "logo": "",
-    "organizers": ["test_person", "test_person", "test_person"],
+    "organizers": ["Odysseus_Kirikopoulos", "Nikos_Tsilas", "Marios_Mitsios"],
     "info": {
-        "location": "Not yet decided",
-        "dates": "20/08/2025 - 23/08/2025 (I just put a date)",
+        "location": "Δεν έχει ακόμα οριστεί, Ν. Θεσσαλονίκης",
+        "dates": "20/08/2025 - 23/08/2025",
         "participants": 0,
-        "zoom": "Not yet decided",
+        "zoom": "Δεν έχει ακόμα οριστεί",
         "contact": {
-            "email": "spain@eurohacks.org", 
-            "phone": "+00 00000000000 Fill this"
+            "email": "greece@eurohacks.org", 
+            "phone": "+30 6987391425"
         }
     },
     "lang": {
         "origin": {
-            "welcome": " Fill this ",
-            "organizers": " Fill this ",
-            "translation": "For changin the language from French to English press this button:",
+            "welcome": "Καλώς ήρθατε στην σελίδα του Ελληνικού Hackathon. Εδώ μπορείτε να βρείτε παραπάνω πληροφορίες για την διεξαγωγή του Ελληνικού Hackathon. ",
+            "organizers": "Οργανωτική επιτροπή διοργάνωσης",
+            "translation": "To change the language from to English press this button: ",
             "info": {
-                "header": " Fill this ",
-                "dates": " Fill this ",
-                "participants": " Fill this ",
-                "zoom": " Fill this ",
+                "header": "Πληροφορίες διοργάνωσης: ",
+                "dates": "Ημερομηνίες διεξαγωγής: ",
+                "location": "Τοποθεσία διεξαγωγής: ",
+                "participants": "Αριθμός Συμμετεχόντων: ",
+                "zoom": "Σύνδεσμος zoom: ",
                 "contact": {
-                    "email": " Fill this ", 
-                    "phone": " Fill this "
+                    "email": "E-mail επικοινωνίας: ", 
+                    "phone": "Τηλέφωνο επικοινωνίας: "
                 }
             },
             "announcements": {
-                "header": "Fill this",
-                "data": " Fill this "
+                "header": "Ανακοινώσεις",
+                "data": ""
             },
             "food": {
-                "header": " Fill this ",
-                "data": " Fill this "
+                "header": "Διατροφή συμμετεχόντων",
+                "data": "Η διατροφή των συμμετεχόντων θα καλύπτεται πλήρως από την διοργάνωση με 3 γεύματα (πρωινό, μεσημεριανό & βραδινό) για συμμετέχοντες των οποίων η μεταφορά μερικώς καλύπτεται και 2 γεύματα (πρωινό & μεσημεριανό) για τους συμμετέχοντες από κοντινές περιοχές. Ακόμα, κατά την διάρκεια όλου του 3ημέρου θα ειναι διαθέσιμα snacks."
             },
             "stay": {
-                "header": " Fill this ",
-                "data": " Fill this "
+                "header": "Διαμονή συμμετεχόντων",
+                "data": "Η διαμονή των συμμετεχόντων εντός των 50χλμ θα γίνεται στα σπίτια του και η μεταφορά τους από τον χώρο του hackathon θα γίνεται στις 20:00 με 21:00. Συμμετέχοντες  από άλλες πόλεις θα φιλοξενούνται σε κοντική εγκατάσταση με έξοδα της διοργάνωσης και η μεταφορά τους θα γίνεται με λεωφορείο της διοργάνωσης."
             },
             "transit": {
-                "header": " Fill this ",
-                "data": " Fill this "
+                "header": "Μεταφορά συμμετεχόντων",
+                "data": "Η μεταφορά των συμμετεχόντων θα γίνει με έξοδα των ιδίων. Η μεταφορά θα καλυπτεται στην περίπτωση όπου η μεταφορά είναι μεγαλύτερη από 50χλμ. Το μέγιστο καλυπτόμενο ποσό ορίζεται στα xx€ και η μεταφορά μπορεί να γίνει με λεωφορείο ή τρένο. Ακόμα θα πραγματοποιηθεί ομαδική μεταφορά συμμετεχόντων από τα Τρίκαλα."
             }
         },
 
 
             
         "en": {
-            "welcome": " Welcome to the French Hackathon page. Here you can find more information about the French Hackathon. ",
+            "welcome": "Welcome to the Greek Hackathon page. Here you can find more information about the Greek Hackathon. ",
             "organizers": "Organizing committee",
-            "translation": " Fill this ",
+            "translation": "Για να αλλάξετε την γλώσσα σε Ελληνικά, πατήστε το κουμπί: ",
             "info": {
                 "header": "Event Information: ",
                 "dates": "Event Dates: ",
+                "location": "Event Venue: ",
                 "participants": "Participants: ",
                 "zoom": "Zoom link: ",
                 "contact": {
@@ -62,19 +64,19 @@
             },
             "announcements": {
                 "header": "Announcements",
-                "data": " Fill this "
+                "data": ""
             },
             "food": {
                 "header": "Participant Nutrition",
-                "data": " Fill this "
+                "data": ""
             },
             "stay": {
                 "header": "Participant Stay",
-                "data": " Fill this "
+                "data": ""
             },
             "transit": {
                 "header": "Participant Transit",
-                "data": " Fill this "
+                "data": ""
             }
         }
     }
