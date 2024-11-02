@@ -3,6 +3,9 @@ import FAQ from "../components/FAQElement.astro";
 import Layout from "../layout/default.astro";
 import Event from "../components/Event.astro";
 import Sponsors from "../components/Sponsor.astro";
+import { getEntry } from "astro:content";
+
+const faq = (await getEntry("faq", "FAQ_list")).data
 ---
 
 <Layout title="Home Page">
@@ -37,12 +40,12 @@ import Sponsors from "../components/Sponsor.astro";
 
 		<div class="overflow-hidden relative my-[10vh]">
 			<div class="carousel flex flex-row w-max">
-				<Event city="Munich"        country="Germany"   image="../../public/Munich.jpg"/>
-				<Event city="Bydgoszcz"    	country="Poland"    image="../../public/Bydgoszcz.jpg"/>
-				<Event city="Madrid"        country="Spain"     image="../../public/Madrid.jpg"/>
-				<Event city="London"        country="UK"        image="../../public/London.jpg"/>
-				<Event city="Thessaloniki"  country="Greece"    image="../../public/Thessaloniki.jpg"/>
-				<Event city="Milan"         country="Italy"     image="../../public/Milan.jpg"/>
+				<Event city="Munich"        country="Germany"   image="../../public/Munich.jpg"			/>
+				<Event city="Bydgoszcz"    	country="Poland"    image="../../public/Bydgoszcz.jpg"		/>
+				<Event city="Madrid"        country="Spain"     image="../../public/Madrid.jpg"			/>
+				<Event city="London"        country="UK"        image="../../public/London.jpg"			/>
+				<Event city="Thessaloniki"  country="Greece"    image="../../public/Thessaloniki.jpg"	/>
+				<Event city="Milan"         country="Italy"     image="../../public/Milan.jpg"			/>
 			</div>
 		</div>
 
@@ -51,8 +54,9 @@ import Sponsors from "../components/Sponsor.astro";
 			FAQ (Frequently Asked Questions)
 		</h1>
 		<FAQ
-			question=" What is a hackathon? "
-			answer=" Hackathon is when many people interested in coding/robotics and generally computer science for 1 or more days in order to create amazing project but more importantly meet new people and learn new things. All of these combined with amazing venues, food, drinks and good attitude make up a wonderful experience and an unforgetable coding event."
+
+			question = {faq.questions[0].question}
+			answer= "Hackathon is when many people interested in coding/robotics and generally computer science for 1 or more days in order to create amazing project but more importantly meet new people and learn new things. All of these combined with amazing venues, food, drinks and good attitude make up a wonderful experience and an unforgetable coding event."
 		/>
 
 		<FAQ
@@ -112,7 +116,8 @@ import Sponsors from "../components/Sponsor.astro";
 				transform: translateX(-50%);
 			}
 		}
-		</style>
+
+	</style>
 		
 		
 		<script>
@@ -124,5 +129,6 @@ import Sponsors from "../components/Sponsor.astro";
 			const clone = img.cloneNode(true);
 			carousel.appendChild(clone);
 		});
-		</script>
+
+	</script>
 </Layout>
