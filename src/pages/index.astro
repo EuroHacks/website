@@ -53,43 +53,48 @@ const faq = (await getEntry("faq", "FAQ_list")).data
 		<h1 class="text-left w-85vw text-light-apricot text-5xl mb-4">
 			FAQ (Frequently Asked Questions)
 		</h1>
-		<FAQ
 
-			question = {faq.questions[0].question}
-			answer= "Hackathon is when many people interested in coding/robotics and generally computer science for 1 or more days in order to create amazing project but more importantly meet new people and learn new things. All of these combined with amazing venues, food, drinks and good attitude make up a wonderful experience and an unforgetable coding event."
+		<FAQ
+			question = 	{faq.questions[0].question}
+			answer = 	{faq.questions[0].answer}
 		/>
 
 		<FAQ
-			question=" Is there any age limit? "
-			answer=" Τhis is an event for teenagers. Technically the ages accepted are 0-18 but preferably this is an event for people from 13 to 18 years old."
+			question = 	{faq.questions[1].question}
+			answer = 	{faq.questions[1].answer}
 		/>
 
 		<FAQ
-			question=" Do I have to speak English? "
-			answer=" No, you don’t have to speak English or any other languages except your native one but it would be really helpful for navigating yourself in the website and also communicate with other people from all over Europe during the hackathon. (It is an optional activity but deferentially a wonderful experience). "
+			question = 	{faq.questions[2].question}
+			answer = 	{faq.questions[2].answer}
 		/>
 
 		<FAQ
-			question=" How can I contact you if I have any question for the events? "
-			answer=" Don’t hesitate to send us an email with all your question. We will answer them as soon as possible (probably under 24h). You can either send an email in questions@eurohacks.org or in yours country email which is <country>@eurohacks.org. If we don’t answer after 3 days you can contact hackathon’s phone number (but please don’t use it for no important reason). "
+			question = 	{faq.questions[3].question}
+			answer = 	{faq.questions[3].answer}
 		/>
 
 		<FAQ
-			question=" Do I have to pay in order to participate in the hackathon? "
-			answer=" Technically yes but probably no. It depends on where you live. If you live less than 50km from the venue you will have to come in the venue each day with your ouw expenses. If you live away from the venue and you came with a bus from an other city, your expenses for coming in the host city will be partially covered so you may have to pay some amount of money for your tickets. "
+			question = 	{faq.questions[4].question}
+			answer = 	{faq.questions[4].answer}
 		/>
 
 		<FAQ
-			question=" Can I participate in the event if I am not near the venue (or not even the host city)?"
-			answer=" Whatever you want if it is about computer science. It could be something with Arduino, raspberry pi, or (something that you don’t have to get your own hardware) coding. This could be website developing, app developing, code an Arduino or making code which do something cool and something that YOU are proud of."
+			question = 	{faq.questions[5].question}
+			answer = 	{faq.questions[5].answer}
 		/>
 
 		<FAQ
-			question=" Do I have to get a laptop with me? "
-			answer=" Yes. It is a coding event, you have to get your devices (it could be a tablet or a laptop) so you can make your projects. We may be able to offer some laptop in 1 or 2 people but you have to get your own devices in the hackathon.  "
-		/>
+			question = 	{faq.questions[6].question}
+			answer = 	{faq.questions[6].answer}
+		/>	
+
 		<br />
 	</div>
+
+	<h1 class="text-center w-[100vw] text-light-apricot text-8xl font-bold mb-4 flex justify-center my-[4vh]">
+		Our Sponsors
+	</h1>
 
 	<div class="overflow-hidden relative my-[10vh]">
 		<div class="carousel flex flex-row w-max">
