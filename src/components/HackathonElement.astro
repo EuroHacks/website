@@ -1,34 +1,45 @@
 ---
-let { city, discordlink, telephone, country, countrytitle, image, rsvp_page, info_page} = Astro.props
+let { city, discordlink, telephone, country, countrytitle, image, rsvp_page, info_page, background} = Astro.props
 ---
 
 <div class="hackathon-card font-bold bg-marine-sapphire w-90vw my-4vw mx-5vw rounded-2xl justify-center">
-    <div class="flex flex-row justify-between">
 
-        <div class="flex flex-col">
-            <div class="flex flex-row m-3 text-soft-peach">
-                <img src={image} width="90px" height="64px">
-                <div class="text-5xl my-5 ml-4"> {countrytitle} </div>
+    <div class="flex flex-col">
+
+        <div class="flex flex-row w-90vw justify-around items-center">
+
+            <div class="flex flex-row items-center justify-between m-3 text-soft-peach">
+                <img src={image} class= "w-[6vw] h-[6vw]">
+                <div class="text-7xl my-5 ml-4"> {countrytitle} </div>
             </div>
-            <div class="text-3xl my-3 ml-4 text-soft-peach">
-                <br> <i class="fa-solid fa-envelope mr-2 my-3"></i> Mail: {country}@eurohacks.org
-                <br> <i class="fa-solid fa-phone mr-2 my-3"></i> Telephone: {telephone}
-                <br> <i class="fa-brands fa-discord mr-1 my-3"></i> Discord/Slack: {discordlink}
+
+            <div class="flex flex-row m-3 text-soft-peach"> 
+                <h1 class="flex flex-row text-5xl"> <i class="fa-solid fa-location-dot mr-3"> </i> {city} </h1>
             </div>
+
         </div>
 
-        <div class="flex flex-col justify-center items-center">
-            <h1 class="text-soft-peach flex text-4xl justify-end mr-10%"> <i class="fa-solid fa-location-dot mr-3"> </i> {city} </h1>
-            <div class="flex justify-end items-end text-5xl mx-2 -mb-4">
+        <div class="flex flex-row justify-around items-center w-[90vw]">
 
-                <a href={info_page}> 
-                    <button class="h-160px w-360px text-4.5xl mx-3 mt-60px -mb-20px bg-frosted-blue rounded-xl hover:bg-frosted-sky"> 
+            <div class="text-3xl my-3 ml-4 text-soft-peach">
+
+                <br> <i class="fa-solid fa-envelope mr-2 my-3"> </i> Mail: {country}@eurohacks.org
+                <br> <i class="fa-solid fa-phone mr-2 my-3">    </i> Telephone: {telephone}
+                <br> <i class="fa-brands fa-discord mr-2 my-3"> </i> Discord/Slack: {discordlink}
+            </div>
+
+            <div class="flex flex-row justify-between text-5xl">
+
+                <a href={info_page}>
+
+                    <button class="h-160px w-360px text-4.5xl mx-3 bg-blanched-almond rounded-xl hover:bg-golden-sand"> 
                         <div class="button-icons flex flex-col items-start ml-1 -mb-4"> <i class="fa-solid fa-circle-info" id="button-icons"> </i> </div> More information 
                     </button> 
+
                 </a>
                 
                 <a href={rsvp_page}> 
-                    <button class="h-160px w-360px text-4.5xl mx-3 mt-60px -mb-20px bg-frosted-blue rounded-xl hover:bg-icy-mist"> 
+                    <button class="h-160px w-360px text-4.5xl mx-3 bg-blanched-almond rounded-xl hover:bg-golden-sand"> 
                         <div class="button-icons flex flex-col items-start ml-1 -mb-4"> <i class="fa-solid fa-user"> </i> </div> Participate 
                     </button> 
                 </a>
@@ -39,18 +50,19 @@ let { city, discordlink, telephone, country, countrytitle, image, rsvp_page, inf
 </div>
 
 
-<style>
+<style define:vars={{ image: `url("${background}")` }}>
     .hackathon-card {
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-
         background: 
             linear-gradient(to right, #fcc764 38%, rgba(0, 0, 0, 0.1) 100%),
-            url("../../../public/Munich.jpg") no-repeat center center;
-        background-size: 90% 100%, cover;
+            var(--image);
+        background-size: 100% 100%, cover;
         background-repeat: no-repeat;
+        background-position-y: end;
+
     }
     .button-icons {
         transform: translateY(-80%);
