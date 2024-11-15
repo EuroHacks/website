@@ -2,7 +2,7 @@
 let { city, discordlink, telephone, country, countrytitle, image, rsvp_page, info_page, background} = Astro.props
 ---
 
-<div class="hackathon-card font-bold bg-marine-sapphire w-90vw my-4vw mx-5vw rounded-2xl justify-center">
+<div class="hackathon-card font-bold bg-marine-sapphire w-90vw max-h-[21vw] my-4vw mx-5vw rounded-2xl justify-center">
 
     <div class="flex flex-col">
 
@@ -60,9 +60,9 @@ let { city, discordlink, telephone, country, countrytitle, image, rsvp_page, inf
             linear-gradient(to right, #fcc764 38%, rgba(0, 0, 0, 0.1) 100%),
             var(--image);
         background-size: 100% 100%, cover;
+        background-position: center bottom;
         background-repeat: no-repeat;
-        background-position-y: end;
-
+        resize: horizontal;
     }
     .button-icons {
         transform: translateY(-80%);

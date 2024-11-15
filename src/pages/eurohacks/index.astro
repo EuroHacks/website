@@ -4,12 +4,25 @@ import OrganizerCard from "../../components/OrganizerElement.astro"
 ---
 
 <Layout title="EuroHack">
-    
-    <div class="w-100vw flex justify-center">
-        <br><br>
-        <p class="text-[140px] my-6 font-semibold text-[#ECBA82]"> Coming soon </p>
-        <br><br>
-    </div>
+
+        <style>
+            .container {
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: #333;
+                width: 80%; /* Adjust this or set to a specific value */
+                height: 300px;
+                background: url('../../../public/Thessaloniki.jpg') no-repeat right center / cover;
+
+            }
+        </style>
+        
+    <body>
+        <div class="container"></div>
+    </body>
 
 </Layout>
 
