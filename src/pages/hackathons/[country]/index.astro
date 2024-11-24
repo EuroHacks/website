@@ -7,7 +7,6 @@ export const prerender = true;
 
 export function getStaticPaths() {
   return [
-    {params: {country: 'france'}},
     {params: {country: 'germany'}},
     {params: {country: 'greece'}},
     {params: {country: 'italy'}},
@@ -44,15 +43,16 @@ if (translation != "en") translation = "origin";
       </div>
     </div>
 
-    <div class="flex justify-center my-3">
-      <div class="flex flex-col justify-center items-center mt-12 bg-frosted-blue w-80vw rounded-2xl">
+    <div class="flex justify-evenly my-3">
+      <div class="flex flex-col justify-evenly items-center mt-12 bg-frosted-blue w-80vw rounded-2xl">
 
           <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
               <img src="../../../head_organizing_team.png" width="80px" class="mr-6 mt-2">
               <h1 class="text-4.5xl font-bold"> {event.lang[translation].organizers}  </h1>
           </div>
 
-          <div class="flex flex-row justify-evenly mt-3">
+          <div class="flex flex-row w-80vw justify-evenly items-start mt-3">
+
             {eventOrganizers.map(
               organizer => <OrganizerCard
               name={organizer.lang[translation].fullname}
@@ -60,9 +60,10 @@ if (translation != "en") translation = "origin";
               country_image={organizer.country}
               image={organizer.thumb}
             />)}
-          </div>
 
+          </div>
           <br>
+          
       </div>
   </div>
 
