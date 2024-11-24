@@ -27,8 +27,11 @@ let translation = Astro.url.searchParams.get("lang");
 if (translation != "en") translation = "origin";
 ---
 
-<Layout title={`Hackathon # ${country}`}>
-    <br>
+<Layout title={`Hackathon ${country}`}>
+
+
+    <button id="button1"> <a href="?lang=en"> Button 1 </a></button>
+    <button id="button2"> <a href="?lang=origin"> Button 1 </a></button>
 
     <div class="flex justify-center text-golden-sand">
       <div class="flex flex-row w-80vw">

@@ -1,39 +1,11 @@
 ---
 import Layout from "../../layout/default.astro"
 import data from '../../content/events/greece.json';
-    import LanguageSwitcher from '../../components';
-    
-    let currentLanguage = "origin"; // Default language
-    const langData = data.lang[currentLanguage];
 ---
 
 <Layout title="EuroHack">
+
     
-    <html lang={currentLanguage}>
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Greek Hackathon</title>
-      </head>
-      <body>
-        <h1>{langData.welcome}</h1>
-        <p>{langData.translation}</p>
-        <h2>{langData.organizers}</h2>
-        <ul>
-          {data.organizers.map(org => <li>{org}</li>)}
-        </ul>
-    
-        <section>
-          <h2>{langData.info.header}</h2>
-          <p>{langData.info.dates} {data.info.dates}</p>
-          <p>{langData.info.location} {data.info.location}</p>
-          <p>{langData.info.participants} {data.info.participants}</p>
-          <p>{langData.info.zoom} {data.info.zoom}</p>
-          <p>{langData.info.contact.email} {data.info.contact.email}</p>
-          <p>{langData.info.contact.phone} {data.info.contact.phone}</p>
-        </section>
-    
-        <LanguageSwitcher />
 
 </Layout>
 

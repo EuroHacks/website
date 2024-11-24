@@ -1,13 +1,13 @@
 {
     "thumb": "/test-photo.png",
-    "country": "/[country].png",
+    "country": "/greece.png",
     "lang": {
         "origin": {
-            "fullname": "Marios Mitsios",
+            "fullname": "Μάριος Μίτσιος",
             "description": ""
         },
         "en": {
-            "fullname": "Test Person",
+            "fullname": "Marios Mitsios",
             "description": "Blah blah"
         }
     }
