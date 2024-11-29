@@ -1,0 +1,12 @@
+---
+let { title, text, alt } = Astro.props
+---
+
+<div class="about-card hover:-translate-y-3 bg-[#fff] rounded-xl overflow-hidden min-w-72 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] flex-[1_1_calc(33.33%_-_20px)] transition-transform duration-[0.3s] ease-[ease-in-out]" id="open-window">
+
+    <img src="https://via.placeholder.com/400x200" alt= {alt} >
+    <div class="card-content">
+        <h3> {title} </h3>
+        <p> {text} </p>
+    </div>
+</div>
