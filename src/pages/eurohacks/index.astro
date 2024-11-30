@@ -5,125 +5,145 @@ import AboutUsCard from "../../components/About_Us_Card.astro";
 
 <Layout title="Eurohacks">
 
-    <div class="hidden fixed top-0 left-0 w-[100%] h-[100%] bg-opacity-30 bg-black justify-center items-center z-50" id="info-modal">
+    <div class="hidden fixed top-0 left-0 w-[100%] h-[100%] bg-opacity-30 bg-black justify-center items-center z-50" id="info-modal1">
         <div class="bg-orange-300 p-5 w-[90%] max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
 
-            <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal"> &times; </button>
-            <h2 class="text-[28px] mb-3"> Our Vision </h2>
-            <p class="text-base text-[#555] mb-5"> 
-                Creativity is a universal trait, and coding serves as a powerful medium for its expression. Through EuroHacks, we aim 
-                to unite individuals in the pursuit of developing remarkable projects that showcase their innovative potential. It is 
-                through the ingenuity and creative efforts of young minds that transformative change can be brought about in the world.
+            <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal1"> &times; </button>
+            <h2 class="text-[28px] mb-3"> Why do we want to organize EuroHacks? </h2>
+            <p class="text-lg text-[#555] mb-5"> 
+
+                <br> Hack Club is an esteemed organization that brings together high school students from across the globe who share a 
+                deep passion for creation and innovation. Within Hack Club, a diverse group of individuals - ranging from organizers, 
+                coders, and hackers to painters, engineers, musicians, writers, and volunteers - unite to foster a dynamic community. 
+                This collaborative spirit is exemplified not only through the Hack Club Slack, where members engage and connect but 
+                also through hackathons.
+
+                <br><br> Hackathons serve as an exceptional platform to gather individuals with a common enthusiasm for coding and 
+                creativity. They offer a unique space for collaboration, learning, and technological innovation while strengthening 
+                bonds within the Hack Club community.
+
+                <br><br> However, despite Hack Club’s global presence, no hackathons are currently being held in Europe, as Hack 
+                Club’s activities are primarily based in the United States. We, the organizers of EuroHacks, believe it is time to 
+                address this gap. With this in mind, we are planning a hybrid, decentralized satellite hackathon across multiple 
+                cities in Europe, scheduled for August 2025.
+            
             </p>
 
         </div>
     </div>
 
-    <script>
-        const openWidnow = document.getElementById('open-window');
-        const closeModal = document.getElementById('close-modal');
-        const modal = document.getElementById('info-modal');
+    <div class="hidden fixed top-0 left-0 w-[100%] h-[100%] bg-opacity-30 bg-black justify-center items-center z-50" id="info-modal2">
+        <div class="bg-orange-300 p-5 w-[90%] max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
 
-        openWidnow.addEventListener('click', () => {
-            modal.style.display = 'flex';
-        });
+            <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal2"> <i class="fa-solid fa-xmark fa-xl"></i> </button>
+            <h2 class="text-[28px] mb-3"> Our vision for EuroHacks </h2>
+            <p class="text-lg text-[#555] mb-5"> 
 
-        closeModal.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
+                <br>Creativity is a universal trait, and coding serves as a powerful medium for its expression. Through EuroHacks, we aim
+                to unite individuals in the pursuit of developing remarkable projects that showcase their innovative potential. It is
+                through the ingenuity and creative efforts of young minds that transformative change can be broughtabout in the world.
 
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
-    </script>
-
-
-    <style>
-        .about-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .about-card .card-content {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .about-card .card-content h3 {
-            font-size: 1.5rem;
-            color: #222;
-            margin-bottom: 10px;
-        }
-
-        .about-card .card-content p {
-            font-size: 0.95rem;
-            color: #555;
-        }
-
-        .about-card img, .about-header, .cta {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.6s ease;
-        }
-
-        .about-card img.visible, .about-header.visible, .cta.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .about-content {
-                flex-direction: column;
-            }
-
-            .about-card {
-                flex: 1 1 100%;
-            }
-        }
-    </style>
-
-
-    <div class="flex justify-center my-[5vh]">
-        <div class="flex flex-wrap justify-between gap-[1.5vw] max-w-[92%]">
-
-            <div class="about-card hover:-translate-y-3 bg-[#fff] rounded-xl overflow-hidden min-w-72 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] flex-[1_1_calc(33.33%_-_20px)] transition-transform duration-[0.3s] ease-[ease-in-out]" id="open-window">
-
-                <img src="https://via.placeholder.com/400x200" alt="Our Mission">
-                <div class="card-content">
-                    <h3>Our Mission</h3>
-                    <p>To create unforgettable experiences that bring people together through events and celebrations.</p>
-                </div>
-
-            </div>
-
-
-            <div class="about-card hover:-translate-y-3 bg-[#fff] rounded-xl overflow-hidden min-w-72 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] flex-[1_1_calc(33.33%_-_20px)] transition-transform duration-[0.3s] ease-[ease-in-out]">
-                <img src="https://via.placeholder.com/400x200" alt="Our Values">
-                <div class="card-content">
-                    <h3>Our Values</h3>
-                    <p>Commitment to excellence, community engagement, and fostering creativity in every event we design.</p>
-                </div>
-            </div>
-
-
-            <div class="about-card hover:-translate-y-3 bg-[#fff] rounded-xl overflow-hidden min-w-72 relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] flex-[1_1_calc(33.33%_-_20px)] transition-transform duration-[0.3s] ease-[ease-in-out]">
-                <img src="https://via.placeholder.com/400x200" alt="Our Team">
-                <div class="card-content">
-                    <h3>Our Team</h3>
-                    <p>A passionate group of event planners, designers, and innovators dedicated to making your events magical.</p>
-                </div>
-            </div>
+                <br><br>To foster greater inclusivity and accessibility, we are organizing EuroHacks as a series of decentralized 
+                hackathons across Europe, allowing participants to engage without the need to travel beyond their respective 
+                countries. Furthermore, the hybrid nature of the event enables individuals to join remotely from the comfort of 
+                their homes, providing a unique opportunity to witness the creation of exceptional projects across the continent.
+            </p>
 
         </div>
     </div>
 
+    <div class="hidden fixed top-0 left-0 w-[100%] h-[100%] bg-opacity-30 bg-black justify-center items-center z-50" id="info-modal3">
+        <div class="bg-orange-300 p-5 w-[90%] max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
+
+            <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal3"> &times; </button>
+            <h2 class="text-[28px] mb-3"> Our awesome orgnanizing team </h2>
+            <p class="text-base text-[#555] mb-5"> 
+                I am still thinking what are we gonna add here. We will probably have to talk about this during the meeting.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="flex justify-center my-[5vh]">
+        <div class="flex flex-row justify-between items-start gap-[1.5vw] max-w-[95vw]">
+
+            <div id="open-window1">
+                <AboutUsCard 
+                title="Why do we want to organize EuroHacks?" 
+                text="Bridging Hack Club's global community with Europe through a hybrid decentralized hackathon in August 2025." 
+                image="https://via.placeholder.com/400x200" />
+            </div>
+
+            <div id="open-window2">
+                <AboutUsCard 
+                title="Our Vision" 
+                text="Connecting European innovators to showcase creativity and build transformative projects across borders." 
+                image="https://via.placeholder.com/400x200" />
+            </div>
+
+            <div id="open-window3">
+                <AboutUsCard 
+                title="Our Team" 
+                text=" We have to think of a description as soon as we get the new text out." 
+                image="https://via.placeholder.com/400x200" />
+            </div>
+            
+        </div>
+    </div>
+
     <script>
+        const openWidnow1 = document.getElementById('open-window1');
+        const openWidnow2 = document.getElementById('open-window2');
+        const openWidnow3 = document.getElementById('open-window3');
+
+        const closeModal1 = document.getElementById('close-modal1');
+        const closeModal2 = document.getElementById('close-modal2');
+        const closeModal3 = document.getElementById('close-modal3');
+
+        const modal1 = document.getElementById('info-modal1');
+        const modal2 = document.getElementById('info-modal2');
+        const modal3 = document.getElementById('info-modal3');
+
+
+        openWidnow1.addEventListener('click', () => {
+            modal1.style.display = 'flex';
+        });
+        openWidnow2.addEventListener('click', () => {
+            modal2.style.display = 'flex';
+        });
+        openWidnow3.addEventListener('click', () => {
+            modal3.style.display = 'flex';
+        });
+
+
+        closeModal1.addEventListener('click', () => {
+            modal1.style.display = 'none';
+        });
+        closeModal2.addEventListener('click', () => {
+            modal2.style.display = 'none';
+        });
+        closeModal3.addEventListener('click', () => {
+            modal3.style.display = 'none';
+        });
+
+
+        modal1.addEventListener('click', (e) => {
+            if (e.target === modal1) {
+                modal1.style.display = 'none';
+            }
+        });
+        modal2.addEventListener('click', (e) => {
+            if (e.target === modal2) {
+                modal2.style.display = 'none';
+            }
+        });
+        modal3.addEventListener('click', (e) => {
+            if (e.target === modal3) {
+                modal3.style.display = 'none';
+            }
+        });
         
-        const elements = document.querySelectorAll('.about-card img, .about-header, .cta');
+        const elements = document.querySelectorAll('.about-card img');
 
         function handleScroll() {
             elements.forEach((el) => {
@@ -135,7 +155,24 @@ import AboutUsCard from "../../components/About_Us_Card.astro";
         }
 
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Initial check on page load
+        handleScroll();
     </script>
+
+    <style>
+        
+        .about-card img.visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+            .about-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
 
 </Layout>
