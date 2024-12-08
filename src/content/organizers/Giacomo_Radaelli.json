@@ -1,0 +1,14 @@
+{
+    "thumb": "/test-photo.png",
+    "country": "/italy.png",
+    "lang": {
+        "origin": {
+            "fullname": "Giacomo Radaelli",
+            "description": " "
+        },
+        "en": {
+            "fullname": "Giacomo Radaelli",
+            "description": " "
+        }
+    }
+}

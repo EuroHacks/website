@@ -1,0 +1,14 @@
+{
+    "thumb": "/test-photo.png",
+    "country": "/uk.png",
+    "lang": {
+        "origin": {
+            "fullname": "Thomas Price",
+            "description": " "
+        },
+        "en": {
+            "fullname": "Thomas Price",
+            "description": " "
+        }
+    }
+}

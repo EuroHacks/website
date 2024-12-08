@@ -1,0 +1,14 @@
+{
+    "thumb": "/test-photo.png",
+    "country": "/italy.png",
+    "lang": {
+        "origin": {
+            "fullname": "Massimiliano Bruchi",
+            "description": " "
+        },
+        "en": {
+            "fullname": "Massimiliano Bruchi",
+            "description": " "
+        }
+    }
+}

@@ -2,7 +2,7 @@
 let { city, discordlink, telephone, country, countrytitle, image, rsvp_page, info_page, background} = Astro.props
 ---
 
-<div class="hackathon-card font-bold bg-marine-sapphire w-90vw max-h-[21vw] my-4vw mx-5vw rounded-2xl justify-center">
+<div class="hackathon-card font-bold bg-marine-sapphire w-[90vw] max-h-[21vw] my-4vw mx-5vw rounded-2xl justify-center">
 
     <div class="flex flex-col justify-evenly">
 
@@ -23,24 +23,25 @@ let { city, discordlink, telephone, country, countrytitle, image, rsvp_page, inf
 
             <div class="text-3xl my-3 ml-4 text-soft-peach">
 
-                <br> <i class="fa-solid fa-envelope mr-2 my-3"> </i> Mail: {country}@eurohacks.org
-                <br> <i class="fa-solid fa-phone mr-2 my-3">    </i> Telephone: {telephone}
-                <br> <i class="fa-brands fa-discord mr-2 my-3"> </i> Discord/Slack: {discordlink}
+                <div> <i class="fa-solid fa-envelope mr-2 my-3"> </i> Mail: {country}@eurohacks.org </div>
+                <div> <i class="fa-solid fa-phone mr-2 my-3">    </i> Telephone: {telephone}        </div>
+                <div> <i class="fa-brands fa-discord mr-2 my-3"> </i> Discord/Slack: {discordlink}  </div>
+
             </div>
 
             <div class="flex flex-row justify-between text-5xl">
 
                 <a href={info_page}>
 
-                    <button class="h-160px w-360px text-4.5xl mx-3 bg-blanched-almond rounded-xl hover:bg-golden-sand"> 
-                        <div class="button-icons flex flex-col items-start ml-1 -mb-4"> <i class="fa-solid fa-circle-info" id="button-icons"> </i> </div> More information 
+                    <button class="h-[10vw] w-[24vw] text-4.5xl mx-3 bg-blanched-almond rounded-xl hover:bg-golden-sand"> 
+                        <div class="button-icons flex flex-col items-start ml-[2%] mt-[4%]"> <i class="fa-solid fa-circle-info" id="button-icons"> </i> </div> More information 
                     </button> 
 
                 </a>
                 
                 <a href={rsvp_page}> 
-                    <button class="h-160px w-360px text-4.5xl mx-3 bg-blanched-almond rounded-xl hover:bg-golden-sand"> 
-                        <div class="button-icons flex flex-col items-start ml-1 -mb-4"> <i class="fa-solid fa-user"> </i> </div> Participate 
+                    <button class="h-[10vw] w-[24vw] text-4.5xl mx-3 bg-blanched-almond rounded-xl hover:bg-golden-sand"> 
+                        <div class="button-icons flex flex-col items-start ml-[2%] mt-[4%]"> <i class="fa-solid fa-user"> </i> </div> Participate 
                     </button> 
                 </a>
 
@@ -51,6 +52,9 @@ let { city, discordlink, telephone, country, countrytitle, image, rsvp_page, inf
 
 
 <style define:vars={{ image: `url("${background}")` }}>
+    *:not(i){
+        font-family: "Keania One";
+    }
     .hackathon-card {
         display: flex;
         align-items: center;
