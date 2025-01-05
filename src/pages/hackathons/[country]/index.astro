@@ -17,8 +17,10 @@ export function getStaticPaths() {
 }
  
 const { country } = Astro.params;
+console.log(`COUNTRY: ${country}`)
 
 const event = (await getEntry('events', country)).data
+console.log(event.organizers)
 const eventOrganizers = await Promise.all(event.organizers.map(
   async (organizer: string) => (await getEntry('organizers', organizer)).data)
 )
