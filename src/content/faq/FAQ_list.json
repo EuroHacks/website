@@ -18,7 +18,7 @@
         },
         {
             "question": "Do I have to pay to participate in the hackathon?",
-            "answer":   "Technically yes, but it depends on your location. If you live within 50km of the venue, you’ll need to cover your daily travel expenses to and from the venue. However, if you’re coming from a city further than 50km away, some of your travel expenses to the host city may be reimbursed. This means you may still need to pay some of the cost of your travel tickets." 
+            "answer":   "No, you don't. You just have to cover the travel stipends but even that depends on your location. If you live within 50km of the venue, you’ll need to cover your daily travel expenses to and from the venue. However, if you’re coming from a city further than 50km away, some of your travel expenses to the host city may be reimbursed. This means you may still need to pay some of the cost of your travel tickets." 
         },
         {
             "question": "Can I participate in the event if I am not near the venue (or not even the host city)?",
@@ -26,7 +26,7 @@
         },
         {
             "question": "Do I have to get a laptop with me?",
-            "answer":   "Yes. It is a coding event, you have to get your devices (it could be a tablet or a laptop) so you can make your projects. We may be able to offer 1 or 2 laptops but you have to get your own devices in the hackathon." 
+            "answer":   "Yes. It is a coding event, you have to get your devices (it could be a tablet or a laptop) so you can make your projects. We may be able to offer some laptops to 1 or 2 people but you have to get your own devices in the hackathon." 
         }
     ]
 }
