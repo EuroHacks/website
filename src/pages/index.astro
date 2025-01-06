@@ -14,8 +14,10 @@ const faq = (await getEntry("faq", "FAQ_list")).data
 		<div class="flex flex-col items-center justify-between w-85vw sm:flex-row">
 			<div
 				class="flex flex-col justify-center items-center mt-10 bg-light-apricot w-[80vw] rounded-2xl sm:w-[40vw]"
-			>
-				<p class="text-justify text-[1.7vw] my-[2vw] mx-[4vw] text-blanched-almond">
+			>	
+				<h1 class="text-[3.5vw] font-extrabold text-blanched-almond"> This is Eurohacks </h1>
+
+				<p class="text-justify text-[1.7vw] my-[0vw] mx-[3vw] text-blanched-almond">
 					EuroHacks is a Europe-wide hackathon, with multiple events all 
 					happening at the same time. Everyone will have the opportunity 
 					to create their own projects, meet other people from all over 
@@ -24,7 +26,7 @@ const faq = (await getEntry("faq", "FAQ_list")).data
 				</p>
 
 				<a href="http://eurohacks.org/eurohacks" class="rounded-lg w-100% h-100%">
-					<div class="question flex flex-row justify-center bg-[#FFE6A7] text-dark-gray font-semibold text-[2vw] rounded-[1.5vw] py-[1.5vw] my-[2vw] w-fit duration-700 border-none cursor-default text-center hover:bg-golden-sand"> 
+					<div class="question flex flex-row justify-center bg-[#FFE6A7] text-dark-gray font-semibold text-[2vw] rounded-[1.5vw] py-[1.5vw] my-[2vw] mx-[1.5vw] px-[1.5vw] w-fit duration-700 border-none cursor-default text-center hover:bg-golden-sand"> 
 						<div> Learn more: Read our vision </div>
 					</div>
 				</a>
@@ -32,26 +34,42 @@ const faq = (await getEntry("faq", "FAQ_list")).data
 			</div>
 		
 			
-			<div class="flex flex-col justify-center mt-12 w-38vw rounded-2xl">
+			<div class="flex flex-col justify-center items-center mt-12 w-[40vw] rounded-2xl">
 		
 				<img src="../../hackathon.png" class="object-contain w-[50vw] rounded-xl">
+
+				<div class="text-black text-2xl max-w-[90%] w-full flex flex-col items-center justify-center">
+
+					<div class="w-[100%] flex flex-row justify-between items-center text-[1.5vw] my-[1vw]">
+						<div> <i class="fa-solid fa-calendar-days"></i> 12.07.2025 - 13.07.2025 </div>
+						<div> <i class="fa-solid fa-clock"></i> 24 hours of hacking </div>
+					</div>
+
+					<div> <i class="fa-solid fa-location-dot"></i> 6 events all over Europe </div>
+
+				</div>
 			</div>
 		</div>
+	</div>
+	<div class="flex flex-col items-center">
+		<h1 class="text-light-apricot text-[3.2vw] text-left w-85vw mt-[8vw]">
+			Join us in...
+		</h1>
 	</div>
 
 		<div class="overflow-hidden relative my-[10vh]">
 			<div class="carousel flex flex-row w-max">
-				<Event city="Munich"        country="Germany"   image="../../Munich.jpg"			/>
-				<Event city="Bydgoszcz"    	country="Poland"    image="../../Bydgoszcz.jpg"		/>
-				<Event city="Madrid"        country="Spain"     image="../../Madrid.jpg"			/>
-				<Event city="London"        country="UK"        image="../../London.jpg"			/>
-				<Event city="Thessaloniki"  country="Greece"    image="../../Thessaloniki.jpg"	/>
-				<Event city="Milan"         country="Italy"     image="../../Milan.jpg"			/>
+				<Event city="Munich"        country="Germany"   image="../../Munich.jpg"/>
+				<Event city="Bydgoszcz"    	country="Poland"    image="../../Bydgoszcz.jpg"/>
+				<Event city="Madrid"        country="Spain"     image="../../Madrid.jpg"/>
+				<Event city="London"        country="UK"        image="../../London.jpg"/>
+				<Event city="Thessaloniki"  country="Greece"    image="../../Thessaloniki.jpg"/>
+				<Event city="Milan"         country="Italy"     image="../../Milan.jpg"/>
 			</div>
 		</div>
 
 	<div class="pt-6 flex flex-col items-center">
-		<h1 class="text-left w-85vw text-light-apricot text-5xl mb-4">
+		<h1 class="text-left w-85vw text-light-apricot text-[3.2vw] mb-4">
 			FAQ (Frequently Asked Questions)
 		</h1>
 
