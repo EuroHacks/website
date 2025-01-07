@@ -34,25 +34,27 @@ const faq = (await getEntry("faq", "FAQ_list")).data
 			</div>
 		
 			
-			<div class="flex flex-col justify-center items-center mt-12 w-[40vw] rounded-2xl">
+			<div class="w-[80vw] flex flex-row justify-evenly items-center mt-12 rounded-2xl sm:flex-col sm:w-[40vw]">
 		
 				<img src="../../hackathon.png" class="object-contain w-[50vw] rounded-xl">
 
 				<div class="text-black text-2xl max-w-[90%] w-full flex flex-col items-center justify-center">
 
-					<div class="w-[100%] flex flex-row justify-between items-center text-[1.5vw] my-[1vw]">
+					<div class="w-[100%] flex flex-col justify-between items-center text-[1.5vw] my-[1vw] sm:flex-row">
 						<div> <i class="fa-solid fa-calendar-days"></i> 12.07.2025 - 13.07.2025 </div>
 						<div> <i class="fa-solid fa-clock"></i> 24 hours of hacking </div>
 					</div>
 
-					<div> <i class="fa-solid fa-location-dot"></i> 6 events all over Europe </div>
+					<div class="text-[1.5vw]"> 
+						<i class="fa-solid fa-location-dot"></i> 6 events all over Europe 
+					</div>
 
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="flex flex-col items-center">
-		<h1 class="text-light-apricot text-[3.2vw] text-left w-85vw mt-[8vw]">
+	<div class="flex flex-col items-center -mb-[8vw] sm:-mb-[4vw]">
+		<h1 class="text-light-apricot text-[3.2vw] text-left w-85vw mt-[6vw]">
 			Join us in...
 		</h1>
 	</div>
@@ -68,7 +70,7 @@ const faq = (await getEntry("faq", "FAQ_list")).data
 			</div>
 		</div>
 
-	<div class="pt-6 flex flex-col items-center">
+	<div class="pt-[2vw] flex flex-col items-center">
 		<h1 class="text-left w-85vw text-light-apricot text-[3.2vw] mb-4">
 			FAQ (Frequently Asked Questions)
 		</h1>

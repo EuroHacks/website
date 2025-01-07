@@ -1,5 +1,5 @@
 <nav class="font-sams h-[100vh] text-zinc-50">
-    <ul class= "w-[33%] flex float-end justify-between px-5 list-none py-3 z-10 sticky top-0">
+    <ul class= "w-[40vw] sm:w-[33vw] flex float-end justify-between px-5 list-none py-3 z-10 sticky top-0">
             
         <li class="nav-link font-bold opacity-75 relative text-[1.8vw] no-underline flex float-end">
                 <a href= "/" class="no-underline"> <slot class="navbar-item"> Home Page </slot> </a>
@@ -20,12 +20,7 @@
 </nav>
 
 <style>
-    @media screen and (max-width: 1100px) {
-        body {
-            background-color: lightgreen;
-        }
-    }
-    .nav-link::before {
+        .nav-link::before {
     transition: 1000ms;
     height: 4px;
     content: "";
@@ -33,6 +28,12 @@
     background-color: rgb(170, 170, 176);
     width: 0%;
     bottom: -1px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .nav-link::before {
+            height: 3px;
+        }
     }
 
     .nav-link:hover::before {
