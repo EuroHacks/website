@@ -4,30 +4,31 @@ import Layout from "../layout/default.astro";
 import Event from "../components/Event.astro";
 import Sponsors from "../components/Sponsor.astro";
 import { getEntry } from "astro:content";
+import { getPreferredEntry } from "../lib/i18n";
 
-const faq = (await getEntry("faq", "FAQ_list")).data as {question: string, answer: string}[]
+import "../styles/home.css";
+
+const t = await getPreferredEntry(Astro);
 ---
-
 <Layout title="Home Page">
-
 	<div class="flex justify-center">
 		<div class="flex flex-col items-center justify-between w-85vw sm:flex-row">
 			<div
 				class="flex flex-col justify-center items-center mt-10 bg-light-apricot w-[80vw] rounded-2xl sm:w-[40vw]"
 			>	
-				<h1 class="text-[3.5vw] font-extrabold text-blanched-almond"> This is Eurohacks </h1>
+				<h1 class="text-[3.5vw] font-extrabold text-blanched-almond">
+					{t['home.vision.title']}
+				</h1>
 
 				<p class="text-justify text-[1.7vw] my-[0vw] mx-[3vw] text-blanched-almond">
-					EuroHacks is a Europe-wide hackathon, with multiple events all 
-					happening at the same time. Everyone will have the opportunity 
-					to create their own projects, meet other people from all over 
-					Europe, have fun, and, of course, to win prizes! Find the 
-					hackathon nearest to you and get more information about them here.
+					{t['home.vision.text']}
 				</p>
 
 				<a href="http://eurohacks.org/eurohacks" class="rounded-lg w-100% h-100%">
 					<div class="question flex flex-row justify-center bg-[#FFE6A7] text-dark-gray font-semibold text-[2vw] rounded-[1.5vw] py-[1.5vw] my-[2vw] mx-[1.5vw] px-[1.5vw] w-fit duration-700 border-none cursor-default text-center hover:bg-golden-sand"> 
-						<div> Learn more: Read our vision </div>
+						<div> 
+							{t['home.vision.button']} 
+						</div>
 					</div>
 				</a>
 
@@ -42,11 +43,11 @@ const faq = (await getEntry("faq", "FAQ_list")).data as {question: string, answe
 
 					<div class="w-[100%] flex flex-col justify-between items-center text-[1.5vw] my-[1vw] sm:flex-row">
 						<div> <i class="fa-solid fa-calendar-days"></i> 12.07.2025 - 13.07.2025 </div>
-						<div> <i class="fa-solid fa-clock"></i> 24 hours of hacking </div>
+						<div> <i class="fa-solid fa-clock"></i> {t['home.info.duration']} </div>
 					</div>
 
 					<div class="text-[1.5vw]"> 
-						<i class="fa-solid fa-location-dot"></i> 6 events all over Europe 
+						<i class="fa-solid fa-location-dot"></i> {t['home.info.event#']}
 					</div>
 
 				</div>
@@ -55,36 +56,65 @@ const faq = (await getEntry("faq", "FAQ_list")).data as {question: string, answe
 	</div>
 	<div class="flex flex-col items-center -mb-[8vw] sm:-mb-[4vw]">
 		<h1 class="text-light-apricot text-[3.2vw] text-left w-85vw mt-[6vw]">
-			Join us in...
+			{t['home.events.joinus']}
 		</h1>
 	</div>
 
 		<div class="overflow-hidden relative my-[10vh]">
 			<div class="carousel flex flex-row w-max">
-				<Event city="Munich"        country="Germany"   image="../../Munich.jpg"/>
-				<Event city="Bydgoszcz"    	country="Poland"    image="../../Bydgoszcz.jpg"/>
-				<Event city="Madrid"        country="Spain"     image="../../Madrid.jpg"/>
-				<Event city="London"        country="UK"        image="../../London.jpg"/>
-				<Event city="Thessaloniki"  country="Greece"    image="../../Thessaloniki.jpg"/>
-				<Event city="Milan"         country="Italy"     image="../../Milan.jpg"/>
+				<Event
+					city={t['event.germany.city']}
+					country={t['event.germany.country']}
+					image="../../Munich.jpg"
+					learnMore="Learn More" />
+
+				<Event
+					city={t['event.poland.country']}
+					country={t['event.poland.city']}
+					image="../../Bydgoszcz.jpg"
+					learnMore="Learn More" />
+
+				<Event 
+					city={t['event.spain.city']}
+					country={t['event.spain.country']}
+					image="../../Madrid.jpg"
+					learnMore="Learn More" />
+					
+				<Event
+					city={t['event.uk.city']}
+					country={t['event.uk.country']}
+					image="../../London.jpg"
+					learnMore="Learn More" />
+					
+				<Event
+					city={t['event.greece.city']}
+					country={t['event.greece.country']}
+					image="../../Thessaloniki.jpg"
+					learnMore="Learn More" />	
+
+				<Event
+					city={t['event.italy.city']}
+					country={t['event.italy.country']}
+					image="../../Milan.jpg"
+					learnMore="Learn More" />
 			</div>
 		</div>
 
 	<div class="pt-[2vw] flex flex-col items-center">
+		
 		<h1 class="text-left w-85vw text-light-apricot text-[3.2vw] mb-4">
-			FAQ (Frequently Asked Questions)
+			{t['home.faq.title']}
 		</h1>
 
-		{faq.questions.map(q => (
+		{t.faqs.map(q => (
 			<FAQ question={q.question} answer={q.answer}/>
 		))}
 
 		<br />
+		
 	</div>
 
 	<!-- 	Sponsor's section, not yet finished 
-
-	
 		<h1 class="text-center w-[100vw] text-light-apricot text-8xl font-bold mb-4 flex justify-center my-[4vh]">
 			Our Sponsors
 		</h1>
@@ -101,40 +131,5 @@ const faq = (await getEntry("faq", "FAQ_list")).data as {question: string, answe
 		</div>
 	-->
 
-	<style>
-
-		@media screen and (max-width: 600px) {
-			.paragraph {
-				flex-direction: column;
-			}
-
-		}
-
-		.carousel {
-			animation: scroll 60s linear infinite;
-		}
-		
-		@keyframes scroll {
-			from {
-				transform: translateX(0);
-			}
-			to {
-				transform: translateX(-50%);
-			}
-		}
-
-	</style>
-		
-		
-		<script>
-		const carousel = document.querySelector('.carousel');
-		
-		// Duplicate the content of the carousel
-		const carouselImages = [...carousel.children];
-		carouselImages.forEach((img) => {
-			const clone = img.cloneNode(true);
-			carousel.appendChild(clone);
-		});
-
-	</script>
+	<script src="../scripts/home.js" />
 </Layout>

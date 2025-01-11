@@ -1,90 +1,27 @@
 ---
 import HackathonCard from "../../components/HackathonElement.astro"
 import Layout from "../../layout/default.astro"
+import { getPreferredEntry } from "../../lib/i18n";
+import { getCollection } from "astro:content";
+
+import '../../styles/hackathons.css';
+
+const events = await getCollection("events");
+const t = await getPreferredEntry(Astro);
 ---
 
 <Layout title="Hackathons">
-
     <br>
-    <HackathonCard
-    countrytitle = "Germany"
-    country = "germany"
-    city = " Peraia, Thessaloniki "
-    discordlink = " <placeholder> "
-    telephone = " +30 69******** "
-    image = " ../../../germany.png "
-    background = " ../../../Munich1.jpg "
-    info_page =     "../hackathons/germany"
-    >
-    </HackathonCard>
-
-    <HackathonCard
-    countrytitle = "Greece"
-    country = " greece"
-    city = " Peraia, Thessaloniki "
-    discordlink = " <placeholder> "
-    telephone = " +30 69******** "
-    image = " ../../../greece.png "
-    background = " ../../../Thessaloniki1.jpg "
-    info_page =     "../hackathons/greece"
-    >
-    </HackathonCard>
-
-    <HackathonCard
-    countrytitle = "Italy"
-    country = "italy"
-    city = " Peraia, Thessaloniki "
-    discordlink = " <placeholder> "
-    telephone = " +30 69******** "
-    image = " ../../../italy.png "
-    background = " ../../../Milan1.jpg "
-    info_page =     "../hackathons/italy"
-    >
-    </HackathonCard>
-
-    <HackathonCard
-    countrytitle = "Poland"
-    country = "poland"
-    city = " Bydgoszcz, Kuyavian–Pomeranian "
-    discordlink = " <placeholder> "
-    telephone = " +30 69******** "
-    image = " ../../../poland.png "
-    background = " ../../../Bydgoszcz1.jpg "
-    info_page =     "../hackathons/poland"
-    >
-    </HackathonCard>
-
-    <HackathonCard
-    countrytitle = "Spain"
-    country = "spain"
-    city = " Madrid, Thessaloniki "
-    discordlink = " <placeholder> "
-    telephone = " +30 69******** "
-    image = " ../../../spain.png "
-    background = " ../../../Madrid1.jpg "
-    info_page =     "../hackathons/spain"
-    >
-    </HackathonCard>
-
-    <HackathonCard
-    countrytitle = "UK"
-    country = "uk"
-    city = " London, England "
-    discordlink = " <placeholder> "
-    telephone = " +30 69******** "
-    image = " ../../../united-kingdom.png "
-    background = " ../../../London1.jpg "
-    info_page = "../hackathons/uk"
-    >
-    </HackathonCard>
-
-    <style>
-        .hackathons_title {
-            display: flex;
-            justify-content: center;
-            color: #FFE193;
-            font-size: 48px;
-        }
-    </style>
-    
+    {events.map(e => (
+        <HackathonCard
+            countrytitle = {t[`event.${e.id}.country`]}
+            country = {e.id}
+            city = {t[`event.${e.id}.city`] + ', ' + t[`event.${e.id}.province`]}
+            discordlink = {e.data.info.contact.discord}
+            telephone = {e.data.info.contact.phone}
+            image = {e.data.images.image}
+            background = {e.data.images.background}
+            info_page = {`/hackathons/${e.id}`}
+        />
+    ))}
 </Layout>

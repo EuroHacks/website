@@ -1,66 +1,34 @@
 ---
 import Layout from "../../layout/default.astro"
 import AboutUsCard from "../../components/About_Us_Card.astro";
+import { getPreferredEntry } from "../../lib/i18n";
+
+const t = await getPreferredEntry(Astro);
 ---
 
 <Layout title="Eurohacks">
 
         <div class="hidden fixed top-0 left-0 w-[100%] h-[100%] bg-opacity-30 bg-black justify-center items-center z-50" id="info-modal1">
             <div class="bg-orange-300 p-5 w-[90%] max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
-
-                <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal1"> &times; </button>
-                <h2 class="text-[28px] mb-3"> Why do we want to organize EuroHacks? </h2>
-                <p class="text-lg text-[#555] mb-5"> 
-
-                    <br> Hack Club is an esteemed organization that brings together high school students from across the globe who share a 
-                    deep passion for creation and innovation. Within Hack Club, a diverse group of individuals - ranging from organizers, 
-                    coders, and hackers to painters, engineers, musicians, writers, and volunteers - unite to foster a dynamic community. 
-                    This collaborative spirit is exemplified not only through the Hack Club Slack, where members engage and connect but 
-                    also through hackathons.
-
-                    <br><br> Hackathons serve as an exceptional platform to gather individuals with a common enthusiasm for coding and 
-                    creativity. They offer a unique space for collaboration, learning, and technological innovation while strengthening 
-                    bonds within the Hack Club community.
-
-                    <br><br> However, despite Hack Club’s global presence, no hackathons are currently being held in Europe, as Hack 
-                    Club’s activities are primarily based in the United States. We, the organizers of EuroHacks, believe it is time to 
-                    address this gap. With this in mind, we are planning a hybrid, decentralized satellite hackathon across multiple 
-                    cities in Europe, scheduled for August 2025.
-                
-                </p>
-
+                <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal1">  <i class="fa-solid fa-xmark fa-xl"></i>  </button>
+                <h2 class="text-[28px] mb-3"> {t.about[0].modal.title} </h2>
+                <p class="text-lg text-[#555] mb-5" set:html={t.about[0].modal.text}> </p>
             </div>
         </div>
 
         <div class="hidden fixed top-0 left-0 w-[100%] h-[100%] bg-opacity-30 bg-black justify-center items-center z-50" id="info-modal2">
             <div class="bg-orange-300 p-5 w-[90%] max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
-
                 <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal2"> <i class="fa-solid fa-xmark fa-xl"></i> </button>
-                <h2 class="text-[28px] mb-3"> Our vision for EuroHacks </h2>
-                <p class="text-lg text-[#555] mb-5"> 
-
-                    <br>Creativity is a universal trait, and coding serves as a powerful medium for its expression. Through EuroHacks, we aim
-                    to unite individuals in the pursuit of developing remarkable projects that showcase their innovative potential. It is
-                    through the ingenuity and creative efforts of young minds that transformative change can be broughtabout in the world.
-
-                    <br><br>To foster greater inclusivity and accessibility, we are organizing EuroHacks as a series of decentralized 
-                    hackathons across Europe, allowing participants to engage without the need to travel beyond their respective 
-                    countries. Furthermore, the hybrid nature of the event enables individuals to join remotely from the comfort of 
-                    their homes, providing a unique opportunity to witness the creation of exceptional projects across the continent.
-                </p>
-
+                <h2 class="text-[28px] mb-3"> {t.about[1].modal.title} </h2>
+                <p class="text-lg text-[#555] mb-5" set:html={t.about[1].modal.text}> </p>
             </div>
         </div>
 
         <div class="hidden fixed top-0 left-0 w-[100%] h-[100%] bg-opacity-30 bg-black justify-center items-center z-50" id="info-modal3">
             <div class="bg-orange-300 p-5 w-[90%] max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
-
-                <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal3"> &times; </button>
-                <h2 class="text-[28px] mb-3"> Our awesome orgnanizing team </h2>
-                <p class="text-base text-[#555] mb-5"> 
-                    Coming soon
-                </p>
-
+                <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal3">  <i class="fa-solid fa-xmark fa-xl"></i>  </button>
+                <h2 class="text-[28px] mb-3">{t.about[2].modal.title}</h2>
+                <p class="text-lg text-[#555] mb-5" set:html={t.about[2].modal.text}> </p>
             </div>
         </div>
 
@@ -69,23 +37,23 @@ import AboutUsCard from "../../components/About_Us_Card.astro";
 
                 <div id="open-window1">
                     <AboutUsCard 
-                    title="Why do we want to organize EuroHacks?" 
-                    text="Bridging Hack Club's global community with Europe through a hybrid decentralized hackathon in August 2025." 
-                    image="https://via.placeholder.com/400x200" />
+                        title={t.about[0].title}
+                        text={t.about[0].text}
+                        image={t.about[0].image} />
                 </div>
 
                 <div id="open-window2">
                     <AboutUsCard 
-                    title="Our Vision" 
-                    text="Connecting European innovators to showcase creativity and build transformative projects across borders." 
-                    image="https://via.placeholder.com/400x200" />
+                        title={t.about[1].title}
+                        text={t.about[1].text}
+                        image={t.about[1].image} />
                 </div>
 
                 <div id="open-window3">
                     <AboutUsCard 
-                    title="Our Team" 
-                    text=" We have to think of a description as soon as we get the new text out." 
-                    image="https://via.placeholder.com/400x200" />
+                        title={t.about[2].title}
+                        text={t.about[2].text}
+                        image={t.about[2].image} />
                 </div>
                 
             </div>

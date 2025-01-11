@@ -1,5 +1,5 @@
 ---
-let { city, country, link, image } = Astro.props
+let { city, country, image, learnMore } = Astro.props
 ---
 
 <div class="w-event_cards h-event_cards bg-soft-peach rounded-xl mx-[3vw] my-[1vw]">
@@ -9,7 +9,7 @@ let { city, country, link, image } = Astro.props
     </div>
     <div class="w-event_cards flex flex-row justify-center">
         <button class="absolute bottom-5 p-[0.5vw] bg-zinc-300 rounded-lg">
-            <a href="#"> Learn more </a>
+            <a href='#'> {learnMore} </a>
         </button>
     </div>
 </div>

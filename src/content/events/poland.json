@@ -1,82 +1,17 @@
 {
   "logo": "",
-  "organizers": [
-    "Bartosz_Budnik"
-  ],
+  "organizers": ["Bartosz_Budnik"],
   "info": {
-    "location": "Not yet decided",
-    "dates": "20/08/2025 - 23/08/2025 (I just put a date)",
     "participants": 0,
-    "zoom": "Not yet decided",
     "contact": {
-      "email": "poland@eurohacks.org",
-      "phone": "+64 609 481 080"
+      "email": "greece@eurohacks.org", 
+      "phone": "+30 69",
+        "zoom": "N/A",
+        "discord": "N/A"
     }
   },
-  "lang": {
-    "origin": {
-      "welcome": " Witamy na stronie Polskiego Hackathonu. Tutaj możesz znaleźć więcej informacji na temat Polskiego Hackathonu. ",
-      "organizers": "Komitet organizacyjny",
-      "translation": "For changin the language from Polish to English press this button:",
-      "info": {
-        "header": "Informacje o wydarzeniu: ",
-        "dates": "Daty wydarzenia: ",
-        "participants": "Uczestnicy: ",
-        "zoom": "Link do Zoom: ",
-        "location": "",
-        "contact": {
-          "email": "Kontakt e-mail: ",
-          "phone": "Kontakt telefoniczny: "
-        }
-      },
-      "announcements": {
-        "header": "Ogłoszenia",
-        "data": " Fill this "
-      },
-      "food": {
-        "header": "Żywienie uczestników",
-        "data": " Fill this "
-      },
-      "stay": {
-        "header": "Pobyt uczestników",
-        "data": " Fill this "
-      },
-      "transit": {
-        "header": "Transport uczestników",
-        "data": " Fill this "
-      }
-    },
-    "en": {
-      "welcome": " Welcome to the Poland Hackathon page. Here you can find more information about the French Hackathon. ",
-      "organizers": "Organizing committee",
-      "translation": "For changin the language from English to Polish press this button:",
-      "info": {
-        "header": "Event Information: ",
-        "dates": "Event Dates: ",
-        "participants": "Participants: ",
-        "zoom": "Zoom link: ",
-        "location": "",
-        "contact": {
-          "email": "E-mail contact: ",
-          "phone": "Phone contact: "
-        }
-      },
-      "announcements": {
-        "header": "Announcements",
-        "data": " Fill this "
-      },
-      "food": {
-        "header": "Participant Nutrition",
-        "data": " Fill this "
-      },
-      "stay": {
-        "header": "Participant Stay",
-        "data": " Fill this "
-      },
-      "transit": {
-        "header": "Participant Transit",
-        "data": " Fill this "
-      }
+    "images": {
+      "image": "greece.png",
+      "background": "Munich1.jpg"
     }
-  }
 }

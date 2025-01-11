@@ -1,14 +1,5 @@
 {
     "thumb": "/test-photo.png",
-    "country": "/[country].png",
-    "lang": {
-        "origin": {
-            "fullname": "Bartossz Budnik",
-            "description": ""
-        },
-        "en": {
-            "fullname": "Test Person",
-            "description": "Blah blah"
-        }
-    }
+    "country": "/poland.png",
+    "fullname": "Bartossz Budnik"
 }

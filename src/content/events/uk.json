@@ -1,82 +1,17 @@
 {
   "logo": "",
-  "organizers": [
-    "test_person"
-  ],
+  "organizers": ["Nikos_Tsilas", "Marios_Mitsios"],
   "info": {
-    "location": "United Kingdom",
-    "dates": "20/08/2025 - 23/08/2025 (I just put a date)",
-    "participants": 0,
-    "zoom": "Not yet decided",
-    "contact": {
-      "email": "uk@eurohacks.org",
-      "phone": "+44 tbc"
-    }
-  },
-  "lang": {
-    "origin": {
-      "welcome": "Welcome",
-      "organizers": "Organisers",
-      "translation": "To change the language from French to English, click here: ",
-      "info": {
-        "header": " Fill this ",
-        "dates": " Fill this ",
-        "participants": " Fill this ",
-        "location": "",
-        "zoom": " Fill this ",
-        "contact": {
-          "email": " Fill this ",
-          "phone": " Fill this "
+      "participants": 0,
+      "contact": {
+          "email": "greece@eurohacks.org", 
+          "phone": "+30 69",
+          "zoom": "N/A",
+          "discord": "N/A"
         }
-      },
-      "announcements": {
-        "header": "Fill this",
-        "data": " Fill this "
-      },
-      "food": {
-        "header": " Fill this ",
-        "data": " Fill this "
-      },
-      "stay": {
-        "header": " Fill this ",
-        "data": " Fill this "
-      },
-      "transit": {
-        "header": " Fill this ",
-        "data": " Fill this "
-      }
     },
-    "en": {
-      "welcome": " Welcome to the UK EuroHacks Hackathon page. Here you can find more information about the UK EuroHacks Hackathon. ",
-      "organizers": "Organising Committee",
-      "translation": " Fill this ",
-      "info": {
-        "header": "Event Information: ",
-        "dates": "Event Dates: ",
-        "participants": "Participants: ",
-        "zoom": "Zoom link: ",
-        "location": "",
-        "contact": {
-          "email": "E-mail contact: ",
-          "phone": "Phone contact: "
-        }
-      },
-      "announcements": {
-        "header": "Announcements",
-        "data": " Fill this "
-      },
-      "food": {
-        "header": "Participant Nutrition",
-        "data": " Fill this "
-      },
-      "stay": {
-        "header": "Participant Stay",
-        "data": " Fill this "
-      },
-      "transit": {
-        "header": "Participant Transit",
-        "data": " Fill this "
-      }
+    "images": {
+        "image": "greece.png",
+        "background": "Munich1.jpg"
     }
-  }
 }

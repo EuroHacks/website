@@ -1,14 +1,5 @@
 {
   "thumb": "/test-photo.png",
   "country": "/[country].png",
-  "lang": {
-    "origin": {
-      "fullname": "Max",
-      "description": ""
-    },
-    "en": {
-      "fullname": "Test Person",
-      "description": "Blah blah"
-    }
-  }
+  "fullname": "Test Person"
 }
