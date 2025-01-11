@@ -5,7 +5,7 @@ import Event from "../components/Event.astro";
 import Sponsors from "../components/Sponsor.astro";
 import { getEntry } from "astro:content";
 
-const faq = (await getEntry("faq", "FAQ_list")).data
+const faq = (await getEntry("faq", "FAQ_list")).data as {question: string, answer: string}[]
 ---
 
 <Layout title="Home Page">
@@ -75,40 +75,9 @@ const faq = (await getEntry("faq", "FAQ_list")).data
 			FAQ (Frequently Asked Questions)
 		</h1>
 
-		<FAQ
-			question = 	{faq.questions[0].question}
-			answer = 	{faq.questions[0].answer}
-		/>
-
-		<FAQ
-			question = 	{faq.questions[1].question}
-			answer = 	{faq.questions[1].answer}
-		/>
-
-		<FAQ
-			question = 	{faq.questions[2].question}
-			answer = 	{faq.questions[2].answer}
-		/>
-
-		<FAQ
-			question = 	{faq.questions[3].question}
-			answer = 	{faq.questions[3].answer}
-		/>
-
-		<FAQ
-			question = 	{faq.questions[4].question}
-			answer = 	{faq.questions[4].answer}
-		/>
-
-		<FAQ
-			question = 	{faq.questions[5].question}
-			answer = 	{faq.questions[5].answer}
-		/>
-
-		<FAQ
-			question = 	{faq.questions[6].question}
-			answer = 	{faq.questions[6].answer}
-		/>	
+		{faq.questions.map(q => (
+			<FAQ question={q.question} answer={q.answer}/>
+		))}
 
 		<br />
 	</div>
