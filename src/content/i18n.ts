@@ -5,7 +5,7 @@ const schema = z.object({
     'home.vision.text': z.string(),
     'home.vision.button': z.string(),
     'home.info.duration': z.string(),
-    'home.info.event#': z.string(),
+    'home.info.eventnum': z.string(),
     'home.events.joinus': z.string(),
     'home.events.learnmore': z.string(),
     'home.faq.title': z.string(),
@@ -57,6 +57,10 @@ const schema = z.object({
     'event.italy.province': z.string(),
     'event.italy.city': z.string(),
     'event.italy.title': z.string(),
+
+    'footer.contacts': z.string(),
+    'footer.email.main': z.string(),
+    'footer.email.questions': z.string(), 
 
     'faqs': z.array(z.object({
         question: z.string(),

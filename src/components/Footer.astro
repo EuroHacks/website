@@ -1,9 +1,15 @@
+---
+import { getPreferredEntry } from "../lib/i18n";
+
+const t = await getPreferredEntry(Astro);
+---
+
 <footer class="bg-midnight-slate flex flex-row justify-evenly items-center">
 
             <img src="../../media/Banner.png" class="ml-[1vw] mr-[2vw] w-[12vw] h-[12vw]">
 
             <div class="flex flex-col justify-center items-center">
-                <h1 class="text-[2.5vw] text-zinc-100 mt-[0.5vw]"> Contacts </h1>
+                <h1 class="text-[2.5vw] text-zinc-100 mt-[0.5vw]"> {t['footer.contacts']} </h1>
 
                 <div class="flex flex-row mt-[1vw] mb-[2vw] text-zinc-100">
 
@@ -11,7 +17,7 @@
                         <table class="text-[1.3vw]">
                             <tbody>
                                 <tr>
-                                    <td class="flex justify-end mr-[2vw]"> Main: </td>
+                                    <td class="flex justify-end mr-[2vw]"> {t['footer.email.main']}: </td>
                                     <td> main@europehacks.org </td>
                                 </tr>
 
@@ -20,15 +26,15 @@
                                 </tr>
 
                                 <tr>
-                                    <td class="flex justify-end mr-[2vw]"> Italy: </td>
+                                    <td class="flex justify-end mr-[2vw]"> {t['event.italy.country']}: </td>
                                     <td> italy@europehacks.org </td>
                                 </tr>
                                 <tr>
-                                    <td class="flex justify-end mr-[2vw]"> Germany: </td>
+                                    <td class="flex justify-end mr-[2vw]"> {t['event.germany.country']}: </td>
                                     <td> germany@europehacks.org </td>
                                 </tr>
                                 <tr>
-                                    <td class="flex justify-end mr-[2vw]"> Greece: </td>
+                                    <td class="flex justify-end mr-[2vw]"> {t['event.greece.country']}: </td>
                                     <td> greece@europehacks.org </td>
                                 </tr>
                             </tbody>
@@ -39,7 +45,7 @@
                         <table class="text-[1.3vw]">
                             <tbody>
                                 <tr>
-                                    <td class="flex justify-end mr-[2vw]"> Questions: </td>
+                                    <td class="flex justify-end mr-[2vw]"> {t['footer.email.questions']}: </td>
                                     <td> questions@europehacks.org </td>
                                 </tr>
 
@@ -48,15 +54,15 @@
                                 </tr>
 
                                 <tr>
-                                    <td class="flex justify-end mr-[2vw]"> UK: </td>
+                                    <td class="flex justify-end mr-[2vw]"> {t['event.uk.country']}: </td>
                                     <td> uk@europehacks.org </td>
                                 </tr>
                                 <tr>
-                                    <td class="flex justify-end mr-[2vw]"> Spain: </td>
+                                    <td class="flex justify-end mr-[2vw]"> {t['event.spain.country']}: </td>
                                     <td> spain@europehacks.org </td>
                                 </tr>
                                 <tr>
-                                    <td class="flex justify-end mr-[2vw]"> Poland: </td>
+                                    <td class="flex justify-end mr-[2vw]"> {t['event.poland.country']}: </td>
                                     <td> poland@europehacks.org </td>
                                 </tr>
                             </tbody>

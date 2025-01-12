@@ -1,0 +1,209 @@
+# -----
+# HOMEPAGE
+# -----
+home.vision.title: Τα Eurohacks
+home.vision.text: >
+  Το EuroHacks είναι ένα πανευρωπαϊκό hackathon, με πολλά events τα οποία λαμβάνουν 
+  χώρα ταυτόχρονα. Όλοι θα έχουν την ευκαιρία να δημιουργήσουν τα δικά τους projects, 
+  να γνωρίσουν άλλα άτομα από κάθε γωνιά της Ευρώπης, να διασκεδάσουν και, φυσικά, να διεκδικήσουν 
+  βραβεία! Βρείτε το hackathon πλησιέστερα σε εσάς και δείτε περισσότερες πληροφορίες σχετικά με αυτό.
+
+home.vision.button: "Μάθετε περισσότερα"
+home.info.duration: 24 ώρες προγραμματισμού
+home.events.joinus: Ελάτε μαζί μας στο...
+home.events.learnmore: Μάθετε περισσότερα
+home.faq.title: FAQ (Συχνές ερωτήσεις)
+# -----
+# About Us (Eurohacks Page)
+# -----
+about:
+  - title: Γιατί θέλουμε να οργανώσουμε EuroHacks;
+    text: Για να ενώσουμε της παγκόσμιας κοινότητας του Hack Club με την Ευρώπη 
+          μέσω ενός υβριδικού αποκεντρωμένου hackathon τον Αύγουστο του 2025.
+    image: 'https://via.placeholder.com/400x200'
+    modal:
+      title: Γιατί θέλουμε να οργανώσουμε EuroHacks;
+      text: >
+        <br> Το Hack Club είναι ένας αξιόλογος οργανισμός που συγκεντρώνει μαθητές από όλο τον κόσμο που μοιράζονται ένα
+        βαθύ πάθος για δημιουργία και καινοτομία. Μέσα στο Hack Club, μια διαφορετική ομάδα ατόμων - που κυμαίνονται από 
+        διοργανωτές, προγραμματιστές, ζωγράφους, μηχανικούς, μουσικούς, συγγραφείς και εθελοντές - που ενώνονται για να 
+        προωθήσουν μια δυναμική κοινότητα. Αυτό το πνεύμα συνεργασίας αποδεικνύεται όχι μόνο μέσω της κοινότητα του Hack 
+        Club στο Slack, όπου τα μέλη συμμετέχουν και συνδέονται, αλλά επίσης μέσω των hackathons.
+        
+        <br><br> Τα Hackathons χρησιμεύουν ως μια εξαιρετική αφορμή για τη συγκέντρωση ατόμων με κοινό ενθουσιασμό για τον 
+        προγραμμαισμό και τη δημιουργικότητα. Προσφέρουν έναν μοναδικό χώρο για συνεργασία, μάθηση και τεχνολογική καινοτομία, 
+        ενώ παράλληλα ενισχύονται οι δεσμοί εντός της κοινότητας του Hack Club.
+        
+        <br><br> Ωστόσο, παρά την παγκόσμια παρουσία του Hack Club, κανένα hackathon δεν διεξάγεται επί του παρόντος στην 
+        Ευρώπη, καθώς οι δραστηριότητες του HackClub βασίζονται κυρίως στις Ηνωμένες Πολιτείες. Εμείς, οι διοργανωτές των 
+        EuroHacks, πιστεύουμε ότι είναι καιρός να το κάνουμε αντιμετωπίσει αυτό το κενό. Έχοντας αυτό κατά νου, σχεδιάζουμε 
+        ένα υβριδικό, αποκεντρωμένο δορυφορικό hackathon σε διαφορετικές πόλεις της Ευρώπης, προγραμματισμένο για τον 
+        Ιούλιο του 2025.
+
+  - title: Το Όραμά μας
+    text: Σύνδεση Ευρωπαίων καινοτόμων για να επιδείξουν τη δημιουργικότητα 
+          και να δημιουργήσουν πρωτοποριακά έργα.
+    image: 'https://via.placeholder.com/400x200'
+    modal:
+      title: Το όραμά μας για το EuroHacks
+      text: >
+        <br>Η δημιουργικότητα είναι ένα κοινό χαρακτηριστικό, και ο προγραμματισμός αποτελεί ένα ισχυρό μέσο για την έκφρασής 
+        της. Μέσω του EuroHacks, στοχεύουμε να φέρουμε κοντα τα άτομα στην προσπάθεια της ανάπτυξης αξιόλογων έργων που 
+        αναδεικνύουν τις καινοτόμες δυνατότητές τους. Μέσα από την εφευρετικότητα και τις δημιουργικές προσπάθειες των νέων 
+        μπορεί να επέλθει μία μετασχηματιστική αλλαγή στον κόσμο.
+        
+        <br><br>Για να ενισχύσουμε τη συμμετοχή και την προσβασιμότητα, οργανώνουμε τα EuroHacks ως μια σειρά αποκεντρωμένων
+        hackathons σε όλη την Ευρώπη, επιτρέποντας στους συμμετέχοντες να συμμετέχουν χωρίς να χρειάζεται να ταξιδέψουν πέρα 
+        από τις αντίστοιχες χώρες τους. Επιπλέον, η υβριδική φύση της εκδήλωσης επιτρέπει στα άτομα να παρακολουθούν εξ 
+        αποστάσεως  από την άνεση του σπιτιού τους, παρέχοντάς του μια μοναδική ευκαιρία να παρακολουθήσετε τη δημιουργία 
+        εξαιρετικών έργων από ολόκληρη την ήπειρο.
+
+  - title: Η Ομάδα μας
+    text: Πρέπει να σκεφτούμε μια περιγραφή μόλις βγάλουμε το νέο κείμενο.
+    image: 'https://via.placeholder.com/400x200'
+    modal:
+      title: Η οργανωτική ομάδα μας
+      text: >
+        <br> Προσεχώς...
+# -----
+# HACKATHON PAGE
+# -----
+hackathon.welcome: >
+  Καλώς ήρθατε στη σελίδα του Ελληνικού Hackathon. Εδώ μπορείτε να βρείτε περισσότερες πληροφορίες
+  για το Hackathon.
+hackathon.organizers: Οργανωτική επιτροπή
+hackathon.info.header: 'Πληροφορίες εκδήλωσης: '
+hackathon.info.dates: 'Ημερομηνίες εκδήλωσης: '
+hackathon.info.location: 'Τόπος εκδήλωσης: '
+hackathon.info.participants: 'Συμμετέχοντες: '
+hackathon.info.zoomlink: 'Σύνδεσμος zoom: '
+hackathon.info.contact.email: 'Επικοινωνία μέσω email: '
+hackathon.info.contact.phone: 'Τηλεφωνική επικοινωνία: '
+hackathon.announcements.header: Ανακοινώσεις
+hackathon.announcements.text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+hackathon.food.header: Διατροφή Συμμετεχόντων
+hackathon.food.text: 'Η διατροφή των συμμετεχόντων θα καλύπτεται πλήρως από την διοργάνωση με 3 γεύματα (πρωινό, μεσημεριανό & βραδινό) για συμμετέχοντες των οποίων η μεταφορά μερικώς καλύπτεται και 2 γεύματα (πρωινό & μεσημεριανό) για τους συμμετέχοντες από κοντινές περιοχές. Ακόμα, κατά την διάρκεια όλου του 3ημέρου θα ειναι διαθέσιμα snacks.'
+hackathon.stay.header: Διαμονή Συμμετεχόντων
+hackathon.stay.text: 'Η διαμονή των συμμετεχόντων εντός των 50χλμ θα γίνεται στα σπίτια του και η μεταφορά τους από τον χώρο του hackathon θα γίνεται στις 20:00 με 21:00. Συμμετέχοντες  από άλλες πόλεις θα φιλοξενούνται σε κοντική εγκατάσταση με έξοδα της διοργάνωσης και η μεταφορά τους θα γίνεται με λεωφορείο της διοργάνωσης.'
+hackathon.transit.header: Μεταφορά Συμμετεχόντων
+hackathon.transit.text: 'Η μεταφορά των συμμετεχόντων θα γίνει με έξοδα των ιδίων. Η μεταφορά θα καλυπτεται στην περίπτωση όπου η μεταφορά είναι μεγαλύτερη από 50χλμ. Το μέγιστο καλυπτόμενο ποσό ορίζεται στα xx€ και η μεταφορά μπορεί να γίνει με λεωφορείο ή τρένο.'
+# -----
+# EVENTS
+# -----
+event.germany.country: Γερμανία
+event.germany.city: Μόναχο
+event.germany.province: 'Ν/Α'
+event.germany.title: Γερμανικό Hackathon
+
+event.poland.country: Πολωνία
+event.poland.city: Μπιντκότζ
+event.poland.province: 'Ν/Α'
+event.poland.title: Πολωνικό Hackathon
+
+event.spain.country: Ισπανία
+event.spain.city: Μαδρίτη
+event.spain.province: 'Ν/Α'
+event.spain.title: Ισπανικό Hackathon
+
+event.uk.country: ΗΒ
+event.uk.city: Λονδίνο
+event.uk.province: 'Ν/Α'
+event.uk.title: Hackathon του Ηνωμένου Βασιλείου
+
+event.greece.country: Ελλάδα
+event.greece.city: Θεσσαλονίκη
+event.greece.province: Ν. Θεσσαλονίκης
+event.greece.title: Ελληνικό Hackathon
+
+event.italy.country: Ιταλία
+event.italy.city: Μιλάνο
+event.italy.province: 'Ν/Α'
+event.italy.title: Ιταλικό Hackathon
+
+# -----
+# ORGANIZERS
+# -----
+organizers.Bartosz_Budnik.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Felix_Myrie.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Giacomo_Radaelli.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Karl_Wünsche.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Leonard_Stegle.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Marios_Mitsios.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Massimiliano_Bruchi.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Max_Schneider.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Max_Thorste.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Nikos_Tsilas.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Ole_Fleck.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Samuel_Leber.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Shambhavi_Sinha.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Thomas_Price.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Victorio_Medina.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+# -----
+# FAQs
+# -----
+faqs:
+  - question: Τι είναι τα EuroHacks;
+    answer: >
+      Το EuroHacks είναι ένα πανευρωπαϊκό hackathon, με πολλά με πολλά events τα οποία 
+      λαμβάνουν χώρα ταυτόχρονα. Όλοι θα έχουν την ευκαιρία να δημιουργήσουν τα δικά 
+      τους έργα, να γνωρίσουν άλλους ανθρώπους από διαφορετικά μέρη της Ευρώπης, να περάσουν 
+      καλά και, φυσικά, να διεκδικήσουν βραβεία!
+      
+  - question: Τι είναι το hackathon;
+    answer: >
+      Το hackathon είναι μια εκδήλωση όπου άτομα που ενδιαφέρονται για τον προγραμματισμό και 
+      την επιστήμη των υπολογιστών, να συγκεντρωθούν για λίγες ώρες/μέρες για να δημιουργήσουν 
+      συναρπαστικά έργα, αλλά το πιο σημαντικό, να γνωρίσουν νέους ανθρώπους και να μάθουν νέα 
+      πράγματα. Σε συνδυασμό με έναν καταπληκτικό χώρο, φαγητό, και καλή διάθεση, τα hackathons 
+      είναι μια υπέροχη και αξέχαστη εμπειρία event προγραμματισμού.
+
+  - question: Υπάρχει όριο ηλικίας;
+    answer: >
+      Αυτή η εκδήλωση είναι για εφήβους, ιδανικά ηλικίας 13 έως 18 ετών. Παρ' όλ' αυτά είναι
+      ανοιχτό σε οποιονδήποτε κάτω των 18 ετών.
+
+  - question: Πρέπει να μιλάω αγγλικά για να συμμετάσχω;
+    answer: >
+      Όχι, δεν χρειάζεται να γνωρίζετε αγγλικά, αλλά γνωρίζοντας αγγλικά η επικοινωνία με άλλα
+      άτομα, από άλλα event κατά τη διάρκεια του hackathon.
+
+  - question: Πώς μπορώ να επικοινωνήσω μαζί σας εάν έχω ερωτήσεις σχετικά με το event;
+    answer: >
+      Μη διστάσετε να μας στείλετε ένα email με όλες τις ερωτήσεις σας. Θα απαντήσουμε το 
+      συντομότερο δυνατό (πιθανώς κάτω από 24 ώρες). Μπορείτε είτε να στείλετε email
+      στο question@eurohacks.org ή στο email της χώρας σας: <country>@eurohacks.org.
+
+  - question: Πρέπει να πληρώσω για να συμμετάσχω στο hackathon;
+    answer: >
+      Όχι, σε καμία περίπτωση. Απλώς πρέπει να καλύψετε τα ναύλα ταξιδιού. Μπορεί όμως να καλύψουμε 
+      και μέρος αυτών (εξαρτάται από την τοποθεσία σας). Εάν ζείτε σε απόσταση 50 χιλιομέτρων από 
+      το χώρο, θα χρειαστεί καλύπτετε τα καθημερινά σας έξοδα μετακίνησης από και προς τον χώρο. 
+      Ωστόσο, αν έρχεστε από μια πόλη που απέχει περισσότερο από 50 χιλιόμετρα, ορισμένα από τα 
+      έξοδα ταξιδιού σας στην πόλη υποδοχής μπορεί να καλυφθούν. Αυτό δεν σημαίνει ότι δεν μπορεί να 
+      χρειαστεί ακόμα να πληρώσετε μέρος του κόστους για την μεταφορά σας.
+
+  - question: Τι μπορεί να είναι το project μου;
+    answer: >
+      Ό,τι θέλετε αν πρόκειται για κάτι σχετικό με την επιστήμη των υπολογιστών. Θα μπορούσε να είναι 
+      κάτι σχετικό με Arduino, Raspberry Pi ή κάτι αποκλεισιτκά με προγραμματισμό (το οποίο δεν απαιτεί 
+      και να έχτε το δικό σας υλικό). Αυτό θα μπορούσε να είναι η ανάπτυξη ενός ιστότοπου (web development), 
+      η ανάπτυξη εφαρμογών, o προγραμματισμός ενός Arduino ή απλώς η δημιουργία κώδικα για ένα πρόγραμμα 
+      που κάνει κάτι ωραίο και κάτι για το οποίο ΕΣΕΙΣ είστε περήφανοι που καταφέρατε να φτιάξετε.
+
+  - question: Πρέπει να πάρω μαζί μου φορητό υπολογιστή;
+    answer: >
+      Ναί. Είναι ένα event προγραμματισμού, πρέπει να πάρετε οποιαδήποτε ηλεκρονική συσκευή ειναι απαραίτητη
+      για την δημιουργία του projet σας(θα μπορούσε να είναι ένα tablet ή ένας φορητός υπολογιστής) όπως 
+      και τα αξεσουάρ που ειναι απαρέτητα για εσάς (πχ. φορτιστής, σκληρός δίσκος, SD cadr, κτλ). Ίσως 
+      είμαστε σε θέση να διαθέσουμε μερικούς φορητούς υπολογιστέςσε σε 1 ή 2 άτομα, αλλά πρέπει να έχετε
+      προνοήσει για τις δικές σας συσκευές στο hackathon. 
+
+home.info.eventnum: 6 εκδηλώσεις σε όλη την Ευρώπη
+
+# -----
+# Footer
+# -----
+
+footer.contacts: Στοιχεία Επικοινωνίας
+footer.email.main: Κύριο
+footer.email.questions: Ερωτήσεις

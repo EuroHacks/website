@@ -12,7 +12,7 @@ home.vision.text: >
 home.vision.button: "Learn more: Read our vision"
 
 home.info.duration: 24 hours of hacking
-home.info.event#: 6 events all over Europe 
+home.info.eventnum: 6 events all over Europe 
 
 home.events.joinus: Join us in...
 home.events.learnmore: Learn more
@@ -153,6 +153,14 @@ organizers.Thomas_Price.bio: ''
 organizers.Victorio_Medina.bio: ''
 
 # -----
+# Footer
+# -----
+
+footer.contacts: Contacts
+footer.email.main: Main
+footer.email.questions: Questions
+
+# -----
 # FAQs
 # -----
 
@@ -197,8 +205,8 @@ faqs:
       from a city further than 50km away, some of your travel expenses to the host city
       may be reimbursed. This means you may still need to pay some of the cost of your
       travel tickets.
-      
-  - question: Can I participate in the event if I am not near the venue (or not even the host city)?
+
+  - question: What can I make for a project?
     answer: >
       Whatever you want if it is about computer science. It could be something
       with Arduino, Raspberry Pi, or (something that you don’t have to get your hardware)
@@ -207,6 +215,8 @@ faqs:
       
   - question: Do I have to get a laptop with me?
     answer: >
-      Yes. It is a coding event, you have to get your devices (it could be a tablet
-      or a laptop) so you can make your projects. We may be able to offer some laptops
-      to 1 or 2 people but you have to get your own devices in the hackathon.
+      Yes. It is a coding event, you have to take any electronic device necessary
+      to create your project (it could be a tablet or a laptop) and the accessories 
+      that are necessary for you (eg charger, hard disk, SD card, etc.). Perhaps 
+      we are able to make some laptops available to 1 or 2 people but you must have
+      provide for your own devices at the hackathon.

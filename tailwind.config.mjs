@@ -22,6 +22,7 @@ export default {
 				'blanched-almond': 	'#FFEBCD',
 				'dusty-blue': 		'#5676A6',
 				'sandstone-beige': 	'#DACDBA',
+				'light-beige': 		'#F9EBD7',
 			  },
 			  fontSize: {
 				'4.5xl': '42px',
