@@ -1,0 +1,150 @@
+# -----
+# HOMEPAGE
+# -----
+home.vision.title: Das ist EuroHacks
+home.vision.text: >
+  EuroHacks ist ein Hackathon, mit mehreren, gleichzeitig stattfindenden,  Veranstaltungen in ganz Europa. Jeder hat die Möglichkeit, eigene Projekte zu erstellen, andere Menschen aus ganz Europa kennenzulernen, Spaß zu haben und natürlich Preise zu gewinnen! Finde den Hackathon in deiner Nähe und erhalte weitere Informationen.
+home.vision.button: "Erfahre mehr: Lies unsere Vision"
+home.info.duration: 24 Stunden Hacken
+# I'm not sure about this translation, we might need to change it
+home.events.joinus: Nimm hier teil...
+home.events.learnmore: Mehr erfahren
+home.faq.title: FAQ (Häufig gestellte Fragen)
+# -----
+# About Us (Eurohacks Page)
+# -----
+about:
+  - title: Warum organisieren wir EuroHacks?
+    text: Verbindung der globalen Hack-Club-Community mit Europa durch einen hybriden, dezentralen Hackathon im August 2025.
+    image: 'https://via.placeholder.com/400x200'
+    modal:
+      title: Warum organisieren wir EuroHacks ?
+      text: >
+        <br> Hack Club ist eine Organisation, welche Schüler mit einer Leidenschaft für Kreation und Innovation aus der ganzen Welt zusammenbringt. Hack Club bringt eine vielfältige Gruppe zusammen – von Organisatoren, Programmierern und Hackern bis hin zu Malern, Ingenieuren, Musikern, Schriftstellern und. Auf dem Hack Club Slack, einer Chat-Plattform, Hackathons und bei anderen Events engagieren und vernetzen sich Mitglieder, arbeiten gemeinsam an Projekten und  
+        
+        <br><br> Hackathons sind eine großartige Möglichkeit, um Personen mit einer gemeinsamen Begeisterung für Programmierung und Kreativität zusammenzubringen. Sie bieten einen einzigartigen Raum für Zusammenarbeit, Lernen und technologische Innovation und stärken gleichzeitig die Bindungen innerhalb der Hack-Club-Community.
+        
+        <br><br> Trotz der globalen Präsenz Hack Clubs finden derzeit keine Hackathons in Europa statt. Die Aktivitäten Hack Clubs finden zurzeit hauptsächlich in den Vereinigten Staaten statt. Wir, die Organisatoren von EuroHacks, glauben, dass es an der Zeit ist, diese Lücke zu schließen. Deshalb planen wir für Juli 2025 einen hybriden, dezentralen Satelliten-Hackathon in mehreren Städten in ganz Europa.
+  - title: Unsere Vision
+    text: "Europäische Entwickler zusammen bringen, um zusammen an kreative und innovative Projekte zu arbeiten. "
+    image: 'https://via.placeholder.com/400x200'
+    modal:
+      title: Unsere Vision für EuroHacks
+      text: >
+        <br>Das Entwickeln von Software ist eine großartige Möglichkeit, um Kreativität auszuleben. Mit EuroHacks wollen wir
+        Programmierer, Maker, Kreative und Interessierte aus ganz Europa zusammenbringen, um gemeinsam bemerkenswerte und innovative Projekte zu entwickeln. Mit dem Einfallsreichtum und der Kreativität junger Menschen kann echte Veränderung in der Welt passieren.
+        
+        <br><br>Um die Veranstaltung für möglichst viele Interresierte zugänglich zu machen, organisieren wir EuroHacks als eine Reihe dezentraler Hackathons in ganz Europa. So müssen die Teilnehmer nicht in andere Länder reisen, um an EuroHacks teilzunehmen. Darüber hinaus ermöglicht der hybride Charakter der Veranstaltung auch online am Hackathon teilzunehmen, falls man nicht vor Ort sein kann. So können wir eine einzigartige Gelegenheit schaffen, die Entstehung außergewöhnlicher Projekte auf dem gesamten Kontinent mitzuerleben.
+  - title: Unser Team
+    text: Sobald der neue Text draußen ist, müssen wir uns eine Beschreibung überlegen.
+    image: 'https://via.placeholder.com/400x200'
+    modal:
+      title: Unser tolles Organisationsteam
+      text: >
+        <br>In Kürze verfügbar ...
+# -----
+# HACKATHON PAGE
+# -----
+hackathon.welcome: >
+  Willkommen auf der Seite des griechischen Hackathons. Hier findest du weitere Informationen
+  zum griechischen Hackathon.
+hackathon.organizers: Organisationskomitee
+hackathon.info.header: 'Veranstaltungsinformationen: '
+hackathon.info.dates: 'Veranstaltungstermine: '
+hackathon.info.location: 'Veranstaltungsort: '
+hackathon.info.participants: 'Teilnehmer: '
+hackathon.info.zoomlink: 'Zoom-Link: '
+hackathon.info.contact.email: 'E-Mail Kontakt: '
+hackathon.info.contact.phone: 'Telefonischer Kontakt: '
+hackathon.announcements.header: Ankündigungen
+hackathon.announcements.text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bis zu einem gewissen Grad ist es uns gelungen, unsere Arbeit zu erledigen, ohne dass wir sie von der entsprechenden Kommode übernehmen müssen. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fgiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+hackathon.food.header: 'Versorgung der Teilnehmer:innen'
+hackathon.food.text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bis zu einem gewissen Grad ist es uns gelungen, unsere Arbeit zu erledigen, ohne dass wir sie von der entsprechenden Kommode übernehmen müssen. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fgiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+hackathon.stay.header: 'Aufenthalt der Teilnehmer:innen'
+hackathon.stay.text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bis zu einem gewissen Grad ist es uns gelungen, unsere Arbeit zu erledigen, ohne dass wir sie von der entsprechenden Kommode übernehmen müssen. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fgiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+hackathon.transit.header: 'Anreise der Teilnehmer:innen'
+hackathon.transit.text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bis zu einem gewissen Grad ist es uns gelungen, unsere Arbeit zu erledigen, ohne dass wir sie von der entsprechenden Kommode übernehmen müssen. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fgiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+# -----
+# EVENTS
+# -----
+event.germany.country: Deutschland
+event.germany.city: München
+event.germany.province: 'Bundesland'
+event.germany.title: Deutscher Hackathon
+event.poland.country: Polen
+event.poland.city: Bydgoszcz
+event.poland.province: 'PROVINZ'
+event.poland.title: Polnischer Hackathon
+event.spain.country: Spanien
+event.spain.city: Madrid
+event.spain.province: 'PROVINZ'
+event.spain.title: Spanischer Hackathon
+event.uk.country: Vereinigtes Königreich
+event.uk.city: London
+event.uk.province: 'PROVINZ'
+event.uk.title: Großbritanniens Hackathon
+event.greece.country: Griechenland
+event.greece.city: Thessaloniki
+event.greece.province: Thessaloniki
+event.greece.title: Griechischer Hackathon
+event.italy.country: Italien
+event.italy.city: Mailand
+event.italy.province: 'PROVINZ'
+event.italy.title: Italienischer Hackathon
+# -----
+# ORGANIZERS
+# -----
+organizers.Bartosz_Budnik.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Felix_Myrie.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Giacomo_Radaelli.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Karl_Wünsche.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Leonard_Stegle.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Marios_Mitsios.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Massimiliano_Bruchi.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Max_Schneider.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Max_Thorste.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Nikos_Tsilas.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Ole_Fleck.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Samuel_Leber.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Shambhavi_Sinha.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Thomas_Price.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Victorio_Medina.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+# -----
+# FAQs
+# -----
+faqs:
+  - question: Was ist EuroHacks?
+    answer: >
+      EuroHacks ist ein Hackathon, mit mehreren, gleichzeitig stattfindenden,  Veranstaltungen in ganz Europa. Jeder hat die Möglichkeit, eigene Projekte zu erstellen, andere Menschen aus ganz Europa kennenzulernen, Spaß zu haben und natürlich Preise zu gewinnen! Finde den Hackathon in deiner Nähe und erhalte weitere Informationen.
+  - question: Was ist ein Hackathon?
+    answer: >
+      Ein Hackathon ist eine Veranstaltung, bei der Leute, die sich für Programmierung und Informatik interessieren, für ein paar Tage zusammenkommen, um spannende Projekte zu entwickeln, aber noch wichtiger, um neue Leute kennenzulernen und neue Dinge zu lernen. Kombiniert mit tollen Veranstaltungsorten, Essen, Getränken und einer vielen netten Teilnehmern sind Hackathons eine wunderbare Erfahrung und ein unvergessliches Programmier-Event.
+  - question: Gibt es eine Altersgrenze?
+    answer: >
+      Diese Veranstaltung richtet sich an Teenager im Alter von idealerweise 13 bis 18 Jahren, obwohl sie technisch gesehen für alle Personen unter 18 Jahren zugänglich ist.
+  - question: Muss ich Englisch sprechen?
+    answer: >
+      Nein, du musst nicht unbedingt Englisch sprechen und verstehen, ein wenig Englisch kann beim Navigieren auf Websites und bei der Kommunikation mit anderen während des Hackathons aber hilfreich sein.
+  - question: Wen kann ich kontaktieren, wenn ich Fragen zu den Veranstaltungen habe?
+    answer: >
+      Zögere nicht, uns bei Fragen, Wünschen oder anderen Anmerkungen eine E-Mail zu schicken. Wir werden sie so schnell wie möglich beantworten. Du erreichst uns mit allgemeinen Angelegenheiten unter questions@eurohacks.org oder bei landes-spezifischen Fragen unter <country>@eurohacks.org .
+  - question: Muss ich für die Teilnahme am Hackathon bezahlen?
+    answer: >
+      Nein, das EuroHacks ist für dich komplett kostenlos. Du musst lediglich deine Reisekosten übernehmen, aber selbst das
+      hängt von Ihrem Standort ab. Wenn du im Umkreis von 50 km um den Veranstaltungsort wohnen, musst du deine täglichen Reisekosten zum und vom Veranstaltungsort selbst übernehmen. Wenn du jedoch
+      aus einer Stadt kommen, die weiter als 50 km entfernt ist,
+      können einige Ihrer Reisekosten zur Gastgeberstadt
+      erstattet werden. Das bedeutet, dass Sie möglicherweise trotzdem einen Teil der Kosten für Ihre Reisetickets bezahlen müssen. 
+  - question: An welchen Projekt knn ich arbeiten?
+    answer: >
+      Für die Art oder den Inhalt deines Projekts gibt es zuerst einmal keine Vorgaben. Es soll lediglich etwas mit Informatik zu tun haben. Du könntest mit Mikrocontrollern an einem hardwarenahen Projekt arbeiten, aber auch eine Website oder App entwickeln. Das Wichtigste ist, dass es ein cooles Projekt ist, auf das du stolz sein kannst.
+  - question: Muss ich einen Laptop mitbringen?
+    answer: >
+      Ja. Es handelt sich um eine Programmierveranstaltung. Du musst alle elektronischen Geräte mitbringen, die Sie zum Erstellen Ihres Projekts benötigen (das kann ein Tablet oder ein Laptop sein) und das Zubehör, das Sie benötigen (z. B. Ladegerät, Festplatte, SD-Karte usw.). Wenn das für dich dennoch nicht möglich ist sende uns gerne eine E-Mail und wir werden versuchen eine Lösung zu finden.
+home.info.eventnum: 6 Veranstaltungen in ganz Europa
+# -----
+# Footer
+# -----
+footer.contacts: Kontakte
+footer.email.main: Hauptsächlich
+footer.email.questions: Fragen

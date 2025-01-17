@@ -2,14 +2,14 @@
 let { question, answer } = Astro.props
 ---
 
-<div class="question flex flex-row justify-between text-dark-gray font-semibold text-[2vw] rounded-xl py-3 px-5 m-2 w-85vw duration-700 border-none cursor-pointer text-center hover:bg-grayish-blue hover:w-85vw"> 
+<div class="question flex flex-row justify-between text-[#7A4B2A] font-semibold text-[2vw] rounded-xl py-3 px-5 m-2 w-85vw duration-700 border-none cursor-pointer text-center hover:bg-grayish-blue hover:w-85vw"> 
     {question} 
     <div class="arrow-icon">
         <i class="fa-solid fa-caret-down fa-2xl"></i>
     </div>
 </div>
 
-<div class="answer text-xl w-85vw max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out rounded-xl mb-4">
+<div class="answer text-xl text-[#7A4B2A] w-85vw max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out rounded-xl mb-4">
     <p class="px-5 py-3 font-semibold text-center">
         {answer}
     </p>
@@ -17,13 +17,13 @@ let { question, answer } = Astro.props
 
 <style>
     .question {
-        background-color: #FFCC88;
+        background-color: #F5C99F;
     }
     .question:hover {
-        background-color: #FFD4A6;
+        background-color: #F5B684;
     }
     .active {
-        background-color: #FFD4A6;
+        background-color: #F5B684;
         width: 85vw;
     }
     .transition-max-height {
@@ -32,7 +32,7 @@ let { question, answer } = Astro.props
     .answer p {
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
-        background-color: #FFB974;
+        background-color: #E7A474;
     }
     .answer.show p {
         opacity: 1;

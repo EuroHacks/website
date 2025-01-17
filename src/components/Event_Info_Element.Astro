@@ -1,0 +1,17 @@
+---
+let {header, text} = Astro.props
+---
+
+<div class="flex flex-col justify-center mt-12 bg-button-bg w-35vw rounded-2xl">
+      
+    <div class="flex flex-row items-center justify-center">
+      <img src="../../../../announcments.png" class="w-5vw mt-4 ml-4">
+      <h2 class="flex items-center text-5xl font-semibold text-footer-header mt-3 w-30vw justify-center text-center">
+        {header}
+      </h2>
+    </div>
+
+    <p class="text-justify text-[1.5vw] my-4 mx-8 text-button-text"> 
+      {text}
+    </p>
+  </div>

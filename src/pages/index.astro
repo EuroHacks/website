@@ -14,18 +14,18 @@ const t = await getPreferredEntry(Astro);
 	<div class="flex justify-center">
 		<div class="flex flex-col items-center justify-between w-85vw sm:flex-row">
 			<div
-				class="flex flex-col justify-center items-center mt-10 bg-[#FFD1A9] w-[80vw] rounded-2xl sm:w-[40vw] border-[#FFAC7A] border-4"
+				class="flex flex-col justify-center items-center mt-10 bg-div-bg w-[80vw] rounded-2xl sm:w-[40vw]"
 			>	
-				<h1 class="text-[3.5vw] font-extrabold text-[#D88A57]">
+				<h1 class="text-[3.5vw] font-extrabold text-header">
 					{t['home.vision.title']}
 				</h1>
 
-				<p class="text-justify text-[1.7vw] my-[0vw] mx-[3vw] text-[#8C4F2B]">
+				<p class="text-justify text-[1.7vw] my-[0vw] mx-[3vw] text-paragraph-text">
 					{t['home.vision.text']}
 				</p>
 
 				<a href="http://eurohacks.org/eurohacks" class="rounded-lg w-100% h-100%">
-					<div class="question flex flex-row justify-center bg-[#FFE6CC] text-[#5A3A31] hover:bg-[#FFB77C] font-semibold text-[2vw] rounded-[1.5vw] py-[1.5vw] my-[2vw] mx-[1.5vw] px-[1.5vw] w-fit duration-700 border-none cursor-default text-center"> 
+					<div class="question flex flex-row justify-center bg-button-bg text-button-text hover:bg-button-bg-hover font-semibold text-[2vw] rounded-[1.5vw] py-[1.5vw] my-[2vw] mx-[1.5vw] px-[1.5vw] w-fit duration-700 border-none cursor-default text-center"> 
 						<div> 
 							{t['home.vision.button']} 
 						</div>
@@ -39,7 +39,7 @@ const t = await getPreferredEntry(Astro);
 		
 				<img src="../../hackathon.png" class="object-contain w-[50vw] rounded-xl">
 
-				<div class="text-black text-2xl max-w-[90%] w-full flex flex-col items-center justify-center">
+				<div class="text-2xl text-header max-w-[90%] w-full flex flex-col items-center justify-evenly">
 
 					<div class="w-[115%] flex flex-col justify-between items-center text-[1.5vw] my-[1vw] sm:flex-row">
 						<div> <i class="fa-solid fa-calendar-days"></i> 12.07.2025 - 13.07.2025 </div>
@@ -55,7 +55,7 @@ const t = await getPreferredEntry(Astro);
 		</div>
 	</div>
 	<div class="flex flex-col items-center -mb-[8vw] sm:-mb-[4vw]">
-		<h1 class="text-light-apricot text-[3.2vw] text-left w-85vw mt-[6vw]">
+		<h1 class="text-header text-[3.2vw] text-left w-85vw mt-[6vw]">
 			{t['home.events.joinus']}
 		</h1>
 	</div>
@@ -102,7 +102,7 @@ const t = await getPreferredEntry(Astro);
 
 	<div class="pt-[2vw] flex flex-col items-center">
 		
-		<h1 class="text-left w-85vw text-light-apricot text-[3.2vw] mb-4">
+		<h1 class="text-left w-85vw text-[#D97A4A] text-[3.2vw] mb-4">
 			{t['home.faq.title']}
 		</h1>
 

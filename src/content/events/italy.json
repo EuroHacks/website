@@ -4,14 +4,14 @@
     "info": {
         "participants": 0,
         "contact": {
-            "email": "greece@eurohacks.org", 
-            "phone": "+30 69",
+            "email": "italy@eurohacks.org", 
+            "phone": "N/A",
             "zoom": "N/A",
             "discord": "N/A"
           }
       },
       "images": {
-          "image": "greece.png",
-          "background": "Munich1.jpg"
+          "image": "italy.png",
+          "background": "Milan.jpg"
       }
   }

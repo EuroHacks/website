@@ -4,14 +4,14 @@ import { getPreferredEntry } from "../lib/i18n";
 const t = await getPreferredEntry(Astro);
 ---
 
-<footer class="bg-midnight-slate flex flex-row justify-evenly items-center">
+<footer class="bg-footer-bg flex flex-row justify-evenly items-center">
 
             <img src="../../media/Banner.png" class="ml-[1vw] mr-[2vw] w-[12vw] h-[12vw]">
 
             <div class="flex flex-col justify-center items-center">
-                <h1 class="text-[2.5vw] text-zinc-100 mt-[0.5vw]"> {t['footer.contacts']} </h1>
+                <h1 class="text-[2.5vw] text-footer-header mt-[0.5vw]"> {t['footer.contacts']} </h1>
 
-                <div class="flex flex-row mt-[1vw] mb-[2vw] text-zinc-100">
+                <div class="flex flex-row mt-[1vw] mb-[2vw] text-footer-text">
 
                     <div class="mx-4">
                         <table class="text-[1.3vw]">
@@ -71,7 +71,7 @@ const t = await getPreferredEntry(Astro);
                 </div>
             </div>
 
-        <div class="flex flex-row items-center text-[#FFEAD1]">
+        <div class="flex flex-row items-center text-footer-link">
             <div class= "flex flex-col items-center">
                 <div class= "flex flex-row my-[0.8vw] items-center">
                     <a href="https://www.instagram.com/eurohacks2025/"> <img src="../../instagram.png" title='#eurohacks2025' class="mx-[1.5vw] w-[8vw] sm:w-[4vw]"> </a>

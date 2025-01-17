@@ -8,7 +8,7 @@ export default defineConfig({
   output: 'server',
 
   i18n: {
-    locales: ['en', 'el'],
+    locales: ['en', 'el', 'de', 'it'],
     defaultLocale: 'en',
   }
 });

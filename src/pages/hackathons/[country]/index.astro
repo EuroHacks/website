@@ -1,6 +1,7 @@
 ---
 import Layout from "../../../layout/default.astro"; 
 import OrganizerCard from "../../../components/OrganizerElement.astro";
+import Event_Info_Element from "../../../components/Event_Info_Element.astro";
 import { getEntry } from "astro:content";
 import { getPreferredEntry } from "../../../lib/i18n";
 
@@ -31,14 +32,14 @@ const t = await getPreferredEntry(Astro);
     </div> -->
 
     <div class="flex justify-evenly my-3">
-      <div class="flex flex-col justify-evenly items-center mt-12 bg-frosted-blue w-80vw rounded-2xl">
+      <div class="flex flex-col justify-evenly items-center mt-12 bg-div-bg w-80vw rounded-2xl">
 
-          <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
+          <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-[80vw]">
               <img src="../../../head_organizing_team.png" width="80px" class="mr-6 mt-2">
-              <h1 class="text-4.5xl font-bold"> {t['hackathon.organizers']}  </h1>
+              <h1 class="text-[5vw] sm:text-[3.5vw] text-header font-bold"> {t['hackathon.organizers']}  </h1>
           </div>
 
-          <div class="flex flex-row w-80vw justify-evenly items-start mt-3">
+          <div class="flex flex-col w-[80vw] justify-evenly items-center sm:items-start mt-3 sm:flex-row">
 
             {eventOrganizers.map(
               organizer => <OrganizerCard
@@ -56,21 +57,21 @@ const t = await getPreferredEntry(Astro);
   </div>
 
   <div class="flex justify-center my-3">
-    <div class="flex flex-col justify-start mt-12 bg-frosted-blue w-80vw rounded-2xl">
+    <div class="flex flex-col justify-start mt-12 bg-div-bg w-80vw rounded-2xl">
 
-      <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
-        <img src="/info.png" width="80px" class= "mr-6 mt-2">
-        <h1 class="text-5xl font-bold">{t['hackathon.info.header']}</h1>
+      <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw text-header mt-[2vw]">
+        <img src="/info.png" class= "mr-[1.5vw] w-[5vw]">
+        <h1 class="text-[3.5vw] font-bold">{t['hackathon.info.header']}</h1>
       </div>
       
-      <br>
-      <div class="flex flex-row items-center justify-start ml-4vw">
+      <br><br><br>
+      <div class="flex flex-row items-center justify-start ml-[4vw]">
 
         <div class="mr-1vw"> 
           <i class="fa-solid fa-location-dot fa-2xl"></i> 
         </div>
         
-        <h2 class="text-4xl"> 
+        <h2 class= "text-[2.5vw] text-paragraph-text"> 
           {t['hackathon.info.location']} {t[`event.${country}.city`]} 
         </h2> 
 
@@ -84,7 +85,7 @@ const t = await getPreferredEntry(Astro);
           <i class="fa-solid fa-clock fa-2xl"></i> 
         </div> 
 
-        <h2 class="text-4xl"> 
+        <h2 class="text-[2.5vw] text-paragraph-text"> 
           {t['hackathon.info.dates']} 12/7/2025 - 13/7/2025
         </h2> 
         
@@ -98,7 +99,7 @@ const t = await getPreferredEntry(Astro);
           <img src="../../../../participants.png" class="w-9"> 
         </div> 
         
-        <h2 class="text-4xl"> 
+        <h2 class="text-[2.5vw] text-paragraph-text"> 
           {t['hackathon.info.participants']} {event.info.participants} 
         </h2> 
         
@@ -112,7 +113,7 @@ const t = await getPreferredEntry(Astro);
           <img src="../../../../zoom.png" class="w-9"> 
         </div> 
         
-        <h2 class="text-4xl"> 
+        <h2 class="text-[2.5vw] text-paragraph-text"> 
           {t['hackathon.info.zoomlink']} {event.info.zoom}
         </h2> 
 
@@ -126,7 +127,7 @@ const t = await getPreferredEntry(Astro);
           <i class="fa-solid fa-envelope fa-2x"></i> 
         </div> 
         
-        <h2 class="text-4xl"> 
+        <h2 class="text-[2.5vw] text-paragraph-text"> 
           {t['hackathon.info.contact.email']}  {event.info.contact.email}
         </h2> 
 
@@ -140,7 +141,7 @@ const t = await getPreferredEntry(Astro);
           <i class="fa-solid fa-phone fa-2x"></i> 
         </div> 
 
-        <h2 class="text-4xl"> 
+        <h2 class="text-[2.5vw] text-paragraph-text"> 
           {t['hackathon.info.contact.phone']}  {event.info.contact.phone}
         </h2> 
         
@@ -152,65 +153,75 @@ const t = await getPreferredEntry(Astro);
   <br>
 
   <div class="flex items-center justify-evenly my-3">
-    <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw rounded-2xl">
-      
+
+
+    <div class="flex flex-col justify-center mt-12 bg-button-bg w-35vw rounded-2xl">
+
       <div class="flex flex-row items-center justify-center">
         <img src="../../../../announcments.png" class="w-5vw mt-4 ml-4">
-        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center">
+
+        <h2 class="flex items-center text-[3.5vw] font-semibold text-footer-header mt-3 w-30vw justify-center text-center">
           {t['hackathon.announcements.header']}
         </h2>
       </div>
 
-      <p class="text-justify text-3xl my-4 mx-8"> 
+      <p class="text-justify text-[1.5vw] my-4 mx-8 text-button-text"> 
         {t['hackathon.announcements.text']}
       </p>
     </div>
 
 
-    <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw rounded-2xl">
+    <div class="flex flex-col justify-center mt-12 bg-button-bg-hover w-35vw rounded-2xl">
 
       <div class="flex flex-row items-center justify-center">
         <img src="../../../../food.png" class="w-5vw mt-4 ml-4">
-        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center">
+
+        <h2 class="flex items-center text-[3.5vw] font-semibold text-footer-header mt-3 w-30vw justify-center text-center">
           {t['hackathon.food.header']}
         </h2>
       </div>
 
-      <p class="text-justify text-3xl my-4 mx-8"> 
+      <p class="text-justify text-[1.5vw] my-4 mx-8 text-button-text"> 
         {t['hackathon.food.text']}
       </p>
     </div>
-  </div>
 
-  <div class="flex justify-evenly items-start my-3">
-    <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw rounded-2xl">
-      
+
+  </div>
+  <div class="flex flex-col sm:flex-row items-center justify-evenly my-3">
+
+    <div class="flex flex-col justify-center mt-12 bg-button-bg-hover w-[80vw] sm:w-[35vw] rounded-2xl">
+
       <div class="flex flex-row items-center justify-center">
         <img src="../../../../staying.png" class="w-5vw mt-4 ml-4">
-        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center">
+
+        <h2 class="flex items-center text-[3.5vw] font-semibold text-footer-header mt-3 sm:[w-30vw] justify-center text-center">
           {t['hackathon.stay.header']}
         </h2>
       </div>
 
-      <p class="text-justify text-3xl my-4 mx-8"> 
+      <p class="text-justify text-[1.5vw] my-4 mx-8 text-button-text"> 
         {t['hackathon.stay.text']}
       </p>
     </div>
 
-    
-    <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw h-fit rounded-2xl">
+
+    <div class="flex flex-col justify-center mt-12 bg-button-bg w-35vw rounded-2xl">
 
       <div class="flex flex-row items-center justify-center">
         <img src="../../../../transportation.png" class="w-5vw mt-4 ml-4">
-        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center">
+
+        <h2 class="flex items-center text-[3.5vw] font-semibold text-footer-header mt-3 w-30vw justify-center text-center">
           {t['hackathon.transit.header']}
         </h2>
       </div>
 
-      <p class="text-justify text-3xl my-4 mx-8"> 
+      <p class="text-justify text-[1.5vw] my-4 mx-8 text-button-text"> 
         {t['hackathon.transit.text']}
       </p>
     </div>
+
+
   </div>
   <br>
 </Layout>
