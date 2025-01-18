@@ -87,16 +87,16 @@ hackathon.info.contact.email: 'E-mail contact: '
 hackathon.info.contact.phone: 'Phone contact: '
 
 hackathon.announcements.header: Announcements
-hackathon.announcements.text: ''
+hackathon.announcements.text: 'No announcments are done yet from the organizers.'
 
 hackathon.food.header: Participant Nutrition
-hackathon.food.text: ''
+hackathon.food.text: 'No information can be provided yet.'
 
 hackathon.stay.header: Participant Stay
-hackathon.stay.text: ''
+hackathon.stay.text: 'No information can be provided yet.'
 
 hackathon.transit.header: Participant Transit
-hackathon.transit.text: ''
+hackathon.transit.text: 'No information can be provided yet.'
 
 # -----
 # EVENTS
@@ -148,7 +148,12 @@ organizers.Max_Thorste.bio: ''
 organizers.Nikos_Tsilas.bio: ''
 organizers.Ole_Fleck.bio: ''
 organizers.Samuel_Leber.bio: ''
-organizers.Shambhavi_Sinha.bio: ''
+organizers.Shambhavi_Sinha.bio: >
+  Hi! I'm Shambhavi, an enthusiastic Hack Clubber and student based in Leicester, UK, with a 
+  passion for creating things and problem-solving. I love making useful websites to help me 
+  compose music and I also enjoy improving my own personal website! When I'm not busy coding 
+  or composing, you'll probably find me immersed in maths problems or playing the piano to unwind.
+
 organizers.Thomas_Price.bio: ''
 organizers.Victorio_Medina.bio: ''
 
@@ -198,14 +203,10 @@ faqs:
       at questions@eurohacks.org or in your country email: <country>@eurohacks.org.'
       
   - question: Do I have to pay to participate in the hackathon?
-    answer: >
-      No, you don't. You just have to cover the travel stipends but even that
-      depends on your location. If you live within 50km of the venue, you’ll need to
-      cover your daily travel expenses to and from the venue. However, if you’re coming
-      from a city further than 50km away, some of your travel expenses to the host city
-      may be reimbursed. This means you may still need to pay some of the cost of your
-      travel tickets.
 
+    answer: > # but even that depends on your location. If you live within 50km of the venue, you’ll need to cover your daily travel expenses to and from the venue. However, if you’re coming from a city further than 50km away, some of your travel expenses to the host city may be reimbursed. This means you may still need to pay some of the cost of your travel tickets.
+      No, you don't. You just have to cover the travel stipends. 
+      
   - question: What can I make for a project?
     answer: >
       Whatever you want if it is about computer science. It could be something

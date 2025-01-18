@@ -16,19 +16,6 @@ export default {
 				'footer-text': 			"#FFD6A5",
 				'footer-link': 			"#FFC4A3",
 				'footer-header': 		"#FAE3B4",
-
-
-				'light-peach-bg': 	"#FBEED7",
-				'light-apricot': 	"#fec580",
-				'dark-gray': 		'#2f2f2f',
-				'background': 		'#263954',
-				'soft-peach': 		'#FFF2DE',
-				'icy-mist': 		'#D3E4FF',
-				'golden-sand': 		'#FFE193',
-				'blanched-almond': 	'#FFEBCD',
-				'dusty-blue': 		'#5676A6',
-				'sandstone-beige': 	'#DACDBA',
-				'light-beige': 		'#F9EBD7',
 			  },
 			  fontSize: {
 				'4.5xl': '42px',
