@@ -1,6 +1,6 @@
 {
     "logo": "",
-    "organizers": ["Karl_Wünsche", "Samuel_Leber", "Max_Schneider", "Leonard_Stegle"],
+    "organizers": [],
     "info": {
         "participants": 0,
         "contact": {
@@ -11,7 +11,7 @@
         }
     },
     "images": {
-        "image": "greece.png",
+        "image": "germany.png",
         "background": "Munich.jpg"
     }
 }

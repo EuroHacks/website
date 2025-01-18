@@ -9,26 +9,26 @@ const t = await getPreferredEntry(Astro);
 <Layout title="Eurohacks">
 
         <div class="hidden fixed top-0 left-0 w-[100%] h-[100%] bg-opacity-30 bg-black justify-center items-center z-50" id="info-modal1">
-            <div class="bg-div-bg p-5 w-[90%] max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
+            <div class="bg-div-bg p-5 w-[90%] max-w-[85vw] sm:max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
                 <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal1">  <i class="fa-solid fa-xmark fa-xl"></i>  </button>
-                <h2 class="text-[28px] mb-3 text-header"> {t.about[0].modal.title} </h2>
-                <p class="text-lg text-button-text mb-5" set:html={t.about[0].modal.text}> </p>
+                <h2 class="text-[4vw] sm:text-[3vw] mb-3 text-header"> {t.about[0].modal.title} </h2>
+                <p class="text-[2.5vw] sm:text-[1.2vw] text-button-text mb-5" set:html={t.about[0].modal.text}> </p>
             </div>
         </div>
 
         <div class="hidden fixed top-0 left-0 w-[100%] h-[100%] bg-opacity-30 bg-black justify-center items-center z-50" id="info-modal2">
-            <div class="bg-div-bg p-5 w-[90%] max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
+            <div class="bg-div-bg p-5 w-[90%] max-w-[85vw] sm:max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
                 <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal2"> <i class="fa-solid fa-xmark fa-xl"></i> </button>
-                <h2 class="text-[28px] mb-3 text-header"> {t.about[1].modal.title} </h2>
-                <p class="text-lg text-button-text mb-5" set:html={t.about[1].modal.text}> </p>
+                <h2 class="text-[4vw] sm:text-[3vw] mb-3 text-header"> {t.about[1].modal.title} </h2>
+                <p class="text-[2.5vw] sm:text-[1.2vw] text-button-text mb-5" set:html={t.about[1].modal.text}> </p>
             </div>
         </div>
 
         <div class="hidden fixed top-0 left-0 w-[100%] h-[100%] bg-opacity-30 bg-black justify-center items-center z-50" id="info-modal3">
-            <div class="bg-div-bg p-5 w-[90%] max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
+            <div class="bg-div-bg p-5 w-[90%] max-w-[85vw] sm:max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
                 <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal3">  <i class="fa-solid fa-xmark fa-xl"></i>  </button>
-                <h2 class="text-[28px] mb-3 text-header">{t.about[2].modal.title}</h2>
-                <p class="text-lg text-button-text mb-5" set:html={t.about[2].modal.text}> </p>
+                <h2 class="text-[4vw] sm:text-[3vw] mb-3 text-header">{t.about[2].modal.title}</h2>
+                <p class="text-[2.5vw] sm:text-[1.2vw] text-button-text mb-5" set:html={t.about[2].modal.text}> </p>
             </div>
         </div>
 

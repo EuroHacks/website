@@ -141,11 +141,22 @@ organizers.Felix_Myrie.bio: ''
 organizers.Giacomo_Radaelli.bio: ''
 organizers.Karl_Wünsche.bio: ''
 organizers.Leonard_Stegle.bio: ''
-organizers.Marios_Mitsios.bio: ''
+organizers.Marios_Mitsios.bio: >
+  I'm Marios, Hack Clubber and high school student from Trikala. We work with all different programming 
+  languages and I like to explore new technologies. As a Hack Club member for the last three years, 
+  I have contributed in various ways to supporting the community. In my spare time, I like to 
+  listening to music, and of course, dabbling in different areas of programming. I'm excited to be a part of the 
+  I'm excited to organize the Greek event and will do everything I can to ensure that Eurohacks is the best it can be!
+
 organizers.Massimiliano_Bruchi.bio: ''
 organizers.Max_Schneider.bio: ''
 organizers.Max_Thorste.bio: ''
-organizers.Nikos_Tsilas.bio: ''
+organizers.Nikos_Tsilas.bio: >
+  Hi! I'm Nikos, a Hack Clubber and student based in Thessaloniki, Greece. I'm passionate about coding, 
+  problem-solving, and creating things. I love making websites and apps that help me and others. I am
+  also a big fan of automations and robots in general. When I'm  not coding, you'll probably find me 
+  playing voleyball or reading a book. I am looking forward to meet you all!
+
 organizers.Ole_Fleck.bio: ''
 organizers.Samuel_Leber.bio: ''
 organizers.Shambhavi_Sinha.bio: >
@@ -154,7 +165,13 @@ organizers.Shambhavi_Sinha.bio: >
   compose music and I also enjoy improving my own personal website! When I'm not busy coding 
   or composing, you'll probably find me immersed in maths problems or playing the piano to unwind.
 
-organizers.Thomas_Price.bio: ''
+organizers.Thomas_Price.bio: >
+  Hi, I'm Thomas! I'm an aspiring software engineer from the UK and I joined HackClub during the summer 
+  for their Arcade program. After winning some Airpods and some other cool stuff over the summer, I decided 
+  to volunteer to be a Co-organiser for the UK Eurohacks! During my free time, I like to make websites, run 
+  and listen to indie rock music (the wombats as my favourite)! I'm really looking forward to being a part 
+  of this event and hopefully everyone can make something awesome!
+
 organizers.Victorio_Medina.bio: ''
 
 # -----

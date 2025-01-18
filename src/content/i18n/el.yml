@@ -80,13 +80,13 @@ hackathon.info.zoomlink: 'Σύνδεσμος zoom: '
 hackathon.info.contact.email: 'Επικοινωνία μέσω email: '
 hackathon.info.contact.phone: 'Τηλεφωνική επικοινωνία: '
 hackathon.announcements.header: Ανακοινώσεις
-hackathon.announcements.text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+hackathon.announcements.text: 'Δεν έχουν γίνει ακόμη ανακοινώσεις από τους διοργανωτές.'
 hackathon.food.header: Διατροφή Συμμετεχόντων
-hackathon.food.text: 'Η διατροφή των συμμετεχόντων θα καλύπτεται πλήρως από την διοργάνωση με 3 γεύματα (πρωινό, μεσημεριανό & βραδινό) για συμμετέχοντες των οποίων η μεταφορά μερικώς καλύπτεται και 2 γεύματα (πρωινό & μεσημεριανό) για τους συμμετέχοντες από κοντινές περιοχές. Ακόμα, κατά την διάρκεια όλου του 3ημέρου θα ειναι διαθέσιμα snacks.'
+hackathon.food.text: 'Δεν μπορούν να δοθούν ακόμη πληροφορίες.'
 hackathon.stay.header: Διαμονή Συμμετεχόντων
-hackathon.stay.text: 'Η διαμονή των συμμετεχόντων εντός των 50χλμ θα γίνεται στα σπίτια του και η μεταφορά τους από τον χώρο του hackathon θα γίνεται στις 20:00 με 21:00. Συμμετέχοντες  από άλλες πόλεις θα φιλοξενούνται σε κοντική εγκατάσταση με έξοδα της διοργάνωσης και η μεταφορά τους θα γίνεται με λεωφορείο της διοργάνωσης.'
+hackathon.stay.text: 'Δεν μπορούν να δοθούν ακόμη πληροφορίες.'
 hackathon.transit.header: Μεταφορά Συμμετεχόντων
-hackathon.transit.text: 'Η μεταφορά των συμμετεχόντων θα γίνει με έξοδα των ιδίων. Η μεταφορά θα καλυπτεται στην περίπτωση όπου η μεταφορά είναι μεγαλύτερη από 50χλμ. Το μέγιστο καλυπτόμενο ποσό ορίζεται στα xx€ και η μεταφορά μπορεί να γίνει με λεωφορείο ή τρένο.'
+hackathon.transit.text: 'Δεν μπορούν να δοθούν ακόμη πληροφορίες.'
 # -----
 # EVENTS
 # -----
@@ -128,11 +128,25 @@ organizers.Felix_Myrie.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing 
 organizers.Giacomo_Radaelli.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 organizers.Karl_Wünsche.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 organizers.Leonard_Stegle.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Marios_Mitsios.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+
+organizers.Marios_Mitsios.bio: >
+  Είμαι ο Μάριος, Hack Clubber και μαθητής λυκείου από τα Τρίκαλα. Ασχολούμαι με όλες τις διαφορετικές γλώσσες 
+  προγραμματισμού και μυο αρέσει να εξερευνώ νέες τεχνολογίες. Ως μέλος του Hack Club τα τελευταία τρία χρόνια, 
+  έχω συνεισφέρει με διάφορους τρόπους στην υποστήριξη της κοινότητας. Στον ελεύθερο χρόνο μου, μου αρέσει να 
+  ακούω μουσική, και φυσικά να ασχολούμαι με διαφορετικούς τομείς του προγραμματισμού. Είμαι ενθουσιασμένος που 
+  θα οργανώσω το ελληνικό event και θα κάνω ότι μπορώ για να διασφαλίσω ότι το Eurohacks θα είναι το καλύτερο δυνατό!
+
 organizers.Massimiliano_Bruchi.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 organizers.Max_Schneider.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 organizers.Max_Thorste.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Nikos_Tsilas.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+
+organizers.Nikos_Tsilas.bio: >
+    Γεια σας! Είμαι ο Νίκος, ένας Hack Clubber και μαθητής Λυκείου και κατοικώ στη Θεσσαλονίκη, Ελλάδα. Ασχολούμαι 
+    συστηματικά τον προγραμματισμό, την επίλυση προγραμματιστικών προβλημάτων και τη δημιουργία κατασκευών. Μου 
+    αρέσει να φτιάχνω ιστοσελίδες και εφαρμογές που βοηθούν εμένα και τους άλλους. Είμαι επίσης μεγάλος fan των 
+    αυτοματισμών και των robot γενικότερα. Όταν δεν ασχολούμαι με τον προγραμματισμό, πιθανότατα θα παίζω βόλεϊ 
+    ή θα διαβάζω κάποιο βιβλίο.
+
 organizers.Ole_Fleck.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 organizers.Samuel_Leber.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 organizers.Shambhavi_Sinha.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
