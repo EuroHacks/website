@@ -1,3 +1,8 @@
+---
+import { getPreferredEntry } from "../lib/i18n";
+const t = await getPreferredEntry(Astro);
+---
+
 <nav class="font-sams h-[40vh] sm:h-[100vh] text-div-bg">
     <ul class= "w-[60vw] sm:w-[33vw] flex float-end justify-between px-5 list-none py-3 z-10 sticky top-0">
             
@@ -16,7 +21,13 @@
 
     <img src="../../Banner.png" class="absolute w-max">
 
-    
+    <div class="bg-div-bg p-[1vw] text-justify text-[1.2vw] flex z-10 sticky w-[30vw] rounded-lg top-[1vw] left-[1vw]">
+		<p class="text-button-text">
+            {t['home.warning']}
+		</p>
+
+	</div>
+
 </nav>
 
 <style>

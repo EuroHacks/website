@@ -1,6 +1,7 @@
 import { z } from 'astro:content';
 
 const schema = z.object({
+    'home.warning': z.string(),
     'home.vision.title': z.string(),
     'home.vision.text': z.string(),
     'home.vision.button': z.string(),

@@ -4,7 +4,7 @@ let { name, paragraph, country_image, image  } = Astro.props
 
 <div class="flex flex-row justify-center items-center mx-4 my-[1.5vw] sm:mb-[5vw] sm:my-0 sm:flex-col">
     <div class="relative">
-        <img src={image} class="block w-[28vw] object-cover sm:w-[24vw] rounded-xl">
+        <img src={image} class="block w-[28vw] max-h-[24vw] object-cover sm:w-[24vw] sm:max-h-[20vw] rounded-xl">
         <img src={country_image} class="absolute w-[6vw] h-[6vw] sm:w-[5vw] sm:h-[5vw] top-2 left-2">
      </div>
     <div class="w-[40vw] ml-3 sm:mt-3 sm:w-[25vw] sm:ml-0">

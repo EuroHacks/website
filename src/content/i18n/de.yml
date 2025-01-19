@@ -1,6 +1,15 @@
 # -----
 # HOMEPAGE
 # -----
+
+home.warning: >
+  Die Website befindet sich derzeit im Aufbau. Die meisten Teile funktionieren bereits. Es könnte 
+  jedoch einige falsche Informationen und viele leere Stellen, da wir noch nicht alle Informationen 
+  haben da wir uns noch in einem sehr frühen Stadium des Organisationsprozesses befinden. Außerdem 
+  ist die Übersetzung der gesamten Website in 7 verschiedene Sprachen ein schwieriger Prozess ist, 
+  könnten einige Übersetzungen fehlerhaft oder nicht vorhanden sein. Wir raten Ihnen, auf Englisch 
+  zu wechseln, um die beste Erfahrung zu machen. (Die Probleme werden bald behoben sein).
+
 home.vision.title: Das ist EuroHacks
 home.vision.text: >
   EuroHacks ist ein Hackathon, mit mehreren, gleichzeitig stattfindenden,  Veranstaltungen in ganz Europa. Jeder hat die Möglichkeit, eigene Projekte zu erstellen, andere Menschen aus ganz Europa kennenzulernen, Spaß zu haben und natürlich Preise zu gewinnen! Finde den Hackathon in deiner Nähe und erhalte weitere Informationen.
@@ -101,7 +110,11 @@ organizers.Karl_Wünsche.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscin
 organizers.Leonard_Stegle.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 organizers.Marios_Mitsios.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 organizers.Massimiliano_Bruchi.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Max_Schneider.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Max_Schneider.bio: >
+  Hi, ich bin Max, 16 Jahre alt und lebe in Baden-Württemberg. In meiner Freizeit arbeite und programmiere 
+  ich unglaublich gerne an diversen Robotik- und Software-Projekten. Außerdem gehe ich sehr gerne bouldern. 
+  Als Teil des EuroHacks-Deutschland Teams würde ich mich sehr freuen dich bei EuroHacks in München zu treffen.
+
 organizers.Max_Thorste.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 organizers.Nikos_Tsilas.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 organizers.Ole_Fleck.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'

@@ -11,6 +11,7 @@ import "../styles/home.css";
 const t = await getPreferredEntry(Astro);
 ---
 <Layout title="Home Page">
+
 	<div class="flex justify-center">
 		<div class="flex flex-col items-center justify-between w-85vw sm:flex-row">
 			<div
@@ -54,6 +55,7 @@ const t = await getPreferredEntry(Astro);
 			</div>
 		</div>
 	</div>
+
 	<div class="flex flex-col items-center -mb-[8vw] sm:-mb-[4vw]">
 		<h1 class="text-header text-[3.2vw] text-left w-85vw mt-[6vw]">
 			{t['home.events.joinus']}
@@ -65,38 +67,32 @@ const t = await getPreferredEntry(Astro);
 				<Event
 					city={t['event.germany.city']}
 					country={t['event.germany.country']}
-					image="../../Munich.jpg"
-					learnMore="Learn More" />
+					image="../../Munich.jpg"/>
 
 				<Event
 					city={t['event.poland.city']}
 					country={t['event.poland.country']}
-					image="../../Bydgoszcz.jpg"
-					learnMore="Learn More" />
+					image="../../Bydgoszcz.jpg"/>
 
 				<Event 
 					city={t['event.spain.city']}
 					country={t['event.spain.country']}
-					image="../../Madrid.jpg"
-					learnMore="Learn More" />
+					image="../../Madrid.jpg"/>
 					
 				<Event
 					city={t['event.uk.city']}
 					country={t['event.uk.country']}
-					image="../../London.jpg"
-					learnMore="Learn More" />
+					image="../../London.jpg"/>
 					
 				<Event
 					city={t['event.greece.city']}
 					country={t['event.greece.country']}
-					image="../../Thessaloniki.jpg"
-					learnMore="Learn More" />	
+					image="../../Thessaloniki.jpg"/>	
 
 				<Event
 					city={t['event.italy.city']}
 					country={t['event.italy.country']}
-					image="../../Milan.jpg"
-					learnMore="Learn More" />
+					image="../../Milan.jpg"/>
 			</div>
 		</div>
 

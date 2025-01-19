@@ -2,6 +2,13 @@
 # HOMEPAGE
 # -----
 
+home.warning: >
+  The website is currently under construction. Most parts of it are working. However, there might 
+  be some false information as well as many blank parts because of the lack of information that we
+  currently have as it is very early in the organizing process. Also as translating the whole website 
+  in 7 different languages is a difficult process some translations might be off or not existing. We 
+  would advise you to switch to English for the best experience. (the issues will be resolved pretty soon).
+  
 home.vision.title: This is Eurohacks
 home.vision.text: >
   EuroHacks is a Europe-wide hackathon, with multiple events all 
@@ -136,7 +143,12 @@ event.italy.title: Italin Hackathon
 # ORGANIZERS
 # -----
 
-organizers.Bartosz_Budnik.bio: ''
+organizers.Bartosz_Budnik.bio: >
+  Hiya! Bartosz here, I'm just a Hack Clubber who wants to help out others as much as possible. I code 
+  games and some fun tools in low level languages, though I prefer to spend my time doing tasks at Hack 
+  Club. I love reading self-improvement books, and if I get bored - play some video games like Persona. 
+  I just want to influence as many people as possible and make them acknowledge their skills, improve them!
+
 organizers.Felix_Myrie.bio: ''
 organizers.Giacomo_Radaelli.bio: ''
 organizers.Karl_Wünsche.bio: ''
@@ -149,7 +161,11 @@ organizers.Marios_Mitsios.bio: >
   I'm excited to organize the Greek event and will do everything I can to ensure that Eurohacks is the best it can be!
 
 organizers.Massimiliano_Bruchi.bio: ''
-organizers.Max_Schneider.bio: ''
+organizers.Max_Schneider.bio: >
+  Hi, I'm Max, 16 years old and I live in Baden-Württemberg. In my spare time, I love working on and programming 
+  various robotics and software projects. I also love bouldering. As part of the EuroHacks Germany team, I would 
+  be very happy to meet you at EuroHacks in Munich.
+  
 organizers.Max_Thorste.bio: ''
 organizers.Nikos_Tsilas.bio: >
   Hi! I'm Nikos, a Hack Clubber and student based in Thessaloniki, Greece. I'm passionate about coding, 

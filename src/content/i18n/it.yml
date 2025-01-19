@@ -1,6 +1,15 @@
 # -----
 # HOMEPAGE
 # -----
+
+home.warning: >
+  Il sito web è attualmente in costruzione. La maggior parte delle parti è funzionante. Tuttavia, 
+  potrebbero esserci informazioni errate e molte parti vuote a causa della mancanza di informazioni 
+  di cui disponiamo al momento. informazioni di cui disponiamo attualmente, poiché è molto presto nel 
+  processo di organizzazione. Inoltre, la traduzione dell'intero sito web in 7 lingue diverse è un 
+  processo difficile, alcune traduzioni potrebbero essere errate o inesistenti. Vi vi consigliamo di 
+  passare all'inglese per avere un'esperienza migliore. (I problemi saranno risolti molto presto).
+
 home.vision.title: Questo è Eurohacks
 home.vision.text: >
   Eurohacks è un'hackathon a livello europeo, con più eventi che si
