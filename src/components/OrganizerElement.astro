@@ -2,15 +2,15 @@
 let { name, paragraph, country_image, image  } = Astro.props
 ---
 
-<div class="flex flex-col justify-center items-center my-0 mx-4">
+<div class="flex flex-row justify-center items-center mx-4 my-[1.5vw] sm:mb-[5vw] sm:my-0 sm:flex-col">
     <div class="relative">
-        <img src={image} class="block w-24vw h-18vw rounded-xl">
-        <img src={country_image} class="absolute w-16 h-16 top-2 left-2">
+        <img src={image} class="block w-[28vw] max-h-[24vw] object-cover sm:w-[24vw] sm:max-h-[20vw] rounded-xl">
+        <img src={country_image} class="absolute w-[6vw] h-[6vw] sm:w-[5vw] sm:h-[5vw] top-2 left-2">
      </div>
-    <div class="w-24vw mt-3">
-        <h1 class="w-24vw text-soft-peach bg-pale-sky-blue text-center p-0.4vw rounded-t-md text-3xl font-bold"> {name} </h1>
-        <div class="mt-0 bg-steel-blue text-2xl rounded-b-md"> 
-            <p class="mx-4 text-soft-peach text-justify"> {paragraph} </p>
+    <div class="w-[40vw] ml-3 sm:mt-3 sm:w-[25vw] sm:ml-0">
+        <h1 class="w-[40vw] sm:w-[25vw] text-footer-header bg-header text-center p-0.4vw rounded-t-lg text-[2vw] font-bold"> {name} </h1>
+        <div class="mt-0 bg-button-bg text-[1.8vw] sm:text-[1.3vw] rounded-b-lg"> 
+            <p class="mx-4 text-paragraph-text text-justify"> {paragraph} </p>
         </div>
     </div>
 </div>

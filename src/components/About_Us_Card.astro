@@ -1,0 +1,28 @@
+---
+let { title, text, image} = Astro.props
+---
+
+<div class="about-card hover:-translate-y-3 bg-div-bg rounded-xl overflow-hidden min-w-[25vw] my-[1vw] max-w-[80vw] sm:max-w-[30vw] relative shadow-[0_4px_10px_rgba(0,0,0,0.1)] flex-[1_1_calc(33.33%_-_20px)] transition-transform duration-[0.3s] ease-[ease-in-out]">
+    <img src= {image} class="w-[100%] h-[200px] object-cover opacity-0 translate-y-[50px] transition-all duration-[0.6s] ease-[ease]" alt= {title}>
+    <div class="card-content p-5 text-center">
+        <h1 class="text-[23px] leading-5 mb-4 text-header"> {title} </h1>
+        <p class="text-base text-paragraph-text"> {text} </p>
+    </div>
+</div>
+
+<style>
+        
+    .about-card img.visible{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+        .about-content {
+            flex-direction: column;
+        }
+        .about-card {
+            flex: 1 1 100%;
+        }
+    }
+</style>

@@ -1,0 +1,20 @@
+---
+let {header, text, image} = Astro.props
+---
+
+<div class="flex flex-row sm:flex-col justify-center w-[80vw] sm:w-35vw mt-[3vw] sm:mt-12 bg-button-bg rounded-2xl">
+      
+    <div class="flex flex-col sm:flex-row items-center justify-center">
+
+      <img src={image} class="w-5vw mt-2 sm:mt-4 ml-4">
+      <h2 class="flex items-center text-[3vw] font-semibold text-footer-header mt-3 w-30vw justify-center text-center">
+        {header}
+      </h2>
+
+    </div>
+
+    <p class="text-justify text-[1.5vw] my-0 sm:my-[1vw] mt-[1.5vw] mx-[2vw] text-button-text"> 
+      {text}
+    </p>
+
+</div>

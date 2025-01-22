@@ -1,36 +1,24 @@
 ---
 import Layout from "../../../layout/default.astro"; 
 import OrganizerCard from "../../../components/OrganizerElement.astro";
+import EventInfoElement from "../../../components/EventInfoElement.astro";
 import { getEntry } from "astro:content";
+import { getPreferredEntry } from "../../../lib/i18n";
 
-export const prerender = true;
+import '../../../styles/hackathon_country.css'
 
-export function getStaticPaths() {
-  return [
-    {params: {country: 'germany'}},
-    {params: {country: 'greece'}},
-    {params: {country: 'italy'}},
-    {params: {country: 'poland'}},
-    {params: {country: 'spain'}},
-    {params: {country: 'uk'}}
-  ];
-}
- 
 const { country } = Astro.params;
-
 const event = (await getEntry('events', country)).data
 const eventOrganizers = await Promise.all(event.organizers.map(
-  async (organizer: string) => (await getEntry('organizers', organizer)).data)
+  async (organizer: string) => (await getEntry('organizers', organizer)))
 )
 
-let translation = Astro.url.searchParams.get("lang");
-if (translation != "en") translation = "origin";
+const t = await getPreferredEntry(Astro);
 ---
 
-<Layout title={`Hackathon # ${country}`}>
-    <br>
-
-    <div class="flex justify-center text-golden-sand">
+<Layout title={t[`event.${country}.title`]}>
+  
+    <!-- <div class="flex justify-center text-golden-sand">
       <div class="flex flex-row w-80vw">
         <div class="text-6xl mr-3"> <i class="fa-solid fa-language"></i> </div>
         <h2 class="font-bold text-4.5xl"> {event.lang[translation].translation} </h2>
@@ -41,71 +29,122 @@ if (translation != "en") translation = "origin";
           </label>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="flex justify-center my-3">
-      <div class="flex flex-col justify-center items-center mt-12 bg-frosted-blue w-80vw rounded-2xl">
+    <div class="flex justify-evenly">
+      <div class="flex flex-col justify-evenly items-center bg-div-bg w-80vw rounded-2xl">
 
-          <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
-              <img src="/head_organizing_team.png" width="80px" class="mr-6 mt-2">
-              <h1 class="text-4.5xl font-bold"> {event.lang[translation].organizers}  </h1>
+          <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-[80vw]">
+              <img src="../../../head_organizing_team.png" width="80px" class="mr-6 mt-2">
+              <h1 class="text-[5vw] sm:text-[3.5vw] text-header font-bold"> {t['hackathon.organizers']}  </h1>
           </div>
 
-          <div class="flex flex-row justify-evenly mt-3">
+          <div class="flex flex-col w-[80vw] justify-evenly items-center sm:items-start mt-3 sm:flex-row">
+
             {eventOrganizers.map(
               organizer => <OrganizerCard
-              name={organizer.lang[translation].fullname}
-              paragraph={organizer.lang[translation].description}
-              country_image={organizer.country}
-              image={organizer.thumb}
-            />)}
-          </div>
+              name={organizer.data.fullname}
+              paragraph={t[`organizers.${organizer.id}.bio`]}
+              country_image={organizer.data.country}
+              image={organizer.data.thumb}
+              />
+            )}
 
+          </div>
           <br>
+          
       </div>
   </div>
 
   <div class="flex justify-center my-3">
-    <div class="flex flex-col justify-start mt-12 bg-frosted-blue w-80vw rounded-2xl">
+    <div class="flex flex-col justify-start mt-12 bg-div-bg w-80vw rounded-2xl">
 
-      <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
-        <img src="/info.png" width="80px" class= "mr-6 mt-2">
-        <h1 class="text-5xl font-bold">{event.lang[translation].info.header}</h1>
+      <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw text-header mt-[2vw] -mb-[8vw] sm:-mb-[0vw]">
+        <img src="/info.png" class= "mr-[1.5vw] w-[5vw]">
+        <h1 class="text-[3.5vw] font-bold">{t['hackathon.info.header']}</h1>
       </div>
+      
+      <br><br><br>
+      <div class="flex flex-row items-center justify-start ml-[4vw]">
+
+        <div class="mr-1vw"> 
+          <i class="fa-solid fa-location-dot fa-2xl"></i> 
+        </div>
+        
+        <h2 class= "text-[3vw] sm:text-[2.5vw] text-paragraph-text"> 
+          {t['hackathon.info.location']} {t[`event.${country}.city`]} 
+        </h2> 
+
+      </div>
+      <br>
+
+      <br>
+      <div class="flex flex-row items-center justify-start ml-4vw"> 
+        
+        <div class="mr-1vw"> 
+          <i class="fa-solid fa-clock fa-2xl"></i> 
+        </div> 
+
+        <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text"> 
+          {t['hackathon.info.dates']} 12/7/2025 - 13/7/2025
+        </h2> 
+        
+      </div>
+      <br>
+
+      <br>
+      <div class="flex flex-row items-center justify-start ml-4vw"> 
+
+        <div class="mr-1vw"> 
+          <img src="../../../../participants.png" class="w-9"> 
+        </div> 
+        
+        <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text"> 
+          {t['hackathon.info.participants']} {event.info.participants} 
+        </h2> 
+        
+      </div>
+      <br>
       
       <br>
       <div class="flex flex-row items-center justify-start ml-4vw"> 
-        <div class="mr-1vw"> <i class="fa-solid fa-location-dot fa-2xl"></i> </div> <h2 class="text-4xl"> {event.lang[translation].info.location} {event.info.location} </h2> 
+        
+        <div class="mr-1vw"> 
+          <img src="../../../../zoom.png" class="w-9"> 
+        </div> 
+        
+        <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text"> 
+          {t['hackathon.info.zoomlink']} {event.info.zoom}
+        </h2> 
+
       </div>
       <br>
 
       <br>
       <div class="flex flex-row items-center justify-start ml-4vw"> 
-        <div class="mr-1vw"> <i class="fa-solid fa-clock fa-2xl"></i> </div> <h2 class="text-4xl"> {event.lang[translation].info.dates} {event.info.dates} </h2> 
+
+        <div class="mr-1vw"> 
+          <i class="fa-solid fa-envelope fa-2x"></i> 
+        </div> 
+        
+        <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text"> 
+          {t['hackathon.info.contact.email']}  {event.info.contact.email}
+        </h2> 
+
       </div>
       <br>
 
       <br>
       <div class="flex flex-row items-center justify-start ml-4vw"> 
-        <div class="mr-1vw"> <img src="/participants.png" class="w-9"> </div> <h2 class="text-4xl"> {event.lang[translation].info.participants} {event.info.participants} </h2> 
-      </div>
-      <br>
 
-      <br>
-      <div class="flex flex-row items-center justify-start ml-4vw"> 
-        <div class="mr-1vw"> <img src="/zoom.png" class="w-9"> </div> <h2 class="text-4xl"> {event.lang[translation].info.zoom} {event.info.zoom}</h2> 
-      </div>
-      <br>
+        <div class="mr-1vw"> 
+          <i class="fa-solid fa-phone fa-2x"></i> 
+        </div> 
 
-      <br>
-      <div class="flex flex-row items-center justify-start ml-4vw"> 
-        <div class="mr-1vw"> <i class="fa-solid fa-envelope fa-2x"></i> </div> <h2 class="text-4xl"> {event.lang[translation].info.contact.email}  {event.info.contact.email}</h2> 
-      </div>
-      <br>
-
-      <br>
-      <div class="flex flex-row items-center justify-start ml-4vw"> 
-        <div class="mr-1vw"> <i class="fa-solid fa-phone fa-2x"></i> </div> <h2 class="text-4xl"> {event.lang[translation].info.contact.phone}  {event.info.contact.phone}</h2> 
+        <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text"> 
+          {t['hackathon.info.contact.phone']}  {event.info.contact.phone}
+        </h2> 
+        
       </div>
       <br>
     </div>
@@ -113,98 +152,35 @@ if (translation != "en") translation = "origin";
   
   <br>
 
-  <div class="flex items-center justify-evenly my-3">
-    <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw rounded-2xl">
-      
-      <div class="flex flex-row items-center justify-center">
-        <img src="/announcments.png" class="w-5vw mt-4 ml-4">
-        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> {event.lang[translation].announcements.header} </h2>
-      </div>
+  <div class="flex flex-col sm:flex-row items-center justify-evenly">
 
-      <p class="text-justify text-3xl my-4 mx-8"> 
-        
-        {event.lang[translation].announcements.data}
+    <EventInfoElement
+      header = {t['hackathon.announcements.header']}
+      text = {t['hackathon.announcements.text']}
+      image = "/announcements.png"
+    />
 
-      </p>
-    </div>
+    <EventInfoElement
+      header = {t['hackathon.food.header']}
+      text = {t['hackathon.food.text']}
+      image = "/food.png"
+    />
 
-
-    <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw rounded-2xl">
-
-      <div class="flex flex-row items-center justify-center">
-        <img src="/food.png" class="w-5vw mt-4 ml-4">
-        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> {event.lang[translation].food.header} </h2>
-      </div>
-
-      <p class="text-justify text-3xl my-4 mx-8"> 
-        
-        {event.lang[translation].food.data}
-      
-      </p>
-    </div>
   </div>
+  <div class="flex flex-col sm:flex-row items-center justify-evenly">
 
-  <div class="flex justify-evenly items-start my-3">
-    <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw rounded-2xl">
-      
-      <div class="flex flex-row items-center justify-center">
-        <img src="/staying.png" class="w-5vw mt-4 ml-4">
-        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> {event.lang[translation].stay.header} </h2>
-      </div>
+    <EventInfoElement
+      header = {t['hackathon.stay.header']}
+      text = {t['hackathon.stay.text']}
+      image = "/stay.png"
+    />
 
-      <p class="text-justify text-3xl my-4 mx-8"> 
-        
-        {event.lang[translation].stay.data}
-      
-      </p>
-    </div>
+    <EventInfoElement
+      header = {t['hackathon.transit.header']}
+      text = {t['hackathon.transit.text']}
+      image = "/transportation.png"
+    />
 
-    
-    <div class="flex flex-col justify-center mt-12 bg-frosted-blue w-35vw h-fit rounded-2xl">
-
-      <div class="flex flex-row items-center justify-center">
-        <img src="/transportation.png" class="w-5vw mt-4 ml-4">
-        <h2 class="flex items-center text-5xl font-semibold text-golden-sand mt-3 w-30vw justify-center text-center"> {event.lang[translation].transit.header} </h2>
-      </div>
-
-      <p class="text-justify text-3xl my-4 mx-8"> 
-          
-        {event.lang[translation].transit.data}
-
-      </p>
-    </div>
   </div>
   <br>
-
-  <style>
-
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 26px;
-      width: 26px;
-      left: 5px;
-      bottom: 5px;
-      background-color: bisque;
-      -webkit-transition: .4s;
-      transition: .4s;
-    }
-    input:checked + .slider {
-      background-color: #2196F3;
-    }
-
-    input:checked + .slider:before {
-      -webkit-transform: translateX(26px);
-      -ms-transform: translateX(26px);
-      transform: translateX(26px);
-    }
-    .slider.round {
-      border-radius: 34px;
-    }
-
-    .slider.round:before {
-      border-radius: 50%;
-    }
-  </style>
-   
 </Layout>

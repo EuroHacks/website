@@ -1,173 +1,146 @@
 ---
 import Layout from "../../layout/default.astro"
-import OrganizerCard from "../../components/OrganizerElement.astro"
+import AboutUsCard from "../../components/About_Us_Card.astro";
+import { getPreferredEntry } from "../../lib/i18n";
+
+const t = await getPreferredEntry(Astro);
 ---
 
-<Layout title="EuroHack">
-    
-    <div class="w-100vw flex justify-center">
-        <br><br>
-        <p class="text-[140px] my-6 font-semibold text-[#ECBA82]"> Coming soon </p>
-        <br><br>
-    </div>
+<Layout title="Eurohacks">
+
+        <div class="hidden fixed top-0 left-0 w-[100%] h-[100%] bg-opacity-30 bg-black justify-center items-center z-50" id="info-modal1">
+            <div class="bg-div-bg p-5 w-[90%] max-w-[85vw] sm:max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
+                <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal1">  <i class="fa-solid fa-xmark fa-xl"></i>  </button>
+                <h2 class="text-[4vw] sm:text-[3vw] mb-3 text-header"> {t.about[0].modal.title} </h2>
+                <p class="text-[2.5vw] sm:text-[1.2vw] text-button-text mb-5" set:html={t.about[0].modal.text}> </p>
+            </div>
+        </div>
+
+        <div class="hidden fixed top-0 left-0 w-[100%] h-[100%] bg-opacity-30 bg-black justify-center items-center z-50" id="info-modal2">
+            <div class="bg-div-bg p-5 w-[90%] max-w-[85vw] sm:max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
+                <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal2"> <i class="fa-solid fa-xmark fa-xl"></i> </button>
+                <h2 class="text-[4vw] sm:text-[3vw] mb-3 text-header"> {t.about[1].modal.title} </h2>
+                <p class="text-[2.5vw] sm:text-[1.2vw] text-button-text mb-5" set:html={t.about[1].modal.text}> </p>
+            </div>
+        </div>
+
+        <div class="hidden fixed top-0 left-0 w-[100%] h-[100%] bg-opacity-30 bg-black justify-center items-center z-50" id="info-modal3">
+            <div class="bg-div-bg p-5 w-[90%] max-w-[85vw] sm:max-w-[60vw] rounded-2xl text-center relative shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
+                <button class="hover:text-[#222] absolute top-3 right-3 text-xl border-none cursor-pointer text-[#555]" id="close-modal3">  <i class="fa-solid fa-xmark fa-xl"></i>  </button>
+                <h2 class="text-[4vw] sm:text-[3vw] mb-3 text-header">{t.about[2].modal.title}</h2>
+                <p class="text-[2.5vw] sm:text-[1.2vw] text-button-text mb-5" set:html={t.about[2].modal.text}> </p>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center my-[5vh]">
+            <div class="flex flex-col justify-between items-start gap-[1.5vw] max-w-[95vw] sm:flex-row">
+
+                <div id="open-window1">
+                    <AboutUsCard 
+                        title={t.about[0].title}
+                        text={t.about[0].text}
+                        image={t.about[0].image} />
+                </div>
+
+                <div id="open-window2">
+                    <AboutUsCard 
+                        title={t.about[1].title}
+                        text={t.about[1].text}
+                        image={t.about[1].image} />
+                </div>
+
+                <div id="open-window3">
+                    <AboutUsCard 
+                        title={t.about[2].title}
+                        text={t.about[2].text}
+                        image={t.about[2].image} />
+                </div>
+                
+            </div>
+        </div>
+
+    <script>
+        const openWidnow1 = document.getElementById('open-window1');
+        const openWidnow2 = document.getElementById('open-window2');
+        const openWidnow3 = document.getElementById('open-window3');
+
+        const closeModal1 = document.getElementById('close-modal1');
+        const closeModal2 = document.getElementById('close-modal2');
+        const closeModal3 = document.getElementById('close-modal3');
+
+        const modal1 = document.getElementById('info-modal1');
+        const modal2 = document.getElementById('info-modal2');
+        const modal3 = document.getElementById('info-modal3');
+
+
+        openWidnow1.addEventListener('click', () => {
+            modal1.style.display = 'flex';
+        });
+        openWidnow2.addEventListener('click', () => {
+            modal2.style.display = 'flex';
+        });
+        openWidnow3.addEventListener('click', () => {
+            modal3.style.display = 'flex';
+        });
+
+
+        closeModal1.addEventListener('click', () => {
+            modal1.style.display = 'none';
+        });
+        closeModal2.addEventListener('click', () => {
+            modal2.style.display = 'none';
+        });
+        closeModal3.addEventListener('click', () => {
+            modal3.style.display = 'none';
+        });
+
+
+        modal1.addEventListener('click', (e) => {
+            if (e.target === modal1) {
+                modal1.style.display = 'none';
+            }
+        });
+        modal2.addEventListener('click', (e) => {
+            if (e.target === modal2) {
+                modal2.style.display = 'none';
+            }
+        });
+        modal3.addEventListener('click', (e) => {
+            if (e.target === modal3) {
+                modal3.style.display = 'none';
+            }
+        });
+        
+        const elements = document.querySelectorAll('.about-card img');
+
+        function handleScroll() {
+            elements.forEach((el) => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+    </script>
+
+    <style>
+        
+        .about-card img.visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+            .about-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
 
 </Layout>
-
-
-<!-- This is not finished yet, it will get implemented by the end of October -->
-
-    <!--
-    <div class="flex flex-row justify-center mt-12"> 
-
-        <div class="flex flex-col items-center bg-frosted-blue rounded-2xl h-fit w-80vw">
-            <h1 class="text-5xl"> <i class="fa-solid fa-bullseye"></i> Our goal </h1>
-            <p class="text-4xl my-3 mx-10 text-justify"> After some years in the Hack Club community and after we participated in many smaller and bigger events we found out that there is an issue...there are no enough Hack Club hackathons in Europe. So we decided to take care of the issue by organizing Eurohacks. We hope that this event will be the first event of a series of events in Europe organized by Hack Club. (I will write some more things tmr) 
-                <br> <br> For more information about Hack Club, visit this page: <a href="../hackclub/" style="text-decoration: none; color: rgb(0, 128, 255);"> Hack Club</a>. </p>
-        </div>
-
-    </div>
-
-    <div class="flex justify-center">
-        <div class="flex flex-col justify-center items-center mt-12 bg-frosted-blue w-80vw rounded-2xl">
-
-            <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
-                <img src="/head_organizing_team.png" width="80px" style="margin-right: 25px;">
-                <h1 class="text-5xl"> Head Organizers </h1>
-            </div>
-
-            <div class="flex flex-row justify-evenly mt-3">
-
-                <OrganizerCard
-                name = "Odysseus Kirikopoulos"
-                paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-                country_image = "/greece.png"
-                image = "/test-photo.png"
-                >
-                </OrganizerCard>
-
-                <OrganizerCard
-                name = "Tsilas Nikos"
-                paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-                country_image = "/greece.png"
-                image = "/test-photo.png"
-                >
-                </OrganizerCard>    
-
-                <OrganizerCard
-                name = "Marios Mitsios"
-                paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-                country_image = "/greece.png"
-                image = "/test-photo.png"
-                >
-                </OrganizerCard>
-
-                
-            </div>
-
-            <br>
-        </div>
-    </div>
-
-    <br>
-
-    <div class="flex justify-center">
-        <div class="flex flex-col justify-center items-center mt-12 bg-frosted-blue w-80vw rounded-2xl">
-
-            <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw">
-                <img src="/organizing_team.png" width="80px" style="margin-right: 25px;">
-                <h1 class="text-5xl"> Organizers </h1>
-            </div>
-
-            <div class="flex flex-row justify-evenly mt-3">
-                
-                <OrganizerCard
-                name = "Bartosz Budnik"
-                paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-                country_image = "/poland.png"
-                image = "/test-photo.png"
-                >
-                </OrganizerCard>
-
-                <OrganizerCard
-                name = "Victorio"
-                paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-                country_image = "/spain.png"
-                image = "/test-photo.png"
-                >
-                </OrganizerCard>
-
-                <OrganizerCard
-                name = "Leo Wilkin"
-                paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-                country_image = "/united-kingdom.png"
-                image = "/test-photo.png"
-                >
-                </OrganizerCard>
-            
-            </div>
-
-            <br>
-
-            <div class="flex flex-row justify-evenly">
-
-                <OrganizerCard
-                name = "Leonard Stegle"
-                paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-                country_image = "/germany.png"
-                image = "/test-photo.png"
-                >
-                </OrganizerCard>
-
-                <OrganizerCard
-                name = "Samuel Leber"
-                paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-                country_image = "/germany.png"
-                image = "/test-photo.png"
-                >
-                </OrganizerCard>
-
-                <OrganizerCard
-                name = "Arthur Hardy"
-                paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-                country_image = "/united-kingdom.png"
-                image = "/test-photo.png"
-                >
-                </OrganizerCard>
-
-            </div>
-
-            <br>
-
-            <div class="flex flex-row justify-evenly">
-                
-                <OrganizerCard
-                name = "Giacomo Radaelli"
-                paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-                country_image = "/italy.png"
-                image = "/test-photo.png"
-                >
-                </OrganizerCard>
-
-                <OrganizerCard
-                name = "Doruk Sarp Aydın"
-                paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-                country_image = "/turkey.png"
-                image = "/test-photo.png"
-                >
-                </OrganizerCard>
-
-                <OrganizerCard
-                name = "Marios Mitsios"
-                paragraph = "Blah blah blah blah I want to check what the width and the height is so blah blah blah also I am trying to experiment with desplay: flex; and I need a pretty bit text so blah blah blah if you didn't understand this in my mind was a song blah blah blah. So as I can see we need a bigger font-size but also a pretty big text and I am refusing to us lorem ispum or whatever this latin thingy is."
-                country_image = "/greece.png"
-                image = "/test-photo.png"
-                >
-                </OrganizerCard>
-                
-            </div>
-
-            <br>
-        </div>
-    </div>
-    <br>
--->

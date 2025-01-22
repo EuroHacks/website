@@ -1,14 +1,5 @@
 {
     "thumb": "/test-photo.png",
-    "country": "/[country].png",
-    "lang": {
-        "origin": {
-            "fullname": "Τσίλας Νίκος",
-            "description": ""
-        },
-        "en": {
-            "fullname": "Tsilas Nikos",
-            "description": "Hi, I am Nikos, I am 16 years old and I live in Thessaloniki, Greece. "
-        }
-    }
+    "country": "/greece.png",
+    "fullname": "Τσίλας Νίκος"
 }
