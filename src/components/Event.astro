@@ -1,5 +1,5 @@
 ---
-let { city, country, image} = Astro.props
+let { city, country, image, page } = Astro.props;
 
 import { getPreferredEntry } from "../lib/i18n";
 const t = await getPreferredEntry(Astro);
@@ -12,7 +12,9 @@ const t = await getPreferredEntry(Astro);
     </div>
     <div class="w-event_cards flex flex-row justify-center">
         <button class="absolute bottom-[1.5vw] py-[0.5vw] px-[1vw] bg-[#E7A474] rounded-lg text-[1.3vw]">
-            <a href='#'> {t['home.events.learnmore']} </a>
+            <a href={`/hackathons/${page}`} class="no-underline text-button-text">
+                {t['home.events.learnmore']}
+            </a>
         </button>
     </div>
 </div>
