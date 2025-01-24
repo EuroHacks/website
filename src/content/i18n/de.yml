@@ -57,7 +57,7 @@ about:
 hackathon.welcome: >
   Willkommen auf der Seite des griechischen Hackathons. Hier findest du weitere Informationen
   zum griechischen Hackathon.
-hackathon.organizers: Organisationskomitee
+hackathon.organizers: Organisatoren
 hackathon.info.header: 'Veranstaltungsinformationen: '
 hackathon.info.dates: 'Veranstaltungstermine: '
 hackathon.info.location: 'Veranstaltungsort: '
@@ -78,27 +78,27 @@ hackathon.transit.text: 'Es können noch keine Angaben gemacht werden.'
 # -----
 event.germany.country: Deutschland
 event.germany.city: München
-event.germany.province: 'Bundesland'
+event.germany.province: Bayern
 event.germany.title: Deutscher Hackathon
 event.poland.country: Polen
 event.poland.city: Bydgoszcz
-event.poland.province: 'PROVINZ'
+event.poland.province: Kujawsko-Pomorskie
 event.poland.title: Polnischer Hackathon
 event.spain.country: Spanien
 event.spain.city: Madrid
-event.spain.province: 'PROVINZ'
+event.spain.province: Madrid
 event.spain.title: Spanischer Hackathon
-event.uk.country: Vereinigtes Königreich
+event.uk.country: UK
 event.uk.city: London
-event.uk.province: 'PROVINZ'
+event.uk.province: Greater London
 event.uk.title: Großbritanniens Hackathon
 event.greece.country: Griechenland
 event.greece.city: Thessaloniki
-event.greece.province: Thessaloniki
+event.greece.province: Zentralmakedonien
 event.greece.title: Griechischer Hackathon
 event.italy.country: Italien
 event.italy.city: Mailand
-event.italy.province: 'PROVINZ'
+event.italy.province: Lombardei
 event.italy.title: Italienischer Hackathon
 # -----
 # ORGANIZERS
@@ -148,7 +148,7 @@ faqs:
       aus einer Stadt kommen, die weiter als 50 km entfernt ist,
       können einige Ihrer Reisekosten zur Gastgeberstadt
       erstattet werden. Das bedeutet, dass Sie möglicherweise trotzdem einen Teil der Kosten für Ihre Reisetickets bezahlen müssen. 
-  - question: An welchen Projekt knn ich arbeiten?
+  - question: An welchen Projekt kann ich arbeiten?
     answer: >
       Für die Art oder den Inhalt deines Projekts gibt es zuerst einmal keine Vorgaben. Es soll lediglich etwas mit Informatik zu tun haben. Du könntest mit Mikrocontrollern an einem hardwarenahen Projekt arbeiten, aber auch eine Website oder App entwickeln. Das Wichtigste ist, dass es ein cooles Projekt ist, auf das du stolz sein kannst.
   - question: Muss ich einen Laptop mitbringen?
