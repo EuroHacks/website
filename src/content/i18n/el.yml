@@ -17,13 +17,19 @@ home.vision.text: >
   βραβεία! Βρείτε το hackathon πλησιέστερα σε εσάς και δείτε περισσότερες πληροφορίες σχετικά με αυτό.
 
 home.vision.button: "Μάθετε περισσότερα"
+
 home.info.duration: 24 ώρες προγραμματισμού
+home.info.eventnum: 6 εκδηλώσεις σε όλη την Ευρώπη
+
 home.events.joinus: Ελάτε μαζί μας στο...
 home.events.learnmore: Μάθετε περισσότερα
+
 home.faq.title: FAQ (Συχνές ερωτήσεις)
+
 # -----
 # About Us (Eurohacks Page)
 # -----
+
 about:
   - title: Γιατί θέλουμε να οργανώσουμε EuroHacks;
     text: Για να ενώσουμε της παγκόσμιας κοινότητας του Hack Club με την Ευρώπη 
@@ -72,14 +78,25 @@ about:
     modal:
       title: Η οργανωτική ομάδα μας
       text: >
-        <br> Προσεχώς...
+        <br> Το EuroHacks διοργανώνεται από μια ομάδα μαθητών λυκείου από όλη την Ευρώπη, τους οποίους ενώνει ο στόχος να 
+        δώσουν τη δυνατότητα σε νέους να υλοποιήσουν τις ιδέες τους και να συμμετάσχουν σε κάτι μεγαλύτερο. Καθώς οι περισσότεροι 
+        από εμάς είμαστε μέλη του Hack Club εδώ και χρόνια, γνωρίζουμε εκ των έσω ότι η δημιουργία μιας κοινότητας νέων ατόμων 
+        που ενδιαφέρονται για την επιστήμη της πληροφορικής είναι πολύ ωφέλιμη για την κοινωνία αλλά και τους ίδιους. Η ύπαρξη 
+        προγραμμάτων σχετικά με διαφορετικούς τομείς της πληροφορικής είναι αυτό που κάνει αυτή την κοινότητα ξεχωριστή.  Αυτό 
+        είναι κάτι που όλοι μας έχουμε βιώσει συμμετέχοντας σε προγράμματα/hackathons/πρακτική άσκηση στο Hack Club. Η δέσμευσή 
+        μας για ένταξη, πρόσβαση στην τεχνολογία και δημιουργική συνεργασία μας οδηγεί προς τα εμπρός και αποδεικνύεται από τη 
+        στενή συνεργασία μας τους τελευταίους μήνες για τη δημιουργία αυτής της σύνθετης και δημιουργικής εκδήλωσης.
+
 # -----
 # HACKATHON PAGE
 # -----
+
 hackathon.welcome: >
   Καλώς ήρθατε στη σελίδα του Ελληνικού Hackathon. Εδώ μπορείτε να βρείτε περισσότερες πληροφορίες
   για το Hackathon.
+
 hackathon.organizers: Οργανωτική επιτροπή
+
 hackathon.info.header: 'Πληροφορίες εκδήλωσης: '
 hackathon.info.dates: 'Ημερομηνίες εκδήλωσης: '
 hackathon.info.location: 'Τόπος εκδήλωσης: '
@@ -87,17 +104,23 @@ hackathon.info.participants: 'Συμμετέχοντες: '
 hackathon.info.zoomlink: 'Σύνδεσμος zoom: '
 hackathon.info.contact.email: 'Επικοινωνία μέσω email: '
 hackathon.info.contact.phone: 'Τηλεφωνική επικοινωνία: '
+
 hackathon.announcements.header: Ανακοινώσεις
 hackathon.announcements.text: 'Δεν έχουν γίνει ακόμη ανακοινώσεις από τους διοργανωτές.'
+
 hackathon.food.header: Διατροφή Συμμετεχόντων
 hackathon.food.text: 'Δεν μπορούν να δοθούν ακόμη πληροφορίες.'
+
 hackathon.stay.header: Διαμονή Συμμετεχόντων
 hackathon.stay.text: 'Δεν μπορούν να δοθούν ακόμη πληροφορίες.'
+
 hackathon.transit.header: Μεταφορά Συμμετεχόντων
 hackathon.transit.text: 'Δεν μπορούν να δοθούν ακόμη πληροφορίες.'
+
 # -----
 # EVENTS
 # -----
+
 event.germany.country: Γερμανία
 event.germany.city: Μόναχο
 event.germany.province: Βαυαρία
@@ -131,11 +154,17 @@ event.italy.title: Ιταλικό Hackathon
 # -----
 # ORGANIZERS
 # -----
-organizers.Bartosz_Budnik.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Felix_Myrie.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Giacomo_Radaelli.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Karl_Wünsche.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Leonard_Stegle.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+
+organizers.Bartosz_Budnik.bio: >
+  Γεια σας! Bartosz εδώ, είμαι απλά ένας Hack Clubber που θέλει να βοηθήσει τους άλλους όσο το δυνατόν περισσότερο. Προγραμματίζω παιχνίδια 
+  και κάποια διασκεδαστικά εργαλεία σε γλώσσες προγραμματισμού χαμηλού επιπέδου, αν και προτιμώ να περνάω το χρόνο μου κάνοντας εργασίες 
+  στο Hack Club. Μου αρέσει να διαβάζω βιβλία αυτοβελτίωσης, και αν βαριέμαι - παίζω μερικά βιντεοπαιχνίδια όπως το Persona. Θέλω απλώς 
+  να επηρεάσω όσο το δυνατόν περισσότερους ανθρώπους και να τους κάνω να αναγνωρίσουν τις ικανότητές τους, να τις βελτιώσουν!
+
+organizers.Felix_Myrie.bio: ''
+organizers.Giacomo_Radaelli.bio: ''
+organizers.Karl_Wünsche.bio: ''
+organizers.Leonard_Stegle.bio: ''
 
 organizers.Marios_Mitsios.bio: >
   Είμαι ο Μάριος, Hack Clubber και μαθητής λυκείου από τα Τρίκαλα. Ασχολούμαι με όλες τις διαφορετικές γλώσσες 
@@ -144,9 +173,14 @@ organizers.Marios_Mitsios.bio: >
   ακούω μουσική, και φυσικά να ασχολούμαι με διαφορετικούς τομείς του προγραμματισμού. Είμαι ενθουσιασμένος που 
   θα οργανώσω το ελληνικό event και θα κάνω ότι μπορώ για να διασφαλίσω ότι το Eurohacks θα είναι το καλύτερο δυνατό!
 
-organizers.Massimiliano_Bruchi.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Max_Schneider.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Max_Thorste.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Massimiliano_Bruchi.bio: ''
+
+organizers.Max_Schneider.bio: >
+  Γεια σας, είμαι ο Max, 16 ετών και ζω στη Βάδη-Βυρτεμβέργη. Στον ελεύθερο χρόνο μου, μου αρέσει να εργάζομαι και να 
+  προγραμματίζω διάφορα έργα ρομποτικής και λογισμικού. Λατρεύω επίσης το bouldering. Ως μέλος της ομάδας των EuroHacks 
+  Germany, θα χαρώ πολύ να σας συναντήσω στο event των EuroHacks στο Μόναχο.
+
+organizers.Max_Thorste.bio: ''
 
 organizers.Nikos_Tsilas.bio: >
     Γεια σας! Είμαι ο Νίκος, ένας Hack Clubber και μαθητής Λυκείου και κατοικώ στη Θεσσαλονίκη, Ελλάδα. Ασχολούμαι 
@@ -155,14 +189,28 @@ organizers.Nikos_Tsilas.bio: >
     αυτοματισμών και των robot γενικότερα. Όταν δεν ασχολούμαι με τον προγραμματισμό, πιθανότατα θα παίζω volley 
     ή θα διαβάζω κάποιο βιβλίο.
 
-organizers.Ole_Fleck.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Samuel_Leber.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Shambhavi_Sinha.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Thomas_Price.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Victorio_Medina.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Ole_Fleck.bio: ''
+organizers.Samuel_Leber.bio: ''
+
+organizers.Shambhavi_Sinha.bio: >
+  Γεια! Είμαι η Shambhavi, ενθουσιώδης Hack Clubber και φοιτήτρια με έδρα το Leicester του Ηνωμένου Βασιλείου, με πάθος 
+  για τη δημιουργία πραγμάτων και την επίλυση προβλημάτων. Μου αρέσει να φτιάχνω χρήσιμες ιστοσελίδες που με βοηθούν να 
+  συνθέτω μουσική. Επίσης μου αρέσει να βελτιώνω τη δική μου προσωπική ιστοσελίδα! Όταν δεν είμαι απασχολημένη με τον 
+  προγραμματισμό ή τη μουσική, πιθανότατα θα με βρείτε να ασχολούμε με μαθηματικά προβλήματα ή να παίζω πιάνο για να χαλαρώσω.
+
+organizers.Thomas_Price.bio: >
+  Γεια, είμαι ο Τόμας! Είμαι ένας επίδοξος μηχανικός λογισμικού από το Ηνωμένο Βασίλειο και εντάχθηκα στο HackClub κατά τη 
+  διάρκεια του καλοκαιριού για το πρόγραμμα Arcade. Αφού κέρδισα μερικά Airpods και άλλα ωραία πράγματα κατά τη διάρκεια του 
+  καλοκαιριού, αποφάσισα να γίνω εθελοντής συνδιοργανωτής για το UK Eurohacks! Στον ελεύθερο χρόνο μου, μου αρέσει να φτιάχνω 
+  ιστοσελίδες, να τρέχω και να ακούω indie rock μουσική (οι wombats είναι οι αγαπημένοι μου)! Ανυπομονώ πραγματικά να συμμετάσχω 
+  σε αυτό το γεγονός και ελπίζω ότι όλοι θα μπορέσουμε να φτιάξουμε κάτι φοβερό!
+
+organizers.Victorio_Medina.bio: ''
+
 # -----
 # FAQs
 # -----
+
 faqs:
   - question: Τι είναι τα EuroHacks;
     answer: >
@@ -214,8 +262,6 @@ faqs:
       και τα αξεσουάρ που ειναι απαρέτητα για εσάς (πχ. φορτιστής, σκληρός δίσκος, SD cadr, κτλ). Ίσως 
       είμαστε σε θέση να διαθέσουμε μερικούς φορητούς υπολογιστέςσε σε 1 ή 2 άτομα, αλλά πρέπει να έχετε
       προνοήσει για τις δικές σας συσκευές στο hackathon. 
-
-home.info.eventnum: 6 εκδηλώσεις σε όλη την Ευρώπη
 
 # -----
 # Footer
