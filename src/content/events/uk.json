@@ -5,13 +5,13 @@
       "participants": 0,
       "contact": {
           "email": "uk@eurohacks.org", 
-          "phone": "+30 69",
+          "phone": "N/A",
           "zoom": "N/A",
-          "discord": "N/A"
+          "discord": "discord.gg/gQDq6Rhpcy"
         }
     },
     "images": {
         "image": "united-kingdom.png",
-        "background": "london.jpg"
+        "background": "London.jpg"
     }
 }

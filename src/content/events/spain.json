@@ -1,17 +1,17 @@
 {
   "logo": "",
-  "organizers": [],
+  "organizers": ["Victorio_Medina"],
   "info": {
       "participants": 0,
       "contact": {
           "email": "spain@eurohacks.org", 
-          "phone": "+30 69",
+          "phone": "N/A",
           "zoom": "N/A",
-          "discord": "N/A"
+          "discord": "discord.gg/eBpJ3nmvrW"
         }
     },
     "images": {
         "image": "spain.png",
-        "background": "madrid.jpg"
+        "background": "Madrid.jpg"
     }
 }

@@ -153,6 +153,7 @@ organizers.Felix_Myrie.bio: ''
 organizers.Giacomo_Radaelli.bio: ''
 organizers.Karl_Wünsche.bio: ''
 organizers.Leonard_Stegle.bio: ''
+
 organizers.Marios_Mitsios.bio: >
   I'm Marios, Hack Clubber and high school student from Trikala. We work with all different programming 
   languages and I like to explore new technologies. As a Hack Club member for the last three years, 
@@ -161,12 +162,14 @@ organizers.Marios_Mitsios.bio: >
   I'm excited to organize the Greek event and will do everything I can to ensure that Eurohacks is the best it can be!
 
 organizers.Massimiliano_Bruchi.bio: ''
+
 organizers.Max_Schneider.bio: >
   Hi, I'm Max, 16 years old and I live in Baden-Württemberg. In my spare time, I love working on and programming 
   various robotics and software projects. I also love bouldering. As part of the EuroHacks Germany team, I would 
   be very happy to meet you at EuroHacks in Munich.
   
 organizers.Max_Thorste.bio: ''
+
 organizers.Nikos_Tsilas.bio: >
   Hi! I'm Nikos, a Hack Clubber and student based in Thessaloniki, Greece. I'm passionate about coding, 
   problem-solving, and creating things. I love making websites and apps that help me and others. I am
@@ -175,6 +178,7 @@ organizers.Nikos_Tsilas.bio: >
 
 organizers.Ole_Fleck.bio: ''
 organizers.Samuel_Leber.bio: ''
+
 organizers.Shambhavi_Sinha.bio: >
   Hi! I'm Shambhavi, an enthusiastic Hack Clubber and student based in Leicester, UK, with a 
   passion for creating things and problem-solving. I love making useful websites to help me 
@@ -233,7 +237,7 @@ faqs:
     answer: >
       'Don’t hesitate to send us an email with all of your questions. We will
       answer them as soon as possible (probably under 24 hours). You can either email
-      at questions@eurohacks.org or in your country email: <country>@eurohacks.org.'
+      at questions@eurohacks.org or in your country email: <country>@eurohacks.org.
       
   - question: Do I have to pay to participate in the hackathon?
 

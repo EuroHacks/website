@@ -100,22 +100,22 @@ hackathon.transit.text: 'Δεν μπορούν να δοθούν ακόμη πλ
 # -----
 event.germany.country: Γερμανία
 event.germany.city: Μόναχο
-event.germany.province: 'Ν/Α'
+event.germany.province: Βαυαρία
 event.germany.title: Γερμανικό Hackathon
 
 event.poland.country: Πολωνία
-event.poland.city: Μπιντκότζ
-event.poland.province: 'Ν/Α'
+event.poland.city: Μπίντγκοστς
+event.poland.province: Μπίντγκοστς-Τόρουν
 event.poland.title: Πολωνικό Hackathon
 
 event.spain.country: Ισπανία
 event.spain.city: Μαδρίτη
-event.spain.province: 'Ν/Α'
+event.spain.province: Μαρδίτη
 event.spain.title: Ισπανικό Hackathon
 
 event.uk.country: ΗΒ
 event.uk.city: Λονδίνο
-event.uk.province: 'Ν/Α'
+event.uk.province: Αγγλία
 event.uk.title: Hackathon του Ηνωμένου Βασιλείου
 
 event.greece.country: Ελλάδα
@@ -125,7 +125,7 @@ event.greece.title: Ελληνικό Hackathon
 
 event.italy.country: Ιταλία
 event.italy.city: Μιλάνο
-event.italy.province: 'Ν/Α'
+event.italy.province: Λομβαρδία
 event.italy.title: Ιταλικό Hackathon
 
 # -----
@@ -150,9 +150,9 @@ organizers.Max_Thorste.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing 
 
 organizers.Nikos_Tsilas.bio: >
     Γεια σας! Είμαι ο Νίκος, ένας Hack Clubber και μαθητής Λυκείου και κατοικώ στη Θεσσαλονίκη, Ελλάδα. Ασχολούμαι 
-    συστηματικά τον προγραμματισμό, την επίλυση προγραμματιστικών προβλημάτων και τη δημιουργία κατασκευών. Μου 
+    συστηματικά με τον προγραμματισμό, την επίλυση προγραμματιστικών προβλημάτων και τη δημιουργία κατασκευών. Μου 
     αρέσει να φτιάχνω ιστοσελίδες και εφαρμογές που βοηθούν εμένα και τους άλλους. Είμαι επίσης μεγάλος fan των 
-    αυτοματισμών και των robot γενικότερα. Όταν δεν ασχολούμαι με τον προγραμματισμό, πιθανότατα θα παίζω βόλεϊ 
+    αυτοματισμών και των robot γενικότερα. Όταν δεν ασχολούμαι με τον προγραμματισμό, πιθανότατα θα παίζω volley 
     ή θα διαβάζω κάποιο βιβλίο.
 
 organizers.Ole_Fleck.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
