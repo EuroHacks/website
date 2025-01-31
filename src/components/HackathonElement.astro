@@ -1,24 +1,25 @@
 ---
-let { city, discordlink, telephone, country, countrytitle, image, rsvp_page, info_page, background} = Astro.props
+let { city, discordlink, country, countrytitle, image, rsvp_page, info_page, background} = Astro.props;
+
+const https = "https://";
+const discord = `${https}/${discordlink}`;
 ---
 
-<div class="hackathon-card font-bold bg-div-bg w-[90vw] my-[4vw] mx-5vw rounded-2xl">
+<div class="hackathon-card flex font-bold bg-div-bg my-[4vw] mx-[4vw] rounded-2xl w-[92vw]">
 
-    <div class="flex flex-row justify-evenly w-[90vw]">
+    <div class="flex flex-row justify-evenly w-[92vw]">
 
-        <div class="flex flex-col justify-around items-center mt-[1.5vw]">
+        <div class="flex flex-col justify-around items-center mt-[1.5vw] w-[60vw]">
 
             <div class="flex flex-row items-center justify-between text-header">
                 <img src={image} class="w-[5vw] h-[5vw]">
                 <div class="text-[4vw] mt-[1.5vw] ml-[1vw]"> {countrytitle} </div>
             </div>
 
-            <div class="text-[2vw] my-[2vw] text-paragraph-text flex flex-col items-start">
-
-                <div> <i class="fa-solid fa-envelope    mr-2 mb-[1vw]"> </i> Mail: {country}@eurohacks.org </div>
-                <div> <i class="fa-solid fa-phone       mr-2 my-[1vw]"> </i> Telephone: {telephone}        </div>
-                <div> <i class="fa-brands fa-discord    mr-2 mt-[1vw]"> </i> Discord/Slack: {discordlink}  </div>
-
+            <div class="text-[2vw] my-[2vw] text-paragraph-text flex flex-col items-start justify-evenly">
+                <div> <i class="fa-solid fa-envelope mr-2 mb-[1vw]"> </i> Mail: {country}@eurohacks.org </div>
+                <!-- <div> <i class="fa-solid fa-phone mr-2 my-[1vw]"> </i> Telephone: {telephone} </div> -->
+                <div> <a href={discord} target="_blank"> <i class="fa-brands fa-discord mr-2 mt-[1vw]"> </i> Discord: {discordlink} </a> </div>
             </div>
 
         </div>
@@ -33,15 +34,15 @@ let { city, discordlink, telephone, country, countrytitle, image, rsvp_page, inf
 
                 <a href={info_page}>
 
-                    <button class="h-[10vw] w-[24vw] text-[2.5vw] mx-3 bg-button-bg rounded-xl hover:bg-button-bg-hover"> 
-                        <div class="button-icons flex flex-col items-start ml-[2%] mt-[6%]"> <i class="fa-solid fa-circle-info" id="button-icons"> </i> </div> More information 
+                    <button class="h-[10vw] w-[22vw] sm:w-[24vw] text-[2.5vw] mx-3 bg-button-bg rounded-lg sm:rounded-xl hover:bg-button-bg-hover"> 
+                        <div class="button-icons flex flex-col items-start ml-[4%] mt-[10%]"> <i class="fa-solid fa-circle-info" id="button-icons"> </i> </div> More information 
                     </button> 
 
                 </a>
                 
                 <a href={rsvp_page}> 
-                    <button class="h-[10vw] w-[24vw] text-[2.5vw] mx-3 bg-button-bg rounded-xl hover:bg-button-bg-hover cursor-not-allowed" disabled> 
-                        <div class="button-icons flex flex-col items-start ml-[2%] mt-[9%]"> <i class="fa-solid fa-user"> </i> </div> Participate 
+                    <button class="h-[10vw] w-[22vw] sm:w-[24vw] text-[2.5vw] mx-3 bg-button-bg rounded-lg sm:rounded-xl hover:bg-button-bg-hover cursor-not-allowed" disabled> 
+                        <div class="button-icons flex flex-col items-start ml-[4%] mt-[10%]"> <i class="fa-solid fa-user"> </i> </div> Participate 
                     </button> 
                 </a>
 

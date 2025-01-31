@@ -4,18 +4,20 @@
 
 home.warning: >
   The website is currently under construction. Most parts of it are working. However, there might 
-  be some false information as well as many blank parts because of the lack of information that we
-  currently have as it is very early in the organizing process. Also as translating the whole website 
-  in 7 different languages is a difficult process some translations might be off or not existing. We 
-  would advise you to switch to English for the best experience. (the issues will be resolved pretty soon).
+  be some false information as well as many blank parts because of the lack of information that 
+  we currently have as it is very early in the organizing process. Also as translating the whole 
+  website in 7 different languages is a difficult process some translations might be off or not 
+  existing. We would advise you to switch to English for the best experience. (the issues will 
+  be resolved pretty soon).
   
 home.vision.title: This is Eurohacks
+
 home.vision.text: >
-  EuroHacks is a Europe-wide hackathon, with multiple events all 
-  happening at the same time. Everyone will have the opportunity 
-  to create their own projects, meet other people from all over 
-  Europe, have fun, and, of course, to win prizes! Find the 
-  hackathon nearest to you and get more information about them here.
+  EuroHacks is a Europe-wide hackathon, with multiple events all happening at the same time. 
+  Everyone will have the opportunity to create their own projects, meet other people from all 
+  over Europe, have fun, and, of course, to win prizes! Find the hackathon nearest to you and 
+  get more information about them here.
+
 home.vision.button: "Learn more: Read our vision"
 
 home.info.duration: 24 hours of hacking
@@ -58,7 +60,7 @@ about:
     modal:
       title: Our vision for EuroHacks
       text: >
-        <br>Creativity is a universal trait, and coding serves as a powerful medium for its expression. Through EuroHacks, we aim
+        <br> Creativity is a universal trait, and coding serves as a powerful medium for its expression. Through EuroHacks, we aim
         to unite individuals in the pursuit of developing remarkable projects that showcase their innovative potential. It is
         through the ingenuity and creative efforts of young minds that transformative change can be broughtabout in the world.
 
@@ -73,7 +75,13 @@ about:
     modal:
       title: Our awesome organizing team
       text: >
-        <br> Coming soon...
+        <br> EuroHacks is organized by a team of high-schoolers from all over Europe united by the goal of allowing young 
+        innovators to bring their ideas to life and be part of something greater. As most of us have been part of Hack Club 
+        for years we know from inside that creating a community of young individuals interested in Computer science is very 
+        beneficial for our community and them. Having programs from different parts of CS is what makes this community special. 
+        That is something that all of us have experienced by participating in programs/hackathons/internships in Hack Club. 
+        Our commitment to inclusion, access to technology, and creative collaboration drives us forward and is demonstrated 
+        by our close collaboration over the past few months to create this complex and creative event.
 
 # -----
 # HACKATHON PAGE
@@ -111,22 +119,22 @@ hackathon.transit.text: 'No information can be provided yet.'
 
 event.germany.country: Germany
 event.germany.city: Munich
-event.germany.province: ''
+event.germany.province: Bavaria
 event.germany.title: German Hackathon
 
 event.poland.country: Poland
 event.poland.city: Bydgoszcz
-event.poland.province: ''
+event.poland.province: Bydgoszcz–Toruń
 event.poland.title: Polish Hackathon
 
 event.spain.country: Spain
 event.spain.city: Madrid
-event.spain.province: ''
+event.spain.province: Madrid
 event.spain.title: Spanish Hackathon
 
 event.uk.country: UK
 event.uk.city: London
-event.uk.province: ''
+event.uk.province: England
 event.uk.title: UK's Hackathon
 
 event.greece.country: Greece
@@ -136,7 +144,7 @@ event.greece.title: Greek Hackathon
 
 event.italy.country: Italy
 event.italy.city: Milan
-event.italy.province: ''
+event.italy.province: Lombardy
 event.italy.title: Italin Hackathon
 
 # -----
@@ -153,6 +161,7 @@ organizers.Felix_Myrie.bio: ''
 organizers.Giacomo_Radaelli.bio: ''
 organizers.Karl_Wünsche.bio: ''
 organizers.Leonard_Stegle.bio: ''
+
 organizers.Marios_Mitsios.bio: >
   I'm Marios, Hack Clubber and high school student from Trikala. We work with all different programming 
   languages and I like to explore new technologies. As a Hack Club member for the last three years, 
@@ -161,12 +170,14 @@ organizers.Marios_Mitsios.bio: >
   I'm excited to organize the Greek event and will do everything I can to ensure that Eurohacks is the best it can be!
 
 organizers.Massimiliano_Bruchi.bio: ''
+
 organizers.Max_Schneider.bio: >
   Hi, I'm Max, 16 years old and I live in Baden-Württemberg. In my spare time, I love working on and programming 
   various robotics and software projects. I also love bouldering. As part of the EuroHacks Germany team, I would 
   be very happy to meet you at EuroHacks in Munich.
   
 organizers.Max_Thorste.bio: ''
+
 organizers.Nikos_Tsilas.bio: >
   Hi! I'm Nikos, a Hack Clubber and student based in Thessaloniki, Greece. I'm passionate about coding, 
   problem-solving, and creating things. I love making websites and apps that help me and others. I am
@@ -175,6 +186,7 @@ organizers.Nikos_Tsilas.bio: >
 
 organizers.Ole_Fleck.bio: ''
 organizers.Samuel_Leber.bio: ''
+
 organizers.Shambhavi_Sinha.bio: >
   Hi! I'm Shambhavi, an enthusiastic Hack Clubber and student based in Leicester, UK, with a 
   passion for creating things and problem-solving. I love making useful websites to help me 
@@ -190,13 +202,6 @@ organizers.Thomas_Price.bio: >
 
 organizers.Victorio_Medina.bio: ''
 
-# -----
-# Footer
-# -----
-
-footer.contacts: Contacts
-footer.email.main: Main
-footer.email.questions: Questions
 
 # -----
 # FAQs
@@ -205,52 +210,56 @@ footer.email.questions: Questions
 faqs:
   - question: What is EuroHacks?
     answer: >
-      EuroHacks is a Europe-wide hackathon, with multiple events all 
-      happening at the same time. Everyone will have the opportunity 
-      to create their own projects, meet other people from all over 
-      Europe, have fun, and, of course, to win prizes! Find the 
-      hackathon nearest to you and get more information about them here.
+      EuroHacks is a Europe-wide hackathon, with multiple events all happening at the same time. 
+      Everyone will have the opportunity to create their own projects, meet other people from all 
+      over Europe, have fun, and, of course, to win prizes! Find the ηackathon nearest to you and 
+      get more information about them here.
       
   - question: What is a hackathon?
     answer: >
-      A hackathon is an event where people interested in coding and computer science
-      come together for a few days to create fascinating projects, but more importantly,
-      meet new people and learn new things. Combined with amazing venues, food, drinks,
-      and a good attitude, hackathons are a wonderful experience and an unforgettable
-      coding event.
+      A hackathon is an event where people interested in coding and computer science come together 
+      for a few days to create fascinating projects, but more importantly, meet new people and learn 
+      new things. Combined with amazing venues, food, drinks, and a good attitude, hackathons are a 
+      wonderful experience and an unforgettable coding event.
       
   - question: Is there an age limit?
     answer: >
-      This event is for teenagers, ideally ages 13 to 18, though technically it’s
-      open to anyone 18 or under.
+      This event is for teenagers, ideally ages 13 to 18, though technically it’s open to anyone 18 
+      or under.
 
   - question: Do I have to speak English?
     answer: >
-      No, you don't have to know English, but some English can help with navigating
-      websites and communicating with others during the hackathon.
+      No, you don't have to know English, but some English can help with navigating websites and 
+      communicating with others during the hackathon.
       
   - question: How can I contact you if I have any questions about the events?
     answer: >
-      'Don’t hesitate to send us an email with all of your questions. We will
-      answer them as soon as possible (probably under 24 hours). You can either email
-      at questions@eurohacks.org or in your country email: <country>@eurohacks.org.'
+      Don’t hesitate to send us an email with all of your questions. We will answer them as soon as 
+      possible (probably under 24 hours). You can either email at questions@eurohacks.org or in your 
+      country email: <country>@eurohacks.org.
       
   - question: Do I have to pay to participate in the hackathon?
-
     answer: > # but even that depends on your location. If you live within 50km of the venue, you’ll need to cover your daily travel expenses to and from the venue. However, if you’re coming from a city further than 50km away, some of your travel expenses to the host city may be reimbursed. This means you may still need to pay some of the cost of your travel tickets.
       No, you don't. You just have to cover the travel stipends. 
       
   - question: What can I make for a project?
     answer: >
-      Whatever you want if it is about computer science. It could be something
-      with Arduino, Raspberry Pi, or (something that you don’t have to get your hardware)
-      coding. This could be website developing, app developing, coding an Arduino, or
-      making code which does something cool and something that YOU are proud of.
+      Whatever you want if it is about computer science. It could be something with Arduino, Raspberry 
+      Pi, or (something that you don’t have to get your hardware) coding. This could be website developing, 
+      app developing, coding an Arduino, or making code which does something cool and something that 
+      YOU are proud of.
       
   - question: Do I have to get a laptop with me?
     answer: >
-      Yes. It is a coding event, you have to take any electronic device necessary
-      to create your project (it could be a tablet or a laptop) and the accessories 
-      that are necessary for you (eg charger, hard disk, SD card, etc.). Perhaps 
-      we are able to make some laptops available to 1 or 2 people but you must have
-      provide for your own devices at the hackathon.
+      Yes. It is a coding event, you have to take any electronic device necessary to create your project 
+      (it could be a tablet or a laptop) and the accessories that are necessary for you (eg charger, 
+      hard disk, SD card, etc.). Perhaps we are able to make some laptops available to 1 or 2 people but 
+      you must have provide for your own devices at the hackathon.
+
+# -----
+# Footer
+# -----
+
+footer.contacts: Contacts
+footer.email.main: Main
+footer.email.questions: Questions
