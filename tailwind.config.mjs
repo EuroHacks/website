@@ -3,6 +3,11 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			screens: {
+				sm: '0px',
+				md: '640px',
+				lg: '1024px',
+			},
 			colors: {
 				'bg': 					"#F9F0DD",
 				'div-bg': 				"#F5C99F",

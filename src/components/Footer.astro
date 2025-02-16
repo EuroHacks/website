@@ -4,87 +4,123 @@ import { getPreferredEntry } from "../lib/i18n";
 const t = await getPreferredEntry(Astro);
 ---
 
-<footer class="bg-footer-bg flex flex-row justify-evenly items-center">
+<footer class="bg-footer-bg flex lg:flex-row lg:justify-evenly lg:items-center sm:flex-col sm:justify-center sm:items-center sm:w-full">
+    <img src="footer_logo.png" class="ml-[1vw] mr-[2vw] lg:w-[12vw] lg:h-[12vw] sm:w-[40vw] sm:h-[40vw]" alt="EuroHacks Logo"/>
 
-            <img src="../../media/Banner.png" class="ml-[1vw] mr-[2vw] w-[12vw] h-[12vw]">
+    <div class="flex flex-col justify-center items-center">
+        <h1 class="lg:text-[2.5vw] text-footer-header lg:mt-[0.5vw] sm:mt-[1vw] sm:text-[3vw] sm:color-[#FFD9B2] sm:text-[7vw]">
+            {t["footer.contacts"]}
+        </h1>
 
-            <div class="flex flex-col justify-center items-center">
-                <h1 class="text-[2.5vw] text-footer-header mt-[0.5vw]"> {t['footer.contacts']} </h1>
+        <div class="flex lg:flex-row lg:mt-[1vw] lg:mb-[2vw] text-footer-text sm:flex-col ">
+            <div class="mx-4">
+                <table class="lg:text-[1.3vw] sm:text-[4vw]">
+                    <tbody>
+                        <tr>
+                            <td class="flex justify-end mr-[2vw]">
+                                {t["footer.email.main"]}:
+                            </td>
+                            <td> main@europehacks.org </td>
+                        </tr>
 
-                <div class="flex flex-row mt-[1vw] mb-[2vw] text-footer-text">
+                        <tr>
+                            <td class="flex justify-end mr-[2vw] mt-[1vw]">
+                            </td>
+                        </tr>
 
-                    <div class="mx-4">
-                        <table class="text-[1.3vw]">
-                            <tbody>
-                                <tr>
-                                    <td class="flex justify-end mr-[2vw]"> {t['footer.email.main']}: </td>
-                                    <td> main@europehacks.org </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="flex justify-end mr-[2vw] mt-[1vw]">  </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="flex justify-end mr-[2vw]"> {t['event.italy.country']}: </td>
-                                    <td> italy@europehacks.org </td>
-                                </tr>
-                                <tr>
-                                    <td class="flex justify-end mr-[2vw]"> {t['event.germany.country']}: </td>
-                                    <td> germany@europehacks.org </td>
-                                </tr>
-                                <tr>
-                                    <td class="flex justify-end mr-[2vw]"> {t['event.greece.country']}: </td>
-                                    <td> greece@europehacks.org </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <div class="mx-4">
-                        <table class="text-[1.3vw]">
-                            <tbody>
-                                <tr>
-                                    <td class="flex justify-end mr-[2vw]"> {t['footer.email.questions']}: </td>
-                                    <td> questions@europehacks.org </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="flex justify-end mr-[2vw] mt-[1vw]">  </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="flex justify-end mr-[2vw]"> {t['event.uk.country']}: </td>
-                                    <td> uk@europehacks.org </td>
-                                </tr>
-                                <tr>
-                                    <td class="flex justify-end mr-[2vw]"> {t['event.spain.country']}: </td>
-                                    <td> spain@europehacks.org </td>
-                                </tr>
-                                <tr>
-                                    <td class="flex justify-end mr-[2vw]"> {t['event.poland.country']}: </td>
-                                    <td> poland@europehacks.org </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                        <tr>
+                            <td class="flex justify-end mr-[2vw]">
+                                {t["event.italy.country"]}:
+                            </td>
+                            <td> italy@europehacks.org </td>
+                        </tr>
+                        <tr>
+                            <td class="flex justify-end mr-[2vw]">
+                                {t["event.germany.country"]}:
+                            </td>
+                            <td> germany@europehacks.org </td>
+                        </tr>
+                        <tr>
+                            <td class="flex justify-end mr-[2vw]">
+                                {t["event.greece.country"]}:
+                            </td>
+                            <td> greece@europehacks.org </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-        <div class="flex flex-row justify-center items-center text-footer-link sm:mx-[1.5vw]">
-            <div class= "flex flex-col items-center">
-                <div class= "flex flex-row my-[0.8vw] items-center sm:-mr-0">
-                    <a href="https://www.instagram.com/eurohacks2025/" target="_blank"> <img src="/instagram.png" title='@eurohacks2025' class="mx-[1.5vw] w-[5vw] sm:w-[4vw]"> </a>
-                    <p class="text-[2vw] invisible sm:visible"> @eurohacks2025 </p>
-                </div>
-                <div class= "flex flex-row my-[0.8vw] items-center sm:-mr-0">
-                    <a href="https://discord.gg/p8t5pGmYEt" target="_blank"> <img src="/discord.png"   title='#eurohacks' class="mx-[1.5vw] w-[5vw] sm:w-[4vw]"> </a>
-                    <p class="text-[2vw] invisible sm:visible"> Eurohacks </p>
-                </div>
-                <div class= "flex flex-row my-[0.8vw] items-center sm:-mr-0">
-                    <a href="" target="_blank"> <img src="/youtube.png" title='Coming soon' class="mx-[1.5vw] cursor-not-allowed w-[5vw] sm:w-[4vw]"> </a>
-                    <p class="text-[2vw] invisible sm:visible"> #eurohacks2025 </p>
-                </div>
+            <div class="mx-4">
+                <table class="lg:text-[1.3vw] sm:text-[4vw]">
+                    <tbody>
+                        <tr>
+                            <td class="flex justify-end mr-[2vw]">
+                                {t["footer.email.questions"]}:
+                            </td>
+                            <td> questions@europehacks.org </td>
+                        </tr>
+
+                        <tr>
+                            <td class="flex justify-end mr-[2vw] mt-[1vw]">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="flex justify-end mr-[2vw]">
+                                {t["event.uk.country"]}:
+                            </td>
+                            <td> uk@europehacks.org </td>
+                        </tr>
+                        <tr>
+                            <td class="flex justify-end mr-[2vw]">
+                                {t["event.spain.country"]}:
+                            </td>
+                            <td> spain@europehacks.org </td>
+                        </tr>
+                        <tr>
+                            <td class="flex justify-end mr-[2vw]">
+                                {t["event.poland.country"]}:
+                            </td>
+                            <td> poland@europehacks.org </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+    </div>
+
+    <div class="flex lg:flex-row items-start text-left text-footer-link sm:flex-col sm:mt-[4vw]">
+        <div class="flex flex-col items-start"> <!-- "items-start" statt "items-center" für Links-Ausrichtung -->
+            <div class="flex flex-row my-[0.8vw] items-center">
+                <a href="https://www.instagram.com/eurohacks2025/" target="_blank">
+                    <img
+                        src="/instagram.png"
+                        title="@eurohacks2025"
+                        class="lg:mx-[1.5vw] lg:w-[5vw] lg:w-[4vw] sm:mx-[1.5vw] sm:w-[6vw] sm:w-[6vw]"
+                    />
+                </a>
+                <a href="https://www.instagram.com/eurohacks2025/" target="_blank" class="lg:text-[2vw] sm:text-[4vw] invisible sm:visible">@eurohacks2025</a>
+            </div>
+            <div class="flex flex-row my-[0.8vw] items-center">
+                <a href="https://discord.gg/p8t5pGmYEt" target="_blank">
+                    <img
+                        src="/discord.png"
+                        title="#eurohacks"
+                        class="lg:mx-[1.5vw] lg:w-[5vw] lg:w-[4vw] sm:mx-[1.5vw] sm:w-[6vw] sm:w-[6vw]"
+                    />
+                </a>
+                <a class="lg:text-[2vw] sm:text-[4vw] invisible sm:visible" href="https://discord.gg/p8t5pGmYEt" target="_blank">EuroHacks</a>
+            </div>
+            <div class="flex flex-row my-[0.8vw] items-center">
+                <a href="" target="_blank">
+                    <img
+                        src="/youtube.png"
+                        title="Coming soon"
+                        class="lg:mx-[1.5vw] lg:w-[5vw] lg:w-[4vw] sm:mx-[1.5vw] sm:w-[6vw] sm:w-[6vw]"
+                    />
+                </a>
+                <a href="" target="_blank" class="lg:text-[2vw] sm:text-[4vw] invisible sm:visible">#eurohacks2025</a>
+            </div>
+        </div>
+    </div>    
 </footer>

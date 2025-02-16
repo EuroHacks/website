@@ -10,47 +10,68 @@ import "../styles/home.css";
 
 const t = await getPreferredEntry(Astro);
 ---
-<Layout title="Home Page">
 
+<Layout title="Home Page">
 	<div class="flex justify-center">
-		<div class="flex flex-col items-center justify-between w-85vw sm:flex-row">
+		<div
+			class="flex flex-col items-center justify-between w-85vw sm:flex-row"
+		>
 			<div
 				class="flex flex-col justify-center items-center mt-10 bg-div-bg w-[80vw] rounded-2xl sm:w-[40vw]"
-			>	
+			>
 				<h1 class="text-[3.5vw] font-extrabold text-header">
-					{t['home.vision.title']}
+					{t["home.vision.title"]}
 				</h1>
 
-				<p class="text-justify text-[1.7vw] my-[0vw] mx-[3vw] text-paragraph-text">
-					{t['home.vision.text']}
+				<p
+					class="text-justify text-[1.7vw] my-[0vw] mx-[3vw] text-paragraph-text"
+				>
+					{t["home.vision.text"]}
 				</p>
 
-				<a href="http://eurohacks.org/eurohacks" class="rounded-lg w-100% h-100%">
-					<div class="question flex flex-row justify-center bg-button-bg text-button-text hover:bg-button-bg-hover font-semibold text-[2vw] rounded-[1.5vw] py-[1.5vw] my-[2vw] mx-[1.5vw] px-[1.5vw] w-fit duration-700 border-none cursor-default text-center"> 
-						<div> 
-							{t['home.vision.button']} 
+				<a
+					href="https://docs.google.com/document/d/e/2PACX-1vSFYUWLmsYs_GV31mIB-w_c4rSEcldXDvnji9ML2UmXrc8U3Mu5wi6hHnUQR30FPl5qjxet5G0ZOfhO/pub"
+					class="rounded-lg w-100% h-100%"
+				>
+					<div
+						class="question flex flex-row justify-center bg-button-bg text-button-text hover:bg-button-bg-hover font-semibold text-[2vw] rounded-[1.5vw] py-[1.5vw] my-[2vw] mx-[1.5vw] px-[1.5vw] w-fit duration-700 border-none cursor-default text-center"
+					>
+						<div>
+							{t["home.vision.button"]}
 						</div>
 					</div>
 				</a>
-
 			</div>
-		
-			
-			<div class="w-[80vw] flex flex-row justify-evenly items-center mt-12 rounded-2xl sm:flex-col sm:w-[40vw]">
-		
-				<img src="../../hackathon.png" class="object-contain w-[50vw] rounded-xl">
 
-				<div class="text-2xl text-header max-w-[90%] w-full flex flex-col items-center justify-evenly">
+			<div
+				class="w-[80vw] flex flex-row justify-evenly items-center mt-12 rounded-2xl sm:flex-col sm:w-[40vw]"
+			>
+				<img
+					src="../../hackathon.png"
+					class="object-contain w-[50vw] rounded-xl"
+					alt="Picture of an other Hackathon organized by Hackclub"
+				/>
 
-					<div class="w-[115%] flex flex-col justify-between items-center text-[1.5vw] my-[1vw] sm:flex-row">
-						<div> <i class="fa-solid fa-calendar-days"></i> 12.07.2025 - 13.07.2025 </div>
-						<div> <i class="fa-solid fa-clock"></i> {t['home.info.duration']} </div>
+				<div
+					class="text-2xl text-header max-w-[90%] w-full flex flex-col items-center justify-evenly"
+				>
+					<div
+						class="w-[115%] flex flex-col justify-between items-center text-[1.5vw] my-[1vw] sm:flex-row"
+					>
+						<div>
+							<i class="fa-solid fa-calendar-days"></i> 12.07.2025
+							- 13.07.2025
+						</div>
+						<div>
+							<i class="fa-solid fa-clock"></i>
+							{t["home.info.duration"]}
+						</div>
 					</div>
 
-					<div class="text-[1.5vw]"> 
-						<i class="fa-solid fa-location-dot"></i> {t['home.info.eventnum']}
+					<div class="text-[1.5vw]">
+						<i class="fa-solid fa-location-dot"></i>
+						{t["home.info.eventnum"]}
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -58,63 +79,64 @@ const t = await getPreferredEntry(Astro);
 
 	<div class="flex flex-col items-center">
 		<h1 class="text-header text-[3.2vw] text-left w-85vw mt-[6vw]">
-			{t['home.events.joinus']}
+			{t["home.events.joinus"]}
 		</h1>
 	</div>
 
-		<div class="overflow-hidden relative">
-			<div class="carousel flex flex-row w-max">
+	<div class="overflow-hidden relative">
+		<div class="carousel flex flex-row w-max">
+			<Event
+				city={t["event.germany.city"]}
+				country={t["event.germany.country"]}
+				image="/Munich.jpg"
+				page="germany"
+			/>
 
-				<Event
-					city={t['event.germany.city']}
-					country={t['event.germany.country']}
-					image="/Munich.jpg"
-					page="germany"/>
+			<Event
+				city={t["event.poland.city"]}
+				country={t["event.poland.country"]}
+				image="/Bydgoszcz.jpg"
+				page="poland"
+			/>
 
-				<Event
-					city={t['event.poland.city']}
-					country={t['event.poland.country']}
-					image="/Bydgoszcz.jpg"
-					page="poland"/>
+			<Event
+				city={t["event.spain.city"]}
+				country={t["event.spain.country"]}
+				image="/madrid.jpg"
+				page="spain"
+			/>
 
-				<Event 
-					city={t['event.spain.city']}
-					country={t['event.spain.country']}
-					image="/Madrid.jpg"
-					page="spain"/>
-					
-				<Event
-					city={t['event.uk.city']}
-					country={t['event.uk.country']}
-					image="/London.jpg"
-					page="uk"/>
-					
-				<Event
-					city={t['event.greece.city']}
-					country={t['event.greece.country']}
-					image="/Thessaloniki.jpg"
-					page="greece"/>
+			<Event
+				city={t["event.uk.city"]}
+				country={t["event.uk.country"]}
+				image="/london.jpg"
+				page="uk"
+			/>
 
-				<Event
-					city={t['event.italy.city']}
-					country={t['event.italy.country']}
-					image="/Milan.jpg"
-					page="italy"/>
-			</div>
+			<Event
+				city={t["event.greece.city"]}
+				country={t["event.greece.country"]}
+				image="/thessaloniki.jpg"
+				page="greece"
+			/>
+
+			<Event
+				city={t["event.italy.city"]}
+				country={t["event.italy.country"]}
+				image="/Milan.jpg"
+				page="italy"
+			/>
 		</div>
+	</div>
 
 	<div class="pt-[6vw] flex flex-col items-center">
-		
 		<h1 class="text-left w-85vw text-[#D97A4A] text-[3.2vw] mb-[1.2vw]">
-			{t['home.faq.title']}
+			{t["home.faq.title"]}
 		</h1>
 
-		{t.faqs.map(q => (
-			<FAQ question={q.question} answer={q.answer}/>
-		))}
+		{t.faqs.map((q) => <FAQ question={q.question} answer={q.answer} />)}
 
 		<br />
-		
 	</div>
 
 	<!-- 	Sponsor's section, not yet finished 
@@ -134,5 +156,5 @@ const t = await getPreferredEntry(Astro);
 		</div>
 	-->
 
-	<script src="../scripts/home.js" />
+	<script src="../scripts/home.js"></script>
 </Layout>
