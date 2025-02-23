@@ -3,6 +3,7 @@
   "organizers": ["Victorio_Medina"],
   "info": {
       "participants": 0,
+      "rsvp": "",
       "contact": {
           "email": "spain@eurohacks.org", 
           "phone": "N/A",

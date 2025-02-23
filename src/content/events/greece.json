@@ -3,6 +3,7 @@
     "organizers": ["Nikos_Tsilas", "Marios_Mitsios"],
     "info": {
         "participants": 0,
+        "rsvp": "https://forms.gle/W6Gu7kpTR6G4tHoo9",
         "contact": {
             "email": "greece@eurohacks.org", 
             "phone": "N/A",
@@ -12,6 +13,6 @@
       },
       "images": {
           "image": "greece.png",
-          "background": "Τhessaloniki.jpg"
+          "background": "Thessaloniki.jpg"
       }
   }

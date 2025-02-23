@@ -3,6 +3,7 @@
   "organizers": ["Bartosz_Budnik"],
   "info": {
     "participants": 0,
+    "rsvp": "",
     "contact": {
       "email": "poland@eurohacks.org", 
       "phone": "N/A",
