@@ -3,6 +3,11 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			screens: {
+				sm: '0px',
+				md: '640px',
+				lg: '1025px',
+			},
 			colors: {
 				'bg': 					"#F9F0DD",
 				'div-bg': 				"#F5C99F",
@@ -31,12 +36,14 @@ export default {
 				'90vw': '90vw',
 				'100vw': '100vw',
 				'event_cards': '22vw',
+				'event_cards_mobile': '60vw',
 			  },
 			  height: {
 				'160px': '160px',
 				'18vw': '18vw',
 				'88vh': '88vh',
 				'event_cards': '22vw',
+				'event_cards_mobile': '60vw',
 			  },
 			  spacing: {
 				'-20px': '-20px',
