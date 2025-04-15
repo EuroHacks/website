@@ -88,6 +88,7 @@ hackathon.stay.header: Soggiorno del partecipante
 hackathon.stay.text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 hackathon.transit.header: Transito dei partecipanti
 hackathon.transit.text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+
 # -----
 # EVENTS
 # -----
@@ -95,26 +96,32 @@ event.germany.country: Germania
 event.germany.city: Monaco
 event.germany.province: 'Hackathon Tedesca'
 event.germany.title: Hackathon Tedesca
+
 event.poland.country: Polonia
 event.poland.city: Bydgoszcz
 event.poland.province: 'PROVINCIA'
 event.poland.title: Hackathon Polacca
+
 event.spain.country: Spagna
 event.spain.city: Madrid
 event.spain.province: 'PROVINCIA'
 event.spain.title: Hackathon Spagnola
+
 event.uk.country: Regno Unito
 event.uk.city: Londra
 event.uk.province: 'PROVINCIA'
 event.uk.title: Hackathon del Regno Unito
+
 event.greece.country: Grecia
 event.greece.city: Salonicco
 event.greece.province: Salonicco
 event.greece.title: Hackathon Greca
+
 event.italy.country: Italia
 event.italy.city: Milano
 event.italy.province: 'PROVINCIA'
 event.italy.title: Hackathon Italiana
+
 # -----
 # ORGANIZERS
 # -----
