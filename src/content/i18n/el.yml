@@ -33,7 +33,7 @@ home.faq.title: FAQ (Συχνές ερωτήσεις)
 about:
   - title: Γιατί θέλουμε να οργανώσουμε EuroHacks;
     text: Για να ενώσουμε της παγκόσμιας κοινότητας του Hack Club με την Ευρώπη 
-          μέσω ενός υβριδικού αποκεντρωμένου hackathon τον Αύγουστο του 2025.
+          μέσω ενός υβριδικού αποκεντρωμένου hackathon τον Ιούλιο του 2025.
     image: 'https://via.placeholder.com/400x200'
     modal:
       title: Γιατί θέλουμε να οργανώσουμε EuroHacks;
@@ -55,8 +55,7 @@ about:
         Ιούλιο του 2025.
 
   - title: Το Όραμά μας
-    text: Σύνδεση Ευρωπαίων καινοτόμων για να επιδείξουν τη δημιουργικότητα 
-          και να δημιουργήσουν πρωτοποριακά έργα.
+    text: Σύνδεση Ευρωπαίων καινοτόμων για να επιδείξουν τη δημιουργικότητα και να δημιουργήσουν πρωτοποριακά έργα.
     image: 'https://via.placeholder.com/400x200'
     modal:
       title: Το όραμά μας για το EuroHacks
@@ -109,21 +108,21 @@ hackathon.announcements.header: Ανακοινώσεις
 hackathon.announcements.text: 'Δεν έχουν γίνει ακόμη ανακοινώσεις από τους διοργανωτές.'
 
 hackathon.food.header: Διατροφή Συμμετεχόντων
-hackathon.food.text: 'Δεν μπορούν να δοθούν ακόμη πληροφορίες.'
+hackathon.food.text: 'Ακόμα δεν μπορούμε να δώσουμε πληροφορίες χωρίς κάθε επιφύλαξη. Σύντομα θα ανακοινωθούν περισσότερες πληροφορίες.'
 
 hackathon.stay.header: Διαμονή Συμμετεχόντων
-hackathon.stay.text: 'Δεν μπορούν να δοθούν ακόμη πληροφορίες.'
+hackathon.stay.text: 'Ακόμα δεν μπορούμε να δώσουμε πληροφορίες χωρίς κάθε επιφύλαξη. Σύντομα θα ανακοινωθούν περισσότερες πληροφορίες.'
 
 hackathon.transit.header: Μεταφορά Συμμετεχόντων
-hackathon.transit.text: 'Δεν μπορούν να δοθούν ακόμη πληροφορίες.'
+hackathon.transit.text: 'Ακόμα δεν μπορούμε να δώσουμε πληροφορίες χωρίς κάθε επιφύλαξη. Σύντομα θα ανακοινωθούν περισσότερες πληροφορίες.'
 
 # -----
 # EVENTS
 # -----
 
 event.germany.country: Γερμανία
-event.germany.city: Μόναχο
-event.germany.province: Βαυαρία
+event.germany.city: Στουτγάρδη
+event.germany.province: Βάδη-Βυρτεμβέργη
 event.germany.title: Γερμανικό Hackathon
 
 event.poland.country: Πολωνία

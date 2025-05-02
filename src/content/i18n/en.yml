@@ -118,8 +118,8 @@ hackathon.transit.text: 'No information can be provided yet.'
 # -----
 
 event.germany.country: Germany
-event.germany.city: Munich
-event.germany.province: Bavaria
+event.germany.city: Stoccarda
+event.germany.province: Baden-Württemberg
 event.germany.title: German Hackathon
 
 event.poland.country: Poland

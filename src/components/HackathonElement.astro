@@ -1,5 +1,5 @@
 ---
-let { city, discordlink, country, countrytitle, image, rsvp_page, info_page, background} = Astro.props;
+let { city, discordlink, country, countrytitle, image, info_page, background, rsvp } = Astro.props;
 
 const https = "https://";
 const discord = `${https}/${discordlink}`;
@@ -40,10 +40,12 @@ const discord = `${https}/${discordlink}`;
 
                 </a>
                 
-                <a href={rsvp_page}> 
-                    <button class="h-[10vw] w-[22vw] sm:w-[24vw] text-[2.5vw] mx-3 bg-button-bg rounded-lg sm:rounded-xl hover:bg-button-bg-hover cursor-not-allowed" disabled> 
+                <a href={rsvp} target="_blank">
+
+                    <button class="h-[10vw] w-[22vw] sm:w-[24vw] text-[2.5vw] mx-3 bg-button-bg rounded-lg sm:rounded-xl hover:bg-button-bg-hover"> 
                         <div class="button-icons flex flex-col items-start ml-[4%] mt-[10%]"> <i class="fa-solid fa-user"> </i> </div> Participate 
                     </button> 
+
                 </a>
 
             </div>
