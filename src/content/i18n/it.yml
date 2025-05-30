@@ -92,10 +92,10 @@ hackathon.transit.text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit
 # -----
 # EVENTS
 # -----
-event.germany.country: Germania
-event.germany.city: Monaco
-event.germany.province: 'Hackathon Tedesca'
-event.germany.title: Hackathon Tedesca
+event.online.country: ""
+event.online.city: ""
+event.online.province: ""
+event.online.title: Online
 
 event.poland.country: Polonia
 event.poland.city: Bydgoszcz
@@ -192,7 +192,7 @@ faqs:
       che ti servono (ad esempio caricabatterie, disco rigido, scheda SD, ecc.). Forse
       saremo in grado di mettere a disposizione laptop per 1 o 2 persone, ma devi
       provvedere ai tuoi dispositivi all'hackathon.
-home.info.eventnum: 6 eventi in tutta Europa
+home.info.eventnum: 5 eventi in tutta Europa
 # -----
 # Footer
 # -----

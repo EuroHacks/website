@@ -76,10 +76,10 @@ hackathon.transit.text: 'Es können noch keine Angaben gemacht werden.'
 # -----
 # EVENTS
 # -----
-event.germany.country: Deutschland
-event.germany.city: Stuttgart
-event.germany.province: Baden-Württemberg
-event.germany.title: Deutscher Hackathon
+event.online.country: Online
+event.online.city: ""
+event.online.province: ""
+event.online.title: Online
 
 event.poland.country: Polen
 event.poland.city: Bydgoszcz
@@ -119,7 +119,7 @@ organizers.Massimiliano_Bruchi.bio: 'Lorem ipsum dolor sit amet, consectetur adi
 organizers.Max_Schneider.bio: >
   Hi, ich bin Max, 16 Jahre alt und lebe in Baden-Württemberg. In meiner Freizeit arbeite und programmiere 
   ich unglaublich gerne an diversen Robotik- und Software-Projekten. Außerdem gehe ich sehr gerne bouldern. 
-  Als Teil des EuroHacks-Deutschland Teams würde ich mich sehr freuen dich bei EuroHacks in München zu treffen.
+  Als Teil des EuroHacks-online Teams würde ich mich sehr freuen dich bei EuroHacks in München zu treffen.
 
 organizers.Max_Thorste.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 organizers.Nikos_Tsilas.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'

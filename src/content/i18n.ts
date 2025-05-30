@@ -29,10 +29,10 @@ const schema = z.object({
     'hackathon.transit.header': z.string(),
     'hackathon.transit.text': z.string(),
     
-    'event.germany.country': z.string(),
-    'event.germany.province': z.string(),
-    'event.germany.city': z.string(),
-    'event.germany.title': z.string(),
+    'event.online.country': z.string(),
+    'event.online.province': z.string(),
+    'event.online.city': z.string(),
+    'event.online.title': z.string(),
 
     'event.poland.country': z.string(),
     'event.poland.province': z.string(),

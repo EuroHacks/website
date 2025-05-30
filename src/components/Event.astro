@@ -4,18 +4,32 @@ let { city, country, image, page } = Astro.props;
 import { getPreferredEntry } from "../lib/i18n";
 const t = await getPreferredEntry(Astro);
 ---
-
-<div class="lg:w-event_cards sm:w-event_cards_mobile sm:h-event_cards_mobile lg:h-event_cards bg-soft-peach rounded-xl mx-[3vw] my-[1vw] relative">
-    <img src={image} class="rounded-xl lg:w-event_cards lg:h-event_cards sm:w-event_cards_mobile sm:h-event_cards_mobile"/>
-    <div class="absolute top-[1vw] inset-0 flex  justify-center">
-        <p class="font-bold lg:text-[2vw] sm:text-[5vw] text-center"> {city}, {country} </p>
+{ country === "online" ? (
+    <div class="lg:w-event_cards sm:w-event_cards_mobile sm:h-event_cards_mobile lg:h-event_cards bg-soft-peach rounded-xl mx-[3vw] my-[1vw] relative">
+        <img src={image} class="rounded-xl lg:w-event_cards lg:h-event_cards sm:w-event_cards_mobile sm:h-event_cards_mobile"/>
+        <div class="absolute top-[1vw] inset-0 flex justify-center">
+            <p class="font-bold lg:text-[2vw] sm:text-[5vw] text-center">{country}</p>
+        </div>
+        <div class="absolute bottom-[1.5vw] left-1/2 transform -translate-x-1/2">
+            <button class="py-[0.5vw] px-[1vw] bg-[#E7A474] rounded-md sm:rounded-lg lg:text-[1.3vw] sm:text-[4vw]">
+                <a href={`/hackathons/${page}`} class="no-underline text-button-text">
+                    {t['home.events.learnmore']}
+                </a>
+            </button>
+        </div>
     </div>
-
-    <div class="absolute bottom-[1.5vw] left-1/2 transform -translate-x-1/2">
-        <button class="py-[0.5vw] px-[1vw] bg-[#E7A474] rounded-md sm:rounded-lg lg:text-[1.3vw] sm:text-[4vw]">
-            <a href={`/hackathons/${page}`} class="no-underline text-button-text">
-                {t['home.events.learnmore']}
-            </a>
-        </button>
+) : (
+    <div class="lg:w-event_cards sm:w-event_cards_mobile sm:h-event_cards_mobile lg:h-event_cards bg-soft-peach rounded-xl mx-[3vw] my-[1vw] relative">
+        <img src={image} class="rounded-xl lg:w-event_cards lg:h-event_cards sm:w-event_cards_mobile sm:h-event_cards_mobile"/>
+        <div class="absolute top-[1vw] inset-0 flex justify-center">
+            <p class="font-bold lg:text-[2vw] sm:text-[5vw] text-center"> {city}, {country} </p>
+        </div>
+        <div class="absolute bottom-[1.5vw] left-1/2 transform -translate-x-1/2">
+            <button class="py-[0.5vw] px-[1vw] bg-[#E7A474] rounded-md sm:rounded-lg lg:text-[1.3vw] sm:text-[4vw]">
+                <a href={`/hackathons/${page}`} class="no-underline text-button-text">
+                    {t['home.events.learnmore']}
+                </a>
+            </button>
+        </div>
     </div>
-</div>
+)}
