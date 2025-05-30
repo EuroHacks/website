@@ -17,7 +17,7 @@ const discord = `${https}/${discordlink}`;
             </div>
 
             <div class="text-[2vw] my-[2vw] text-paragraph-text flex flex-col items-start justify-evenly">
-                <div> <i class="fa-solid fa-envelope mr-2 mb-[1vw]"> </i> Mail: {country}@eurohacks.org </div>
+                <div> <i class="fa-solid fa-envelope mr-2 mb-[1vw]"> </i> Mail: { country === "online" ? "maximilian.schneider@eurohacks.org" : `${country}@eurohacks.org` } </div>
                 <!-- <div> <i class="fa-solid fa-phone mr-2 my-[1vw]"> </i> Telephone: {telephone} </div> -->
                 <div> <a href={discord} target="_blank"> <i class="fa-brands fa-discord mr-2 mt-[1vw]"> </i> Discord: {discordlink} </a> </div>
             </div>
@@ -26,8 +26,10 @@ const discord = `${https}/${discordlink}`;
 
         <div class="flex flex-col justify-around items-center">
 
-            <div class="flex flex-row text-header"> 
+            <div class="flex flex-row text-header">
+                {country !== "online" &&(
                 <h1 class="flex flex-row text-[3vw]"> <i class="fa-solid fa-location-dot mr-3"> </i> {city} </h1>
+                )}
             </div>
 
             <div class="flex flex-row justify-evenly">

@@ -120,10 +120,10 @@ hackathon.transit.text: 'Ακόμα δεν μπορούμε να δώσουμε 
 # EVENTS
 # -----
 
-event.germany.country: Γερμανία
-event.germany.city: Στουτγάρδη
-event.germany.province: Βάδη-Βυρτεμβέργη
-event.germany.title: Γερμανικό Hackathon
+event.online.country: ""
+event.online.city: ""
+event.online.province: ""
+event.online.title: "Online"
 
 event.poland.country: Πολωνία
 event.poland.city: Μπίντγκοστς
@@ -177,7 +177,7 @@ organizers.Massimiliano_Bruchi.bio: ''
 organizers.Max_Schneider.bio: >
   Γεια σας, είμαι ο Max, 16 ετών και ζω στη Βάδη-Βυρτεμβέργη. Στον ελεύθερο χρόνο μου, μου αρέσει να εργάζομαι και να 
   προγραμματίζω διάφορα έργα ρομποτικής και λογισμικού. Λατρεύω επίσης το bouldering. Ως μέλος της ομάδας των EuroHacks 
-  Germany, θα χαρώ πολύ να σας συναντήσω στο event των EuroHacks στο Μόναχο.
+  online, θα χαρώ πολύ να σας συναντήσω στο event των EuroHacks στο Μόναχο.
 
 organizers.Max_Thorste.bio: ''
 

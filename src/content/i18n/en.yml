@@ -21,7 +21,7 @@ home.vision.text: >
 home.vision.button: "Learn more: Read our vision"
 
 home.info.duration: 24 hours of hacking
-home.info.eventnum: 6 events all over Europe 
+home.info.eventnum: 5 events all over Europe 
 
 home.events.joinus: Join us in...
 home.events.learnmore: Learn more
@@ -117,10 +117,10 @@ hackathon.transit.text: 'No information can be provided yet.'
 # EVENTS
 # -----
 
-event.germany.country: Germany
-event.germany.city: Stoccarda
-event.germany.province: Baden-Württemberg
-event.germany.title: German Hackathon
+event.online.country: ""
+event.online.city: ""
+event.online.province: ""
+event.online.title: Online Hackathon
 
 event.poland.country: Poland
 event.poland.city: Bydgoszcz
@@ -172,9 +172,9 @@ organizers.Marios_Mitsios.bio: >
 organizers.Massimiliano_Bruchi.bio: ''
 
 organizers.Max_Schneider.bio: >
-  Hi, I'm Max, 16 years old and I live in Baden-Württemberg. In my spare time, I love working on and programming 
-  various robotics and software projects. I also love bouldering. As part of the EuroHacks Germany team, I would 
-  be very happy to meet you at EuroHacks in Munich.
+  Hi, I'm Max, 16 years old and I live in Germany. In my spare time, I love working on and programming 
+  various robotics and software projects. I also love bouldering. As part of the EuroHacks online team, I would 
+  be very happy to see you at EuroHacks.
   
 organizers.Max_Thorste.bio: ''
 

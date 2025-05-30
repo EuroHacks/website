@@ -4,11 +4,18 @@ import OrganizerCard from "../../../components/OrganizerElement.astro";
 import EventInfoElement from "../../../components/EventInfoElement.astro";
 import { getEntry } from "astro:content";
 import { getPreferredEntry } from "../../../lib/i18n";
+import { getCollection } from "astro:content";
 
 import '../../../styles/hackathon_country.css'
 
 const { country } = Astro.params;
-const event = (await getEntry('events', country)).data
+//check if we have the corresponding site
+const allEvents = await getCollection('events');
+const eventFromCollection = allEvents.find(e => e.id === country);
+if (!eventFromCollection) {
+  return new Response("Not Found", { status: 404 });
+}
+const event = eventFromCollection.data;
 const eventOrganizers = await Promise.all(event.organizers.map(
   async (organizer: string) => (await getEntry('organizers', organizer)))
 )
@@ -86,7 +93,7 @@ const t = await getPreferredEntry(Astro);
         </div> 
 
         <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text"> 
-          {t['hackathon.info.dates']} 12/7/2025 - 13/7/2025
+          {t['hackathon.info.dates']} 12/7/2025
         </h2> 
         
       </div>
@@ -151,36 +158,33 @@ const t = await getPreferredEntry(Astro);
   </div>
   
   <br>
-
-  <div class="flex flex-col sm:flex-row items-center justify-evenly">
-
-    <EventInfoElement
-      header = {t['hackathon.announcements.header']}
-      text = {t['hackathon.announcements.text']}
-      image = "/announcements.png"
-    />
-
-    <EventInfoElement
-      header = {t['hackathon.food.header']}
-      text = {t['hackathon.food.text']}
-      image = "/food.png"
-    />
-
-  </div>
-  <div class="flex flex-col sm:flex-row items-center justify-evenly">
-
-    <EventInfoElement
-      header = {t['hackathon.stay.header']}
-      text = {t['hackathon.stay.text']}
-      image = "/stay.png"
-    />
-
-    <EventInfoElement
-      header = {t['hackathon.transit.header']}
-      text = {t['hackathon.transit.text']}
-      image = "/transportation.png"
-    />
-
-  </div>
-  <br>
+  { country !== "online" && (
+    <>
+      <div class="flex flex-col sm:flex-row items-center justify-evenly">
+        <EventInfoElement
+          header={t['hackathon.announcements.header']}
+          text={t['hackathon.announcements.text']}
+          image="/announcements.png"
+        />
+        <EventInfoElement
+          header={t['hackathon.food.header']}
+          text={t['hackathon.food.text']}
+          image="/food.png"
+        />
+      </div>
+      <div class="flex flex-col sm:flex-row items-center justify-evenly">
+        <EventInfoElement
+          header={t['hackathon.stay.header']}
+          text={t['hackathon.stay.text']}
+          image="/stay.png"
+        />
+        <EventInfoElement
+          header={t['hackathon.transit.header']}
+          text={t['hackathon.transit.text']}
+          image="/transportation.png"
+        />
+      </div>
+      <br>
+    </>
+  )}
 </Layout>
