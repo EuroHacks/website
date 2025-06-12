@@ -9,7 +9,7 @@ home.warning: >
   μετάφραση ολόκληρης της ιστοσελίδας σε 7 διαφορετικές γλώσσες είναι μια δύσκολη διαδικασία, ορισμένες 
   μεταφράσεις μπορεί να είναι λάθος ή να μην υπάρχουν (τα προβλήματα θα επιλυθούν αρκετά σύντομα).
 
-home.vision.title: Τα Eurohacks
+home.vision.title: Τo Eurohacks
 home.vision.text: >
   Το EuroHacks είναι ένα πανευρωπαϊκό hackathon, με πολλά events τα οποία λαμβάνουν 
   χώρα ταυτόχρονα. Όλοι θα έχουν την ευκαιρία να δημιουργήσουν τα δικά τους projects, 
@@ -72,7 +72,7 @@ about:
         εξαιρετικών έργων από ολόκληρη την ήπειρο.
 
   - title: Η Ομάδα μας
-    text: Πρέπει να σκεφτούμε μια περιγραφή μόλις βγάλουμε το νέο κείμενο.
+    text: Νέοι από όλη την Ελλάδα συνεργάζονται για να οργανώσουν το Eurohacks Greece
     image: 'https://via.placeholder.com/400x200'
     modal:
       title: Η οργανωτική ομάδα μας
@@ -97,8 +97,8 @@ hackathon.welcome: >
 hackathon.organizers: Οργανωτική επιτροπή
 
 hackathon.info.header: 'Πληροφορίες εκδήλωσης: '
-hackathon.info.dates: 'Ημερομηνίες εκδήλωσης: '
-hackathon.info.location: 'Τόπος εκδήλωσης: '
+hackathon.info.dates: 'Ημερομηνίες εκδήλωσης: 12 Ιουλίου'
+hackathon.info.location: 'Τόπος εκδήλωσης: Κέντρο Διάδοσης Επιστημών και Μουσείο Τεχνολογίας ΝΟΗΣΙΣ, Θεσσαλονίκη'
 hackathon.info.participants: 'Συμμετέχοντες: '
 hackathon.info.zoomlink: 'Σύνδεσμος zoom: '
 hackathon.info.contact.email: 'Επικοινωνία μέσω email: '
