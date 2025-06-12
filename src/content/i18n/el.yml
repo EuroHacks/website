@@ -9,7 +9,7 @@ home.warning: >
   μετάφραση ολόκληρης της ιστοσελίδας σε 7 διαφορετικές γλώσσες είναι μια δύσκολη διαδικασία, ορισμένες 
   μεταφράσεις μπορεί να είναι λάθος ή να μην υπάρχουν (τα προβλήματα θα επιλυθούν αρκετά σύντομα).
 
-home.vision.title: Τα Eurohacks
+home.vision.title: Τo Eurohacks
 home.vision.text: >
   Το EuroHacks είναι ένα πανευρωπαϊκό hackathon, με πολλά events τα οποία λαμβάνουν 
   χώρα ταυτόχρονα. Όλοι θα έχουν την ευκαιρία να δημιουργήσουν τα δικά τους projects, 
@@ -19,7 +19,7 @@ home.vision.text: >
 home.vision.button: "Μάθετε περισσότερα"
 
 home.info.duration: 24 ώρες προγραμματισμού
-home.info.eventnum: 6 εκδηλώσεις σε όλη την Ευρώπη
+home.info.eventnum: 5 εκδηλώσεις σε όλη την Ευρώπη
 
 home.events.joinus: Ελάτε μαζί μας στο...
 home.events.learnmore: Μάθετε περισσότερα
@@ -72,7 +72,7 @@ about:
         εξαιρετικών έργων από ολόκληρη την ήπειρο.
 
   - title: Η Ομάδα μας
-    text: Πρέπει να σκεφτούμε μια περιγραφή μόλις βγάλουμε το νέο κείμενο.
+    text: Νέοι από όλη την Ελλάδα συνεργάζονται για να οργανώσουν το Eurohacks Greece
     image: 'https://via.placeholder.com/400x200'
     modal:
       title: Η οργανωτική ομάδα μας
@@ -97,21 +97,20 @@ hackathon.welcome: >
 hackathon.organizers: Οργανωτική επιτροπή
 
 hackathon.info.header: 'Πληροφορίες εκδήλωσης: '
-hackathon.info.dates: 'Ημερομηνίες εκδήλωσης: '
-hackathon.info.location: 'Τόπος εκδήλωσης: '
+hackathon.info.dates: 'Ημερομηνίες εκδήλωσης:'
+hackathon.info.location: 'Τόπος εκδήλωσης: Κέντρο Διάδοσης Επιστημών ΝΟΗΣΙΣ'
 hackathon.info.participants: 'Συμμετέχοντες: '
 hackathon.info.zoomlink: 'Σύνδεσμος zoom: '
 hackathon.info.contact.email: 'Επικοινωνία μέσω email: '
 hackathon.info.contact.phone: 'Τηλεφωνική επικοινωνία: '
 
 hackathon.announcements.header: Ανακοινώσεις
-hackathon.announcements.text: 'Δεν έχουν γίνει ακόμη ανακοινώσεις από τους διοργανωτές.'
+hackathon.announcements.text: > 
+                            To hackathon θα λάβει χώρα από τις 10:00 μέχρι και τις 19:00 στον χώρο του ΝΟΕΣΙΣ
+                            
 
 hackathon.food.header: Διατροφή Συμμετεχόντων
 hackathon.food.text: 'Ακόμα δεν μπορούμε να δώσουμε πληροφορίες χωρίς κάθε επιφύλαξη. Σύντομα θα ανακοινωθούν περισσότερες πληροφορίες.'
-
-hackathon.stay.header: Διαμονή Συμμετεχόντων
-hackathon.stay.text: 'Ακόμα δεν μπορούμε να δώσουμε πληροφορίες χωρίς κάθε επιφύλαξη. Σύντομα θα ανακοινωθούν περισσότερες πληροφορίες.'
 
 hackathon.transit.header: Μεταφορά Συμμετεχόντων
 hackathon.transit.text: 'Ακόμα δεν μπορούμε να δώσουμε πληροφορίες χωρίς κάθε επιφύλαξη. Σύντομα θα ανακοινωθούν περισσότερες πληροφορίες.'
@@ -120,7 +119,7 @@ hackathon.transit.text: 'Ακόμα δεν μπορούμε να δώσουμε 
 # EVENTS
 # -----
 
-event.online.country: ""
+event.online.country: "Διαδικτυακό"
 event.online.city: ""
 event.online.province: ""
 event.online.title: "Online"

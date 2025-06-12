@@ -2,7 +2,7 @@
 ## 1. Why do we want to organize EuroHacks?
 Hack Club is an esteemed organization that brings together high school students from across the globe who share a deep passion for creation and innovation. Within Hack Club, a diverse group of individuals - ranging from organizers, coders, and hackers to painters, engineers, musicians, writers, and volunteers - unite to foster a dynamic community. This collaborative spirit is exemplified not only through the Hack Club Slack, where members engage and connect but also through hackathons.
 Hackathons serve as an exceptional platform to gather individuals with a common enthusiasm for coding and creativity. They offer a unique space for collaboration, learning, and technological innovation while strengthening bonds within the Hack Club community.
-However, despite Hack Club’s global presence, no hackathons are currently being held in Europe, as Hack Club’s activities are primarily based in the United States. We, the organizers of EuroHacks, believe it is time to address this gap. With this in mind, we are planning a hybrid, decentralized satellite hackathon across multiple cities in Europe, scheduled for August 2025.
+However, despite Hack Club’s global presence, no hackathons are currently being held in Europe, as Hack Club’s activities are primarily based in the United States. We, the organizers of EuroHacks, believe it is time to address this gap. With this in mind, we are planning a hybrid, decentralized satellite hackathon across multiple cities in Europe, scheduled for 12 July 2025.
 
 
 ## 2. Our vision for EuroHacks
