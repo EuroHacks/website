@@ -5,6 +5,7 @@ import EventInfoElement from "../../../components/EventInfoElement.astro";
 import { getEntry } from "astro:content";
 import { getPreferredEntry } from "../../../lib/i18n";
 import { getCollection } from "astro:content";
+import EventAnnouncement from "../../../components/EventAnnouncement.astro";
 
 import '../../../styles/hackathon_country.css'
 
@@ -140,43 +141,27 @@ const t = await getPreferredEntry(Astro);
 
       </div>
       <br>
-    <!--
-      <br>
-      <div class="flex flex-row items-center justify-start ml-4vw"> 
-
-        <div class="mr-1vw"> 
-          <i class="fa-solid fa-phone fa-2x"></i> 
-        </div> 
-
-        <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text"> 
-          {t['hackathon.info.contact.phone']}  {event.info.contact.phone}
-        </h2> 
-        
-      </div>
-      <br>-->
     </div>
   </div>
   
   <br>
   { country !== "online" && (
-    <>
-      <div class="flex flex-col sm:flex-row items-center justify-evenly">
-        <EventInfoElement
+    <div class="flex flex-row w-[110vw] justify-evenly items-center p-4">
+
+      <div class="flex flex-row">
+        <EventAnnouncement
           header={t['hackathon.announcements.header']}
           text={t['hackathon.announcements.text']}
           image="/announcements.png"
         />
+
+      </div>
+
+      <div class="flex lg:flex-col sm:flex-row items-center justify-evenly">
         <EventInfoElement
           header={t['hackathon.food.header']}
           text={t['hackathon.food.text']}
           image="/food.png"
-        />
-      </div>
-      <div class="flex flex-col sm:flex-row items-center justify-evenly">
-        <EventInfoElement
-          header={t['hackathon.stay.header']}
-          text={t['hackathon.stay.text']}
-          image="/stay.png"
         />
         <EventInfoElement
           header={t['hackathon.transit.header']}
@@ -184,7 +169,9 @@ const t = await getPreferredEntry(Astro);
           image="/transportation.png"
         />
       </div>
+
       <br>
+    </div>
     </>
   )}
 </Layout>

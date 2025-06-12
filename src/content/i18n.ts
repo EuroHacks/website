@@ -24,8 +24,6 @@ const schema = z.object({
     'hackathon.announcements.text': z.string(),
     'hackathon.food.header': z.string(),
     'hackathon.food.text': z.string(),
-    'hackathon.stay.header': z.string(),
-    'hackathon.stay.text': z.string(),
     'hackathon.transit.header': z.string(),
     'hackathon.transit.text': z.string(),
     
