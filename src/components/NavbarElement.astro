@@ -3,29 +3,31 @@ import { getPreferredEntry } from "../lib/i18n";
 const t = await getPreferredEntry(Astro);
 ---
 
-<nav class="font-sams lg:h-[140vh] sm:h-[40vh] text-div-bg">
-    <ul class= "lg:w-[37vw] sm:w-[100vw] flex sm:flex-row float-end justify-between px-5 list-none py-3 z-10 sticky top-0">
+<div class="relative object-cover">
+    <nav class="absolute top-0 left-0 font-sams lg:h-[140vh] sm:h-[40vh] text-div-bg ">
+        <ul class= "lg:w-[37vw] sm:w-[100vw] flex sm:flex-row float-end justify-between px-5 list-none py-3 z-10 sticky top-0">
 
-        <button class="nav-link font-bold opacity-100 relative lg:text-[1.8vw] sm:text-[4vw] no-underline flex-none justify-center float-end bg-div-bg rounded-md bg-opacity-40 pr-2 pl-2 hover:bg-opacity-60">
-            <a href= "/hackathons" class="no-underline"> <slot class="navbar-item"> Join </slot> </a>
+            <button class="nav-link font-bold opacity-100 relative lg:text-[1.8vw] sm:text-[4vw] no-underline flex-none justify-center float-end bg-div-bg rounded-md bg-opacity-40 pr-2 pl-2 hover:bg-opacity-60">
+                <a href= "/hackathons" class="no-underline"> <slot class="navbar-item"> Join </slot> </a>
 
-        </button>
+            </button>
 
-        <li class="nav-link font-bold opacity-75 relative lg:text-[1.8vw] sm:text-[4vw] no-underline flex-none float-end">
-                <a href= "/" class="no-underline"> <slot class="navbar-item"> Home Page </slot> </a>
-        </li>
-    
-        <li class="nav-link font-bold opacity-75 relative lg:text-[1.8vw] sm:text-[4vw] no-underline flex-none float-end">
-                <a href= "/eurohacks" class="no-underline"> <slot class="navbar-item"> Eurohacks </slot> </a>
-        </li>
-    
-        <li class="nav-link font-bold opacity-75 relative lg:text-[1.8vw] sm:text-[4vw] no-underline flex-none float-end">
-                <a href= "/hackathons" class="no-underline"> <slot class="navbar-item"> Hackathons </slot> </a>
-        </li>
-    </ul>
+            <li class="nav-link font-bold opacity-75 relative lg:text-[1.8vw] sm:text-[4vw] no-underline flex-none float-end">
+                    <a href= "/" class="no-underline"> <slot class="navbar-item"> Home Page </slot> </a>
+            </li>
 
-    <img src="../../Banner.png" class="absolute w-max" alt="Banner" />
-</nav>
+            <li class="nav-link font-bold opacity-75 relative lg:text-[1.8vw] sm:text-[4vw] no-underline flex-none float-end">
+                    <a href= "/eurohacks" class="no-underline"> <slot class="navbar-item"> Eurohacks </slot> </a>
+            </li>
+
+            <li class="nav-link font-bold opacity-75 relative lg:text-[1.8vw] sm:text-[4vw] no-underline flex-none float-end">
+                    <a href= "/hackathons" class="no-underline"> <slot class="navbar-item"> Hackathons </slot> </a>
+            </li>
+        </ul>
+    </nav>
+
+    <img src="../../Banner.png" class=" w-max" alt="Banner" />
+</div>
 
 <style>
 .nav-link::before {
