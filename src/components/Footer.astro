@@ -1,7 +1,8 @@
 ---
-import { getPreferredEntry } from "../lib/i18n";
+import { getPreferredEntry, getPreferredLanguage } from "../lib/i18n";
 
 const t = await getPreferredEntry(Astro);
+const a = getPreferredLanguage(Astro);
 ---
 
 <footer class="bg-footer-bg flex lg:flex-row lg:justify-evenly lg:items-center sm:flex-col sm:justify-center sm:w-full">
@@ -88,38 +89,73 @@ const t = await getPreferredEntry(Astro);
             </div>
     </div>
 
-    <div class="flex lg:flex-row items-start text-left text-footer-link sm:flex-col lg:mt-[0vw] sm:mt-[4vw]">
-        <div class="flex flex-col items-start"> <!-- "items-start" statt "items-center" für Links-Ausrichtung -->
-            <div class="flex flex-row my-[0.8vw] items-center">
-                <a href="https://www.instagram.com/eurohacks2025/" target="_blank">
-                    <img
-                        src="/instagram.png"
-                        title="@eurohacks2025"
-                        class="lg:mx-[1.5vw] lg:w-[4vw] lg:w-[4vw] sm:mx-[1.5vw] sm:w-[6vw] sm:w-[6vw]"
-                    />
-                </a>
-                <a href="https://www.instagram.com/eurohacks2025/" target="_blank" class="lg:text-[2vw] sm:text-[4vw] invisible sm:visible">@eurohacks2025</a>
+    <table><tbody><tr>
+        <td>
+            <div class="flex lg:flex-row items-start text-left text-footer-link sm:flex-col lg:mt-[0vw] sm:mt-[4vw]">
+                <div class="flex flex-col items-start"> <!-- "items-start" statt "items-center" für Links-Ausrichtung -->
+                    <div class="flex flex-row my-[0.8vw] items-center">
+                        <a href="https://www.instagram.com/eurohacks2025/" target="_blank">
+                            <img
+                                src="/instagram.png"
+                                title="@eurohacks2025"
+                                class="lg:mx-[1.5vw] lg:w-[4vw] lg:w-[4vw] sm:mx-[1.5vw] sm:w-[6vw] sm:w-[6vw]"
+                            />
+                        </a>
+                        <a href="https://www.instagram.com/eurohacks2025/" target="_blank" class="lg:text-[2vw] sm:text-[4vw] invisible sm:visible">@eurohacks2025</a>
+                    </div>
+                    <div class="flex flex-row my-[0.8vw] items-center">
+                        <a href="https://discord.gg/p8t5pGmYEt" target="_blank">
+                            <img
+                                src="/discord.png"
+                                title="#eurohacks"
+                                class="lg:mx-[1.5vw] lg:w-[4vw] lg:w-[4vw] sm:mx-[1.5vw] sm:w-[6vw] sm:w-[6vw]"
+                            />
+                        </a>
+                        <a class="lg:text-[2vw] sm:text-[4vw] invisible sm:visible" href="https://discord.gg/p8t5pGmYEt" target="_blank">EuroHacks</a>
+                    </div>
+                    <div class="flex flex-row my-[0.8vw] items-center">
+                        <a href="" target="_blank">
+                            <img
+                                src="/youtube.png"
+                                title="Coming soon"
+                                class="lg:mx-[1.5vw] lg:w-[4vw] lg:w-[4vw] sm:mx-[1.5vw] sm:w-[6vw] sm:w-[6vw]"
+                            />
+                        </a>
+                        <a href="" target="_blank" class="lg:text-[2vw] sm:text-[4vw] invisible sm:visible">#eurohacks2025</a>
+                    </div>
+                </div>
+            </div>    
+        </td>
+
+        <td>
+            <div class="flex flex-col m-10 items-end text-right text-footer-link">
+                <div class="lg:text-[2vw] sm:text-[4vw]">{t["footer.locale_prompt"]}</div>
+                <button class="lg:text-[1.5vw] sm:text-[3vw] locale">en</button>
+                <button class="lg:text-[1.5vw] sm:text-[3vw] locale">de</button>
+                <button class="lg:text-[1.5vw] sm:text-[3vw] locale">it</button>
+                <button class="lg:text-[1.5vw] sm:text-[3vw] locale">el</button>
             </div>
-            <div class="flex flex-row my-[0.8vw] items-center">
-                <a href="https://discord.gg/p8t5pGmYEt" target="_blank">
-                    <img
-                        src="/discord.png"
-                        title="#eurohacks"
-                        class="lg:mx-[1.5vw] lg:w-[4vw] lg:w-[4vw] sm:mx-[1.5vw] sm:w-[6vw] sm:w-[6vw]"
-                    />
-                </a>
-                <a class="lg:text-[2vw] sm:text-[4vw] invisible sm:visible" href="https://discord.gg/p8t5pGmYEt" target="_blank">EuroHacks</a>
-            </div>
-            <div class="flex flex-row my-[0.8vw] items-center">
-                <a href="" target="_blank">
-                    <img
-                        src="/youtube.png"
-                        title="Coming soon"
-                        class="lg:mx-[1.5vw] lg:w-[4vw] lg:w-[4vw] sm:mx-[1.5vw] sm:w-[6vw] sm:w-[6vw]"
-                    />
-                </a>
-                <a href="" target="_blank" class="lg:text-[2vw] sm:text-[4vw] invisible sm:visible">#eurohacks2025</a>
-            </div>
-        </div>
-    </div>    
+        </td>
+    </tr></tbody></table>
 </footer>
+
+<script>
+import Cookies from 'js-cookie';
+
+const preferred_locale = Cookies.get('lang') || "en";
+
+const buttons = document.querySelectorAll('button.locale');
+
+// Handle clicks on each button.
+buttons.forEach((button) => {
+    const locale = button.textContent;
+
+    button.addEventListener('click', () => {
+        if (preferred_locale !== locale) {
+            Cookies.set('lang', locale, { expires: 30 });
+
+            window.location.reload();
+        }
+    });
+});
+</script>

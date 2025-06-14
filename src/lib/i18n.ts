@@ -1,7 +1,7 @@
 import { getEntry, getCollection } from "astro:content";
 
 export function getPreferredLanguage(Astro: any) {
-    return Astro.url.searchParams.get('lang') || Astro.preferredLocale || 'en';
+    return Astro.url.searchParams.get('lang') || Astro.cookies.get('lang')?.value || Astro.preferredLocale || 'en';
 }
 
 export async function getPreferredEntry(Astro: any) {

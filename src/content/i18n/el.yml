@@ -268,3 +268,4 @@ faqs:
 footer.contacts: Στοιχεία Επικοινωνίας
 footer.email.main: Κύριο
 footer.email.questions: Ερωτήσεις
+footer.locale_prompt: 'Επιλέξτε μια γλώσσα:'
