@@ -77,6 +77,7 @@ const schema = z.object({
     })),
 
     "organizers.Bartosz_Budnik.bio": z.string(),
+    "organizers.Christos_Tsichrinis.bio": z.string(),
     "organizers.Felix_Myrie.bio": z.string(),
     "organizers.Giacomo_Radaelli.bio": z.string(),
     "organizers.Karl_Wünsche.bio": z.string(),
