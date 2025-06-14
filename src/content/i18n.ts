@@ -59,8 +59,7 @@ const schema = z.object({
 
     'footer.contacts': z.string(),
     'footer.email.main': z.string(),
-    'footer.email.questions': z.string(), 
-    'footer.locale_prompt': z.string(),
+    'footer.email.questions': z.string(),
 
     'faqs': z.array(z.object({
         question: z.string(),
