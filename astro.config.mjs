@@ -12,6 +12,10 @@ export default defineConfig({
   i18n: {
     locales: ['en', 'el', 'de', 'it'],
     defaultLocale: 'en',
+  },
+
+  redirects: {
+    "/h/[...slug]": "/hackathons/[...slug]"
   }
 
 });
