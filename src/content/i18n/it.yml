@@ -44,7 +44,7 @@ about:
         
         <br><br> Tuttavia, nonostante la presenza globale di Hack Club, al momento non si tengono hackathon in Europa, poiché le attività di Hack
         Club si svolgono principalmente negli Stati Uniti. Noi, gli organizzatori di EuroHacks, crediamo che sia giunto il momento di
-        colmare questa mancanza. Con questo in mente, stiamo pianificando un hackathon ibrido e decentralizzato in diverse città in Europa, programmato per agosto 2025.
+        colmare questa mancanza. Con questo in mente, stiamo pianificando un hackathon ibrido e decentralizzato in diverse città in Europa, programmato per luglio 2025.
   - title: La nostra Visione
     text: Mettere in contatto gli innovatori europei per mettere in mostra la creatività e costruire progetti rivoluzionari oltre ogni confine.
     image: 'https://via.placeholder.com/400x200'
@@ -65,7 +65,12 @@ about:
     modal:
       title: Il nostro fantastico team di organizzazione
       text: >
-        <br> Prossimamente...
+        <br> EuroHacks è organizzato da un team di studenti delle scuole superiori provenienti da tutta Europa, uniti dall'obiettivo di permettere ai giovani
+        innovatori di realizzare le proprie idee e far parte di qualcosa di più grande. La maggior parte di noi fa parte di Hack Club da anni e sappiamo
+        dall'interno quanto sia importante creare una comunità di giovani interessati all'informatica, sia per loro che per la comunità stessa. Avere programmi
+        che coprono diversi ambiti dell'informatica è ciò che rende speciale questa comunità. Tutto questo lo abbiamo vissuto partecipando a programmi, hackathon
+        e stage di Hack Club. Il nostro impegno per l'inclusione, l'accesso alla tecnologia e la collaborazione creativa ci spinge avanti ed è dimostrato dalla
+        nostra stretta collaborazione negli ultimi mesi per creare questo evento complesso e creativo.
 # -----
 # HACKATHON PAGE
 # -----
@@ -81,13 +86,13 @@ hackathon.info.zoomlink: 'Link di zoom: '
 hackathon.info.contact.email: 'Contatto E-mail: '
 hackathon.info.contact.phone: 'Contatto telefonico: '
 hackathon.announcements.header: Annunci
-hackathon.announcements.text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+hackathon.announcements.text: 'Al momento non ci sono annunci'
 hackathon.food.header: Alimentazione del partecipante
-hackathon.food.text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+hackathon.food.text: 'Al momento non sono ancora presenti informazioni'
 hackathon.stay.header: Soggiorno del partecipante
-hackathon.stay.text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+hackathon.stay.text: 'Al momento non sono ancora presenti informazioni'
 hackathon.transit.header: Transito dei partecipanti
-hackathon.transit.text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+hackathon.transit.text: 'Al momento non sono ancora presenti informazioni'
 
 # -----
 # EVENTS
@@ -99,17 +104,17 @@ event.online.title: Online
 
 event.poland.country: Polonia
 event.poland.city: Bydgoszcz
-event.poland.province: 'PROVINCIA'
+event.poland.province: Bydgoszcz–Toruń
 event.poland.title: Hackathon Polacca
 
 event.spain.country: Spagna
 event.spain.city: Madrid
-event.spain.province: 'PROVINCIA'
+event.spain.province: Madrid
 event.spain.title: Hackathon Spagnola
 
 event.uk.country: Regno Unito
 event.uk.city: Londra
-event.uk.province: 'PROVINCIA'
+event.uk.province: Inghilterra
 event.uk.title: Hackathon del Regno Unito
 
 event.greece.country: Grecia
@@ -118,28 +123,67 @@ event.greece.province: Salonicco
 event.greece.title: Hackathon Greca
 
 event.italy.country: Italia
-event.italy.city: Milano
-event.italy.province: 'PROVINCIA'
+event.italy.city: Padova
+event.italy.province: Veneto
 event.italy.title: Hackathon Italiana
 
 # -----
 # ORGANIZERS
 # -----
-organizers.Bartosz_Budnik.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Christos_Tsichrinis.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Felix_Myrie.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Giacomo_Radaelli.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Karl_Wünsche.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Leonard_Stegle.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Marios_Mitsios.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Massimiliano_Bruchi.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Max_Schneider.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Max_Thorste.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Nikos_Tsilas.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Ole_Fleck.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Samuel_Leber.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Shambhavi_Sinha.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-organizers.Thomas_Price.bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+organizers.Bartosz_Budnik.bio: >
+  Hiya! Bartosz here, I'm just a Hack Clubber who wants to help out others as much as possible. I code 
+  games and some fun tools in low level languages, though I prefer to spend my time doing tasks at Hack 
+  Club. I love reading self-improvement books, and if I get bored - play some video games like Persona. 
+  I just want to influence as many people as possible and make them acknowledge their skills, improve them!
+
+organizers.Christos_Tsichrinis.bio: >
+  My name is Christos Tsichrinis and I am a high school student from Trikala. I started programming during the pandemic
+  and since then I have been involved in computer science both for competitions and for my fun.
+  In my free time I usually read an extracurricular book or spend time with my pets. 
+  Eurohacks is the first hackathon I am organizing and for this reason I am very excited and looking forward to it
+
+organizers.Felix_Myrie.bio: ''
+organizers.Giacomo_Radaelli.bio: ''
+organizers.Karl_Wünsche.bio: ''
+organizers.Leonard_Stegle.bio: ''
+
+organizers.Marios_Mitsios.bio: >
+  I'm Marios, Hack Clubber and high school student from Trikala. We work with all different programming 
+  languages and I like to explore new technologies. As a Hack Club member for the last three years, 
+  I have contributed in various ways to supporting the community. In my spare time, I like to 
+  listening to music, and of course, dabbling in different areas of programming. I'm excited to be a part of the 
+  I'm excited to organize the Greek event and will do everything I can to ensure that Eurohacks is the best it can be!
+
+organizers.Massimiliano_Bruchi.bio: ''
+
+organizers.Max_Schneider.bio: >
+  Hi, I'm Max, 16 years old and I live in Germany. In my spare time, I love working on and programming 
+  various robotics and software projects. I also love bouldering. As part of the EuroHacks online team, I would 
+  be very happy to see you at EuroHacks.
+
+organizers.Max_Thorste.bio: ''
+
+organizers.Nikos_Tsilas.bio: >
+  Hi! I'm Nikos, a Hack Clubber and student based in Thessaloniki, Greece. I'm passionate about coding, 
+  problem-solving, and creating things. I love making websites and apps that help me and others. I am
+  also a big fan of automations and robots in general. When I'm  not coding, you'll probably find me 
+  playing voleyball or reading a book. I am looking forward to meet you all!
+
+organizers.Ole_Fleck.bio: ''
+organizers.Samuel_Leber.bio: ''
+
+organizers.Shambhavi_Sinha.bio: >
+  Hi! I'm Shambhavi, an enthusiastic Hack Clubber and student based in Leicester, UK, with a 
+  passion for creating things and problem-solving. I love making useful websites to help me 
+  compose music and I also enjoy improving my own personal website! When I'm not busy coding 
+  or composing, you'll probably find me immersed in maths problems or playing the piano to unwind.
+
+organizers.Thomas_Price.bio: >
+  Hi, I'm Thomas! I'm an aspiring software engineer from the UK and I joined HackClub during the summer 
+  for their Arcade program. After winning some Airpods and some other cool stuff over the summer, I decided 
+  to volunteer to be a Co-organiser for the UK Eurohacks! During my free time, I like to make websites, run 
+  and listen to indie rock music (the wombats as my favourite)! I'm really looking forward to being a part 
+  of this event and hopefully everyone can make something awesome!
 organizers.Victorio_Medina.bio: "Eurohacks è un'hackathon a livello europeo, con più eventi che si\nsvolgono nello stesso momento.\nTutti avranno l'opportunità di creare progetti,\nincontrare altre persone da tutta l'Europa, divertirsi, e, ovviamente, vincere premi!\nTrova l'hackathon più vicina a te e informazioni a riguardo qui."
 # -----
 # FAQs
@@ -174,12 +218,7 @@ faqs:
       o all'indirizzo e-mail del paese: italy@eurohacks.org.'
   - question: Devo pagare per partecipare all'hackathon?
     answer: >
-      No, non è necessario. Devi solo coprire le spese di viaggio, ma anche questo
-      dipende dalla tua posizione. Se vivi entro 50 km dal luogo in cui verrà svolta, dovrai
-      coprire le spese di viaggio giornaliere da e per la sede. Tuttavia, se arrivi
-      da una città a più di 50 km di distanza, alcune delle tue spese di viaggio per la città ospitante
-      potrebbero essere rimborsate. Ciò significa che potresti comunque dover pagare una parte del costo dei tuoi
-      biglietti di viaggio.
+      No, non è necessario. Devi solo coprire le spese di viaggio.
   - question: In cosa può consistere il mio progetto?
     answer: >
       Qualunque cosa tu voglia se si tratta di informatica. Potrebbe essere qualcosa
@@ -198,5 +237,5 @@ home.info.eventnum: 5 eventi in tutta Europa
 # Footer
 # -----
 footer.contacts: Contatti
-footer.email.main: Dobbiamo pensare a una descrizione non appena pubblichiamo il nuovo testo.
+footer.email.main: Principale
 footer.email.questions: Domande
