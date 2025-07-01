@@ -2,15 +2,15 @@
 let { question, answer } = Astro.props
 ---
 
-<div class="question flex flex-row justify-between text-[#7A4B2A] font-semibold lg:text-[2vw] sm:text-[4vw] rounded-lg rounded-xl py-[2vw] py-[1.2vw] px-5 m-2 w-85vw duration-700 border-none cursor-pointer text-center hover:bg-grayish-blue hover:w-85vw"> 
+<div class="question flex flex-row justify-between text-[#7A4B2A] font-semibold lg:text-3xl sm:text-2xl rounded-xl py-[1.2vw] px-5 m-2 w-85vw duration-700 border-none cursor-pointer text-center hover:bg-grayish-blue hover:w-85vw"> 
     {question} 
     <div class="arrow-icon">
         <i class="fa-solid fa-caret-down fa-2xl"></i>
     </div>
 </div>
 
-<div class="answer text-xl text-[#7A4B2A] w-85vw max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out rounded-xl mb-4">
-    <p class="px-[1.2vw] py-[1vw] font-semibold text-center lg:text-[2.5vw] sm:text-[4vw] leading-[2.7vw] leading-[2vw] sm:leading-[4.5vw]">
+<div class="answer text-2xl text-[#7A4B2A] w-85vw max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out rounded-xl mb-4">
+    <p class="px-[1.2vw] py-[1vw] text-center leading-relaxed">
         {answer}
     </p>
 </div>
