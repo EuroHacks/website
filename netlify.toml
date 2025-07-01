@@ -1,0 +1,5 @@
+[[redirects]]
+from = "/h/:slug"
+to = "/hackathons/:slug"
+status = 301
+force = true

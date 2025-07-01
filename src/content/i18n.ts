@@ -59,7 +59,7 @@ const schema = z.object({
 
     'footer.contacts': z.string(),
     'footer.email.main': z.string(),
-    'footer.email.questions': z.string(), 
+    'footer.email.questions': z.string(),
 
     'faqs': z.array(z.object({
         question: z.string(),
@@ -77,6 +77,7 @@ const schema = z.object({
     })),
 
     "organizers.Bartosz_Budnik.bio": z.string(),
+    "organizers.Christos_Tsichrinis.bio": z.string(),
     "organizers.Felix_Myrie.bio": z.string(),
     "organizers.Giacomo_Radaelli.bio": z.string(),
     "organizers.Karl_Wünsche.bio": z.string(),

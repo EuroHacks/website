@@ -1,0 +1,7 @@
+---
+const { country } = Astro.params;
+Astro.redirect(`/hackathons/${country}`)
+---
+
+<h1>Redirect...</h1>
+<p>Still waiting? Click <a href={`/hackathons/${country}`}>here</a></p>

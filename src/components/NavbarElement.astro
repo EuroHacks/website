@@ -54,3 +54,24 @@ button.nav-link:hover::before {
 }
 
 </style>
+
+<script>
+import Cookies from 'js-cookie';
+
+const preferred_locale = Cookies.get('lang') || "en";
+
+const buttons = document.querySelectorAll('button.locale');
+
+// Handle clicks on each button.
+buttons.forEach((button) => {
+    const locale = button.attributes.getNamedItem('data-locale').value;
+
+    button.addEventListener('click', () => {
+        if (preferred_locale !== locale) {
+            Cookies.set('lang', locale, { expires: 30 });
+
+            window.location.reload();
+        }
+    });
+});
+</script>
