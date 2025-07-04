@@ -158,16 +158,20 @@ const t = await getPreferredEntry(Astro);
       </div>
 
       <div class="flex lg:flex-col sm:flex-row items-center justify-evenly">
+        { t['hackathon.food.text'] &&
         <EventInfoElement
           header={t['hackathon.food.header']}
           text={t['hackathon.food.text']}
           image="/food.png"
         />
+        }
+        { t['hackathon.transit.text'] &&
         <EventInfoElement
           header={t['hackathon.transit.header']}
           text={t['hackathon.transit.text']}
           image="/transportation.png"
         />
+        }
       </div>
 
       <br>
