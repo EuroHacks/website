@@ -7,4 +7,4 @@ force = true
 [[headers]]
   for = "*.png" # js files should be set this way
   [headers.values]
-    Cache-Control = "public, max-age=604800"
+    Cache-Control = "public, max-age=604800, immutable"
