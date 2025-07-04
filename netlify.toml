@@ -3,3 +3,8 @@ from = "/h/:slug"
 to = "/hackathons/:slug"
 status = 301
 force = true
+
+[[headers]]
+  for = "*.png" # js files should be set this way
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
