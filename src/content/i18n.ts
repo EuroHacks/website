@@ -17,6 +17,7 @@ const schema = z.object({
     'hackathon.info.dates': z.string(),
     'hackathon.info.location': z.string(),
     'hackathon.info.participants': z.string(),
+    'hackathon.info.participants_TBA': z.string(),
     'hackathon.info.zoomlink': z.string(),
     'hackathon.info.contact.email': z.string(),
     'hackathon.info.contact.phone': z.string(),
