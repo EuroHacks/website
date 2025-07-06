@@ -141,6 +141,14 @@ const t = await getPreferredEntry(Astro);
 
       </div>
       <br>
+
+      <br>
+      <div class="flex flex-row items-center justify-start ml-4vw"> 
+        <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text">
+          {event.info.more ? <div set:html={event.info.more}/>: ""}
+        </h2>
+      </div>
+      <br>
     </div>
   </div>
   
