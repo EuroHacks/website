@@ -10,7 +10,6 @@ import EventAnnouncement from "../../../components/EventAnnouncement.astro";
 import '../../../styles/hackathon_country.css'
 
 const { country } = Astro.params;
-//check if we have the corresponding site
 const allEvents = await getCollection('events');
 const eventFromCollection = allEvents.find(e => e.id === country);
 if (!eventFromCollection) {
@@ -18,172 +17,150 @@ if (!eventFromCollection) {
 }
 const event = eventFromCollection.data;
 const eventOrganizers = await Promise.all(event.organizers.map(
-  async (organizer: string) => (await getEntry('organizers', organizer)))
-)
+  async (organizer) => (await getEntry('organizers', organizer)))
+);
 
 const t = await getPreferredEntry(Astro);
 ---
 
-<Layout title={t[`event.${country}.title`]}>
-  
-    <!-- <div class="flex justify-center text-golden-sand">
-      <div class="flex flex-row w-80vw">
-        <div class="text-6xl mr-3"> <i class="fa-solid fa-language"></i> </div>
-        <h2 class="font-bold text-4.5xl"> {event.lang[translation].translation} </h2>
-        <div class="mt-3.5 ml-3">
-          <label class="relative inline-block w-16 h-9">
-            <input type="checkbox" class="opacity-0 w-0 h-0 checked:bg-frosted-blue">
-            <span class="slider round absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-slate-500 @apply transition-[0.4s]; -webkit-transition: 0.4s;"></span>
-          </label>
+<Layout title={t[`event.${country}.title`] ?? "Hackathon"}>
+
+  {country === "online" && (
+    <div class="flex flex-col items-center w-full px-10 mb-8">
+      <div class="text-2xl text-[#7A4B2A] w-[85vw] rounded-xl mb-4 mt-4">
+        <div class="px-[1.2vw] py-[1vw] text-center leading-relaxed">
+          <a>
+            EuroHacks Online took place on July 12th, 2025 — and even though it was a small event, it turned out to be a big success!
+            Hackers from all across Europe joined in remotely, and together we created an amazing sense of community. Throughout the day, we hosted fun and insightful workshops, exchanged ideas, and built some really awesome projects.
+            It was great to see so much creativity, collaboration, and positive energy — all happening online! Whether it was your first hackathon or your tenth, we hope you had as much fun as we did organizing it.
+            Thanks again to everyone who took part. You made this event something special, and we can't wait to hack with you again soon!
+          </a>
         </div>
       </div>
-    </div> -->
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-4 w-full max-w-[90vw]">
+        <img src="/online.png" alt="" class="w-[200px] h-[140px] object-cover rounded-xl" />
+        <img src="/online-1.png" alt="" class="w-[200px] h-[140px] object-cover rounded-xl" />
+        <img src="/online-2.jpg" alt="" class="w-[200px] h-[140px] object-cover rounded-xl" />
+      </div>
+    </div>
+  )}
 
-    <div class="flex justify-evenly">
-      <div class="flex flex-col justify-evenly items-center bg-div-bg w-80vw rounded-2xl">
-
+  {country !== "online" && (
+    <>
+      <div class="flex justify-evenly">
+        <div class="flex flex-col justify-evenly items-center bg-div-bg w-80vw rounded-2xl">
           <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-[80vw]">
-              <img src="../../../head_organizing_team.png" width="80px" class="mr-6 mt-2">
-              <h1 class="text-[5vw] sm:text-[3.5vw] text-header font-bold"> {t['hackathon.organizers']}  </h1>
+            <img src="../../../head_organizing_team.png" width="80px" class="mr-6 mt-2" />
+            <h1 class="text-[5vw] sm:text-[3.5vw] text-header font-bold">
+              {t['hackathon.organizers']}
+            </h1>
           </div>
 
           <div class="flex flex-col w-[80vw] justify-evenly items-center sm:items-start mt-3 sm:flex-row">
-
             {eventOrganizers.map(
               organizer => <OrganizerCard
-              name={organizer.data.fullname}
-              paragraph={t[`organizers.${organizer.id}.bio`]}
-              country_image={organizer.data.country}
-              image={organizer.data.thumb}
+                name={organizer.data.fullname}
+                paragraph={t[`organizers.${organizer.id}.bio`]}
+                country_image={organizer.data.country}
+                image={organizer.data.thumb}
               />
             )}
-
           </div>
-          <br>
-          
-      </div>
-  </div>
-
-  <div class="flex justify-center my-3">
-    <div class="flex flex-col justify-start mt-12 bg-div-bg w-80vw rounded-2xl">
-
-      <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw text-header mt-[2vw] -mb-[8vw] sm:-mb-[0vw]">
-        <img src="/info.png" class= "mr-[1.5vw] w-[5vw]">
-        <h1 class="text-[3.5vw] font-bold">{t['hackathon.info.header']}</h1>
-      </div>
-      
-      <br><br><br>
-      <div class="flex flex-row items-center justify-start ml-[4vw]">
-
-        <div class="mr-1vw"> 
-          <i class="fa-solid fa-location-dot fa-2xl"></i> 
+          <br />
         </div>
-        
-        <h2 class= "text-[3vw] sm:text-[2.5vw] text-paragraph-text"> 
-          {t['hackathon.info.location']} {t[`event.${country}.city`]} 
-        </h2> 
-
-      </div>
-      <br>
-
-      <br>
-      <div class="flex flex-row items-center justify-start ml-4vw"> 
-        
-        <div class="mr-1vw"> 
-          <i class="fa-solid fa-clock fa-2xl"></i> 
-        </div> 
-
-        <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text"> 
-          {t['hackathon.info.dates']} 12/7/2025
-        </h2> 
-        
-      </div>
-      <br>
-
-      <br>
-      <div class="flex flex-row items-center justify-start ml-4vw"> 
-
-        <div class="mr-1vw"> 
-          <img src="../../../../participants.png" class="w-9"> 
-        </div> 
-        
-        <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text"> 
-          {t['hackathon.info.participants']} {event.info.participants} 
-        </h2> 
-        
-      </div>
-      <br>
-      <!--
-      <br>
-      <div class="flex flex-row items-center justify-start ml-4vw"> 
-        
-        <div class="mr-1vw"> 
-          <img src="../../../../zoom.png" class="w-9"> 
-        </div> 
-        
-        <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text"> 
-          {t['hackathon.info.zoomlink']} {event.info.zoom}
-        </h2> 
-
-      </div>
-      <br>
-      -->
-      <br>
-      <div class="flex flex-row items-center justify-start ml-4vw"> 
-
-        <div class="mr-1vw"> 
-          <i class="fa-solid fa-envelope fa-2x"></i> 
-        </div> 
-        
-        <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text"> 
-          {t['hackathon.info.contact.email']}  {event.info.contact.email}
-        </h2> 
-
-      </div>
-      <br>
-
-      <br>
-      <div class="flex flex-row items-center justify-start ml-4vw"> 
-        <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text">
-          {event.info.more ? <div set:html={event.info.more}/>: ""}
-        </h2>
-      </div>
-      <br>
-    </div>
-  </div>
-  
-  <br>
-  { country !== "online" && (
-    <div class="flex flex-row w-[110vw] justify-evenly items-center p-4">
-
-      <div class="flex flex-row">
-        <EventAnnouncement
-          header={t['hackathon.announcements.header']}
-          text={t['hackathon.announcements.text']}
-          image="/announcements.png"
-        />
-
       </div>
 
-      <div class="flex lg:flex-col sm:flex-row items-center justify-evenly">
-        { t['hackathon.food.text'] &&
-        <EventInfoElement
-          header={t['hackathon.food.header']}
-          text={t['hackathon.food.text']}
-          image="/food.png"
-        />
-        }
-        { t['hackathon.transit.text'] &&
-        <EventInfoElement
-          header={t['hackathon.transit.header']}
-          text={t['hackathon.transit.text']}
-          image="/transportation.png"
-        />
-        }
+      <div class="flex justify-center my-3">
+        <div class="flex flex-col justify-start mt-12 bg-div-bg w-80vw rounded-2xl">
+          <div class="flex flex-row justify-center items-center rounded-2xl h-fit w-80vw text-header mt-[2vw] -mb-[8vw] sm:-mb-[0vw]">
+            <img src="/info.png" class="mr-[1.5vw] w-[5vw]" />
+            <h1 class="text-[3.5vw] font-bold">{t['hackathon.info.header']}</h1>
+          </div>
+
+          <br /><br /><br />
+
+          <div class="flex flex-row items-center justify-start ml-[4vw]">
+            <div class="mr-1vw">
+              <i class="fa-solid fa-location-dot fa-2xl"></i>
+            </div>
+            <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text">
+              {t['hackathon.info.location']} {t[`event.${country}.city`]}
+            </h2>
+          </div>
+
+          <br />
+
+          <div class="flex flex-row items-center justify-start ml-4vw">
+            <div class="mr-1vw">
+              <i class="fa-solid fa-clock fa-2xl"></i>
+            </div>
+            <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text">
+              {t['hackathon.info.dates']} 12/7/2025
+            </h2>
+          </div>
+
+          <br />
+
+          <div class="flex flex-row items-center justify-start ml-4vw">
+            <div class="mr-1vw">
+              <img src="../../../../participants.png" class="w-9" />
+            </div>
+            <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text">
+              {t['hackathon.info.participants']} {event.info.participants}
+            </h2>
+          </div>
+
+          <br />
+
+          <div class="flex flex-row items-center justify-start ml-4vw">
+            <div class="mr-1vw">
+              <i class="fa-solid fa-envelope fa-2x"></i>
+            </div>
+            <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text">
+              {t['hackathon.info.contact.email']} {event.info.contact.email}
+            </h2>
+          </div>
+
+          <br />
+
+          <div class="flex flex-row items-center justify-start ml-4vw">
+            <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text">
+              {event.info.more ? <div set:html={event.info.more} /> : ""}
+            </h2>
+          </div>
+
+          <br />
+        </div>
       </div>
 
-      <br>
-    </div>
+      <br />
+
+      <div class="flex flex-row w-[110vw] justify-evenly items-center p-4">
+        <div class="flex flex-row">
+          <EventAnnouncement
+            header={t['hackathon.announcements.header']}
+            text={t['hackathon.announcements.text']}
+            image="/announcements.png"
+          />
+        </div>
+
+        <div class="flex lg:flex-col sm:flex-row items-center justify-evenly">
+          {t['hackathon.food.text'] && (
+            <EventInfoElement
+              header={t['hackathon.food.header']}
+              text={t['hackathon.food.text']}
+              image="/food.png"
+            />
+          )}
+          {t['hackathon.transit.text'] && (
+            <EventInfoElement
+              header={t['hackathon.transit.header']}
+              text={t['hackathon.transit.text']}
+              image="/transportation.png"
+            />
+          )}
+        </div>
+      </div>
     </>
   )}
 </Layout>
