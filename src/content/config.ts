@@ -19,6 +19,7 @@ const eventCollection = defineCollection({
             participants: z.number(),
             more: z.string().optional(),
             rsvp: z.string(),
+            date: z.string().optional(),
             contact: z.object({
                 email: z.string(),
                 phone: z.string(),

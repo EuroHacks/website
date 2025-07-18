@@ -95,7 +95,7 @@ const t = await getPreferredEntry(Astro);
               <i class="fa-solid fa-clock fa-2xl"></i>
             </div>
             <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text">
-              {t['hackathon.info.dates']} 12/7/2025
+              {t['hackathon.info.dates']} {event.info.date || "12/7/2025"}
             </h2>
           </div>
 
