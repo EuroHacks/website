@@ -106,7 +106,7 @@ const t = await getPreferredEntry(Astro);
               <img src="../../../../participants.png" class="w-9" />
             </div>
             <h2 class="text-[3vw] sm:text-[2.5vw] text-paragraph-text">
-              {t['hackathon.info.participants']} {event.info.participants}
+              {t['hackathon.info.participants']} {event.info.participants > 0 ? event.info.participants : t['hackathon.info.participants_TBA']}
             </h2>
           </div>
 
