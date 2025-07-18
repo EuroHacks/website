@@ -41,12 +41,20 @@ const discord = `${https}/${discordlink}`;
                     </button> 
 
                 </a>
-                
-                <a href={rsvp} target="_blank">
-
+                {country !== "online" &&(
+                    <a href={rsvp} target="_blank"></a>
                     <button class="h-[10vw] w-[22vw] sm:w-[24vw] text-[2.5vw] mx-3 bg-button-bg rounded-lg sm:rounded-xl hover:bg-button-bg-hover"> 
                         <div class="button-icons flex flex-col items-start ml-[4%] mt-[10%]"> <i class="fa-solid fa-user"> </i> </div> Participate 
                     </button> 
+                )}
+                {country === "online" &&(
+                    <a href="#" target="_blank"></a>
+                    <button class="h-[10vw] w-[22vw] sm:w-[24vw] text-[2.5vw] mx-3 bg-button-bg rounded-lg sm:rounded-xl hover:bg-button-bg-hoverdisabled:bg-gray-400 disabled:cursor-not-allowed" disabled> 
+                        <div class="button-icons flex flex-col items-start ml-[4%] mt-[10%]"> <i class="fa-solid fa-user"> </i> </div> Participate 
+                    </button> 
+                )}
+
+                    
 
                 </a>
 
